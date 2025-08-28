@@ -34,7 +34,8 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
 }) => {
   const swiperRef = useRef<SwiperType>();
   const [activeIndex, setActiveIndex] = useState(currentIndex);
-  const [thumbnailsLoaded, setThumbnailsLoaded] = useState<boolean[]>(new Array(images.length).fill(false));
+  const [swiperReady, setSwiperReady] = useState(false);
+
 
   useEffect(() => {
     // Keyboard navigation
@@ -68,29 +69,7 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
     setActiveIndex(currentIndex);
   }, [currentIndex]);
 
-  // Preload thumbnails
-  useEffect(() => {
-    const preloadThumbnails = () => {
-      images.forEach((image, index) => {
-        const img = new Image();
-        img.onload = () => {
-          setThumbnailsLoaded(prev => {
-            const newLoaded = [...prev];
-            newLoaded[index] = true;
-            return newLoaded;
-          });
-        };
-        img.onerror = () => {
-          console.error(`Failed to preload thumbnail ${index + 1}:`, image.src);
-        };
-        img.src = image.src;
-      });
-    };
 
-    // Small delay to let the main image load first
-    const timer = setTimeout(preloadThumbnails, 100);
-    return () => clearTimeout(timer);
-  }, [images]);
 
   const backdropVariants = {
     hidden: { opacity: 0 },
@@ -159,6 +138,8 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
         <Swiper
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
+            // Delay thumbnail rendering until Swiper is ready
+            setTimeout(() => setSwiperReady(true), 300);
           }}
           modules={[Navigation, Keyboard, Mousewheel]}
           initialSlide={currentIndex}
@@ -235,9 +216,10 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
         </div>
 
         {/* Thumbnail Strip */}
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 max-w-full">
-          <div className="flex gap-2 px-4 py-3 bg-gray-800/80 backdrop-blur-sm rounded-lg overflow-x-auto max-w-screen-lg">
-            {images.map((image, index) => (
+        {swiperReady && (
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 max-w-full">
+            <div className="flex gap-2 px-4 py-3 bg-gray-800/80 backdrop-blur-sm rounded-lg overflow-x-auto max-w-screen-lg">
+              {images.map((image, index) => (
               <button
                 key={`thumb-${index}`}
                 onClick={(e) => {
@@ -252,22 +234,16 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
                     : 'border-transparent hover:border-white/50'
                 }`}
               >
-{thumbnailsLoaded[index] ? (
-                  <img
-                    src={image.src}
-                    className="w-full h-full object-cover"
-                    loading="eager"
-                    decoding="sync"
-                  />
-                ) : (
-                  <div className="w-full h-full bg-gray-600 flex items-center justify-center">
-                    <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                  </div>
-                )}
+                <img
+                  src={image.src}
+                  className="w-full h-full object-cover"
+                  loading="eager"
+                />
               </button>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
+        )}
       </motion.div>
     </motion.div>
   );
