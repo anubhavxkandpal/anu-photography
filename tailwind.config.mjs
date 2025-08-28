@@ -4,7 +4,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['Source Sans 3', 'system-ui', '-apple-system', 'sans-serif'],
+        display: ['Playfair Display', 'Georgia', 'serif'],
+        heading: ['Playfair Display', 'Georgia', 'serif'],
       },
       colors: {
         gallery: {
