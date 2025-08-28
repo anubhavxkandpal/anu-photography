@@ -1,62 +1,31 @@
 ---
 import Layout from '../layouts/Layout.astro';
-
-const featuredImages = [
-  {
-    src: '/images/landscapes/mountain-sunset.jpg',
-    alt: 'Mountain sunset with golden light',
-    title: 'Mountain Sunset',
-    category: 'landscapes',
-    href: '/galleries/landscapes'
-  },
-  {
-    src: '/images/portraits/professional-headshot.jpg',
-    alt: 'Professional business headshot',
-    title: 'Professional Headshot',
-    category: 'portraits',
-    href: '/galleries/portraits'
-  },
-  {
-    src: '/images/artsy/abstract-architecture.jpg',
-    alt: 'Abstract architectural photography',
-    title: 'Abstract Architecture',
-    category: 'artsy',
-    href: '/galleries/artsy'
-  },
-  {
-    src: '/images/events/wedding-ceremony.jpg',
-    alt: 'Beautiful wedding ceremony moment',
-    title: 'Wedding Ceremony',
-    category: 'events',
-    href: '/galleries/events'
-  }
-];
 ---
 
 <Layout 
   title="Anu Photography - Professional Photography Portfolio"
-  description="Professional photography services including landscapes, portraits, artistic photography, and event coverage. View portfolio and book sessions."
+  description="Professional photography services including landscapes, portraits, artistic photography, and event coverage."
 >
   <!-- Hero Section -->
-  <section class="relative h-screen flex items-center justify-center bg-gradient-to-br from-gallery-900 via-gallery-800 to-gallery-700">
-    <div class="absolute inset-0 bg-black/30"></div>
+  <section class="relative h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700">
+    <div class="absolute inset-0 bg-black opacity-30"></div>
     <div class="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8">
-      <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
+      <h1 class="text-5xl md:text-7xl font-bold mb-6">
         Anu Photography
       </h1>
-      <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90 animate-slide-up">
+      <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
         Capturing life's most beautiful moments through the lens of creativity and passion
       </p>
       <div class="space-x-4">
         <a 
           href="/galleries/landscapes" 
-          class="inline-block bg-white text-gallery-900 px-8 py-3 rounded-lg font-semibold hover:bg-gallery-100 transition-colors duration-300"
+          class="inline-block bg-white text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
         >
           View Galleries
         </a>
         <a 
           href="/contact" 
-          class="inline-block border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-gallery-900 transition-all duration-300"
+          class="inline-block border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300"
         >
           Book Session
         </a>
@@ -67,56 +36,117 @@ const featuredImages = [
   <!-- Featured Categories -->
   <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
     <div class="text-center mb-16">
-      <h2 class="text-4xl font-bold text-gallery-900 mb-4">
+      <h2 class="text-4xl font-bold text-gray-900 mb-4">
         Photography Collections
       </h2>
-      <p class="text-gallery-600 text-lg max-w-2xl mx-auto">
+      <p class="text-gray-600 text-lg max-w-2xl mx-auto">
         Explore different styles and subjects through curated collections of professional photography
       </p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-      {featuredImages.map((image) => (
-        <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-          <a href={image.href} class="block">
-            <div class="aspect-square bg-gallery-100 animate-pulse">
-              <img
-                src={image.src}
-                alt={image.alt}
-                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                loading="lazy"
-              />
+      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+        <a href="/galleries/landscapes" class="block">
+          <div class="aspect-square bg-gray-100">
+            <div class="w-full h-full flex items-center justify-center text-gray-400 text-6xl">
+              🏔️
             </div>
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent">
-              <div class="absolute bottom-0 left-0 right-0 p-6">
-                <h3 class="text-white font-semibold text-xl mb-2 capitalize">
-                  {image.category}
-                </h3>
-                <p class="text-white/80 text-sm">
-                  {image.category === 'landscapes' && 'Natural beauty and scenic vistas'}
-                  {image.category === 'portraits' && 'Professional and personal portraits'}
-                  {image.category === 'artsy' && 'Creative and artistic expressions'}
-                  {image.category === 'events' && 'Special moments and celebrations'}
-                </p>
-                <div class="mt-3 text-white/90 text-sm font-medium group-hover:text-white transition-colors">
-                  View Gallery →
-                </div>
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-80">
+            <div class="absolute bottom-0 left-0 right-0 p-6">
+              <h3 class="text-white font-semibold text-xl mb-2">
+                Landscapes
+              </h3>
+              <p class="text-white text-sm opacity-80">
+                Natural beauty and scenic vistas
+              </p>
+              <div class="mt-3 text-white text-sm font-medium opacity-90 group-hover:opacity-100 transition-opacity">
+                View Gallery →
               </div>
             </div>
-          </a>
-        </div>
-      ))}
+          </div>
+        </a>
+      </div>
+
+      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+        <a href="/galleries/portraits" class="block">
+          <div class="aspect-square bg-gray-100">
+            <div class="w-full h-full flex items-center justify-center text-gray-400 text-6xl">
+              👤
+            </div>
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-80">
+            <div class="absolute bottom-0 left-0 right-0 p-6">
+              <h3 class="text-white font-semibold text-xl mb-2">
+                Portraits
+              </h3>
+              <p class="text-white text-sm opacity-80">
+                Professional and personal portraits
+              </p>
+              <div class="mt-3 text-white text-sm font-medium opacity-90 group-hover:opacity-100 transition-opacity">
+                View Gallery →
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+        <a href="/galleries/artsy" class="block">
+          <div class="aspect-square bg-gray-100">
+            <div class="w-full h-full flex items-center justify-center text-gray-400 text-6xl">
+              🎨
+            </div>
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-80">
+            <div class="absolute bottom-0 left-0 right-0 p-6">
+              <h3 class="text-white font-semibold text-xl mb-2">
+                Artsy
+              </h3>
+              <p class="text-white text-sm opacity-80">
+                Creative and artistic expressions
+              </p>
+              <div class="mt-3 text-white text-sm font-medium opacity-90 group-hover:opacity-100 transition-opacity">
+                View Gallery →
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+        <a href="/galleries/events" class="block">
+          <div class="aspect-square bg-gray-100">
+            <div class="w-full h-full flex items-center justify-center text-gray-400 text-6xl">
+              🎉
+            </div>
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-80">
+            <div class="absolute bottom-0 left-0 right-0 p-6">
+              <h3 class="text-white font-semibold text-xl mb-2">
+                Events
+              </h3>
+              <p class="text-white text-sm opacity-80">
+                Special moments and celebrations
+              </p>
+              <div class="mt-3 text-white text-sm font-medium opacity-90 group-hover:opacity-100 transition-opacity">
+                View Gallery →
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- Services Section -->
-  <section class="py-20 bg-gallery-50">
+  <section class="py-20 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold text-gallery-900 mb-4">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">
           Photography Services
         </h2>
-        <p class="text-gallery-600 text-lg max-w-2xl mx-auto">
+        <p class="text-gray-600 text-lg max-w-2xl mx-auto">
           Professional photography services tailored to capture your unique story
         </p>
       </div>
@@ -124,51 +154,30 @@ const featuredImages = [
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
           <div class="text-4xl mb-4">🏔️</div>
-          <h3 class="text-xl font-semibold text-gallery-900 mb-3">Landscape Photography</h3>
-          <p class="text-gallery-600 mb-4">Stunning natural landscapes, from mountain peaks to ocean shores. Fine art prints available.</p>
-          <a href="/galleries/landscapes" class="text-gallery-700 hover:text-gallery-900 font-medium">View Landscapes →</a>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Landscape Photography</h3>
+          <p class="text-gray-600 mb-4">Stunning natural landscapes, from mountain peaks to ocean shores. Fine art prints available.</p>
+          <a href="/galleries/landscapes" class="text-gray-700 hover:text-gray-900 font-medium">View Landscapes →</a>
         </div>
 
         <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
           <div class="text-4xl mb-4">👤</div>
-          <h3 class="text-xl font-semibold text-gallery-900 mb-3">Portrait Sessions</h3>
-          <p class="text-gallery-600 mb-4">Professional headshots, family portraits, and personal branding photography.</p>
-          <a href="/galleries/portraits" class="text-gallery-700 hover:text-gallery-900 font-medium">View Portraits →</a>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Portrait Sessions</h3>
+          <p class="text-gray-600 mb-4">Professional headshots, family portraits, and personal branding photography.</p>
+          <a href="/galleries/portraits" class="text-gray-700 hover:text-gray-900 font-medium">View Portraits →</a>
         </div>
 
         <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
           <div class="text-4xl mb-4">🎨</div>
-          <h3 class="text-xl font-semibold text-gallery-900 mb-3">Artistic Photography</h3>
-          <p class="text-gallery-600 mb-4">Creative and experimental photography exploring unique perspectives and compositions.</p>
-          <a href="/galleries/artsy" class="text-gallery-700 hover:text-gallery-900 font-medium">View Artsy →</a>
-        </div>
-
-        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-          <div class="text-4xl mb-4">🎉</div>
-          <h3 class="text-xl font-semibold text-gallery-900 mb-3">Event Coverage</h3>
-          <p class="text-gallery-600 mb-4">Weddings, corporate events, celebrations, and special occasions.</p>
-          <a href="/galleries/events" class="text-gallery-700 hover:text-gallery-900 font-medium">View Events →</a>
-        </div>
-
-        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-          <div class="text-4xl mb-4">🖼️</div>
-          <h3 class="text-xl font-semibold text-gallery-900 mb-3">Fine Art Prints</h3>
-          <p class="text-gallery-600 mb-4">High-quality prints available in multiple formats: Canvas, Metal, Acrylic, Fine Art Paper.</p>
-          <a href="/contact" class="text-gallery-700 hover:text-gallery-900 font-medium">Order Prints →</a>
-        </div>
-
-        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-          <div class="text-4xl mb-4">📞</div>
-          <h3 class="text-xl font-semibold text-gallery-900 mb-3">Custom Sessions</h3>
-          <p class="text-gallery-600 mb-4">Personalized photography sessions tailored to your specific needs and vision.</p>
-          <a href="/contact" class="text-gallery-700 hover:text-gallery-900 font-medium">Get Quote →</a>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Artistic Photography</h3>
+          <p class="text-gray-600 mb-4">Creative and experimental photography exploring unique perspectives and compositions.</p>
+          <a href="/galleries/artsy" class="text-gray-700 hover:text-gray-900 font-medium">View Artsy →</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Call to Action -->
-  <section class="py-20 bg-gallery-900 text-white">
+  <section class="py-20 bg-gray-900 text-white">
     <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
       <h2 class="text-4xl font-bold mb-6">
         Ready to Capture Your Story?
@@ -179,207 +188,13 @@ const featuredImages = [
       <div class="space-x-4">
         <a 
           href="/contact" 
-          class="inline-block bg-white text-gallery-900 px-8 py-3 rounded-lg font-semibold hover:bg-gallery-100 transition-colors duration-300"
+          class="inline-block bg-white text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
         >
           Book a Session
         </a>
         <a 
           href="/about" 
-          class="inline-block border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-gallery-900 transition-all duration-300"
-        >
-          About Me
-        </a>
-      </div>
-    </div>
-  </section>
-</Layout>---
-import Layout from '../layouts/Layout.astro';
-
-const featuredImages = [
-  {
-    src: '/images/landscapes/mountain-sunset.jpg',
-    alt: 'Mountain sunset with golden light',
-    title: 'Mountain Sunset',
-    category: 'landscapes',
-    href: '/galleries/landscapes'
-  },
-  {
-    src: '/images/portraits/professional-headshot.jpg',
-    alt: 'Professional business headshot',
-    title: 'Professional Headshot',
-    category: 'portraits',
-    href: '/galleries/portraits'
-  },
-  {
-    src: '/images/artsy/abstract-architecture.jpg',
-    alt: 'Abstract architectural photography',
-    title: 'Abstract Architecture',
-    category: 'artsy',
-    href: '/galleries/artsy'
-  },
-  {
-    src: '/images/events/wedding-ceremony.jpg',
-    alt: 'Beautiful wedding ceremony moment',
-    title: 'Wedding Ceremony',
-    category: 'events',
-    href: '/galleries/events'
-  }
-];
----
-
-<Layout 
-  title="Anu Photography - Professional Photography Portfolio"
-  description="Professional photography services including landscapes, portraits, artistic photography, and event coverage. View portfolio and book sessions."
->
-  <!-- Hero Section -->
-  <section class="relative h-screen flex items-center justify-center bg-gradient-to-br from-gallery-900 via-gallery-800 to-gallery-700">
-    <div class="absolute inset-0 bg-black/30"></div>
-    <div class="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8">
-      <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-        Anu Photography
-      </h1>
-      <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90 animate-slide-up">
-        Capturing life's most beautiful moments through the lens of creativity and passion
-      </p>
-      <div class="space-x-4">
-        <a 
-          href="/galleries/landscapes" 
-          class="inline-block bg-white text-gallery-900 px-8 py-3 rounded-lg font-semibold hover:bg-gallery-100 transition-colors duration-300"
-        >
-          View Galleries
-        </a>
-        <a 
-          href="/contact" 
-          class="inline-block border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-gallery-900 transition-all duration-300"
-        >
-          Book Session
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Featured Categories -->
-  <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-    <div class="text-center mb-16">
-      <h2 class="text-4xl font-bold text-gallery-900 mb-4">
-        Photography Collections
-      </h2>
-      <p class="text-gallery-600 text-lg max-w-2xl mx-auto">
-        Explore different styles and subjects through curated collections of professional photography
-      </p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-      {featuredImages.map((image) => (
-        <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-          <a href={image.href} class="block">
-            <div class="aspect-square bg-gallery-100 animate-pulse">
-              <img
-                src={image.src}
-                alt={image.alt}
-                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                loading="lazy"
-              />
-            </div>
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent">
-              <div class="absolute bottom-0 left-0 right-0 p-6">
-                <h3 class="text-white font-semibold text-xl mb-2 capitalize">
-                  {image.category}
-                </h3>
-                <p class="text-white/80 text-sm">
-                  {image.category === 'landscapes' && 'Natural beauty and scenic vistas'}
-                  {image.category === 'portraits' && 'Professional and personal portraits'}
-                  {image.category === 'artsy' && 'Creative and artistic expressions'}
-                  {image.category === 'events' && 'Special moments and celebrations'}
-                </p>
-                <div class="mt-3 text-white/90 text-sm font-medium group-hover:text-white transition-colors">
-                  View Gallery →
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      ))}
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section class="py-20 bg-gallery-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold text-gallery-900 mb-4">
-          Photography Services
-        </h2>
-        <p class="text-gallery-600 text-lg max-w-2xl mx-auto">
-          Professional photography services tailored to capture your unique story
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-          <div class="text-4xl mb-4">🏔️</div>
-          <h3 class="text-xl font-semibold text-gallery-900 mb-3">Landscape Photography</h3>
-          <p class="text-gallery-600 mb-4">Stunning natural landscapes, from mountain peaks to ocean shores. Fine art prints available.</p>
-          <a href="/galleries/landscapes" class="text-gallery-700 hover:text-gallery-900 font-medium">View Landscapes →</a>
-        </div>
-
-        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-          <div class="text-4xl mb-4">👤</div>
-          <h3 class="text-xl font-semibold text-gallery-900 mb-3">Portrait Sessions</h3>
-          <p class="text-gallery-600 mb-4">Professional headshots, family portraits, and personal branding photography.</p>
-          <a href="/galleries/portraits" class="text-gallery-700 hover:text-gallery-900 font-medium">View Portraits →</a>
-        </div>
-
-        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-          <div class="text-4xl mb-4">🎨</div>
-          <h3 class="text-xl font-semibold text-gallery-900 mb-3">Artistic Photography</h3>
-          <p class="text-gallery-600 mb-4">Creative and experimental photography exploring unique perspectives and compositions.</p>
-          <a href="/galleries/artsy" class="text-gallery-700 hover:text-gallery-900 font-medium">View Artsy →</a>
-        </div>
-
-        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-          <div class="text-4xl mb-4">🎉</div>
-          <h3 class="text-xl font-semibold text-gallery-900 mb-3">Event Coverage</h3>
-          <p class="text-gallery-600 mb-4">Weddings, corporate events, celebrations, and special occasions.</p>
-          <a href="/galleries/events" class="text-gallery-700 hover:text-gallery-900 font-medium">View Events →</a>
-        </div>
-
-        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-          <div class="text-4xl mb-4">🖼️</div>
-          <h3 class="text-xl font-semibold text-gallery-900 mb-3">Fine Art Prints</h3>
-          <p class="text-gallery-600 mb-4">High-quality prints available in multiple formats: Canvas, Metal, Acrylic, Fine Art Paper.</p>
-          <a href="/contact" class="text-gallery-700 hover:text-gallery-900 font-medium">Order Prints →</a>
-        </div>
-
-        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-          <div class="text-4xl mb-4">📞</div>
-          <h3 class="text-xl font-semibold text-gallery-900 mb-3">Custom Sessions</h3>
-          <p class="text-gallery-600 mb-4">Personalized photography sessions tailored to your specific needs and vision.</p>
-          <a href="/contact" class="text-gallery-700 hover:text-gallery-900 font-medium">Get Quote →</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Call to Action -->
-  <section class="py-20 bg-gallery-900 text-white">
-    <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-      <h2 class="text-4xl font-bold mb-6">
-        Ready to Capture Your Story?
-      </h2>
-      <p class="text-xl mb-8 opacity-90">
-        Let's work together to create beautiful, memorable photographs that you'll treasure for years to come.
-      </p>
-      <div class="space-x-4">
-        <a 
-          href="/contact" 
-          class="inline-block bg-white text-gallery-900 px-8 py-3 rounded-lg font-semibold hover:bg-gallery-100 transition-colors duration-300"
-        >
-          Book a Session
-        </a>
-        <a 
-          href="/about" 
-          class="inline-block border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-gallery-900 transition-all duration-300"
+          class="inline-block border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300"
         >
           About Me
         </a>
