@@ -228,7 +228,7 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
               >
                 <img
                   src={image.src}
-                  alt={`Thumbnail ${index + 1}`}
+                  alt=""
                   className="w-full h-full object-cover"
                   loading="eager"
                   onLoad={() => {
