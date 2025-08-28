@@ -18,11 +18,7 @@ interface AnimatedGalleryProps {
 
 const AnimatedGallery: React.FC<AnimatedGalleryProps> = ({ images, category }) => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
-  const [imageLoaded, setImageLoaded] = useState<{ [key: number]: boolean }>({});
 
-  const handleImageLoad = (index: number) => {
-    setImageLoaded(prev => ({ ...prev, [index]: true }));
-  };
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -104,21 +100,13 @@ const AnimatedGallery: React.FC<AnimatedGalleryProps> = ({ images, category }) =
                 variants={hoverVariants}
                 className="relative overflow-hidden rounded-lg shadow-lg bg-gallery-200 h-80"
               >
-                {/* Loading Skeleton */}
-                {!imageLoaded[index] && (
-                  <div className="absolute inset-0 bg-gradient-to-br from-gallery-200 via-gallery-300 to-gallery-200 animate-pulse" />
-                )}
-                
                 {/* Image */}
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className={`w-full h-full object-cover transition-opacity duration-500 ${
-                    imageLoaded[index] ? 'opacity-100' : 'opacity-0'
-                  }`}
-                  loading={index < 4 ? "eager" : "lazy"} // Load first 4 images immediately
+                  className="w-full h-full object-cover"
+                  loading={index < 4 ? "eager" : "lazy"}
                   decoding="async"
-                  onLoad={() => handleImageLoad(index)}
                   onError={() => handleImageLoad(index)}
                   // Performance attributes
                   fetchPriority={index < 2 ? "high" : "auto"}

@@ -168,22 +168,7 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
                   style={{ maxHeight: 'calc(100vh - 200px)' }}
                   loading={Math.abs(index - currentIndex) <= 1 ? 'eager' : 'lazy'}
                 />
-                
-                {/* Image Info Overlay */}
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.2 }}
-                  className="absolute bottom-4 left-4 right-4 bg-black/70 backdrop-blur-sm rounded-lg p-4 text-white"
-                >
-                  <h3 className="font-semibold text-lg mb-1">{image.title}</h3>
-                  {image.location && (
-                    <p className="text-sm opacity-90 mb-1">{image.location}</p>
-                  )}
-                  {image.date && (
-                    <p className="text-xs opacity-70">{new Date(image.date).toLocaleDateString()}</p>
-                  )}
-                </motion.div>
+
               </div>
             </SwiperSlide>
           ))}
