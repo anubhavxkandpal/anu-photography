@@ -117,9 +117,12 @@ const AnimatedGallery: React.FC<AnimatedGalleryProps> = ({ images, category }) =
                   className={`w-full h-full object-cover transition-opacity duration-500 ${
                     imageLoaded[index] ? 'opacity-100' : 'opacity-0'
                   }`}
-                  loading="lazy"
+                  loading={index < 4 ? "eager" : "lazy"} // Load first 4 images immediately
+                  decoding="async"
                   onLoad={() => handleImageLoad(index)}
                   onError={() => handleImageLoad(index)}
+                  // Performance attributes
+                  fetchPriority={index < 2 ? "high" : "auto"}
                 />
                 
                 {/* Hover Overlay */}

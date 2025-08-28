@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
@@ -33,6 +33,7 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
   onPrev,
 }) => {
   const swiperRef = useRef<SwiperType>();
+  const [activeIndex, setActiveIndex] = useState(currentIndex);
 
   useEffect(() => {
     // Keyboard navigation
@@ -63,6 +64,7 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
     if (swiperRef.current) {
       swiperRef.current.slideTo(currentIndex, 0);
     }
+    setActiveIndex(currentIndex);
   }, [currentIndex]);
 
   const backdropVariants = {
@@ -148,7 +150,7 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
             forceToAxis: true,
           }}
           onSlideChange={(swiper) => {
-            // Optional: sync with parent component if needed
+            setActiveIndex(swiper.activeIndex);
           }}
           className="w-full h-full"
         >
@@ -204,6 +206,35 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
         {/* Image Counter */}
         <div className="absolute top-4 left-1/2 -translate-x-1/2 bg-black/50 backdrop-blur-sm rounded-full px-4 py-2 text-white text-sm">
           {currentIndex + 1} / {images.length}
+        </div>
+
+        {/* Thumbnail Strip */}
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 max-w-full">
+          <div className="flex gap-2 px-4 py-3 bg-black/50 backdrop-blur-sm rounded-lg overflow-x-auto max-w-screen-lg">
+            {images.map((image, index) => (
+              <button
+                key={`thumb-${index}`}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  if (swiperRef.current) {
+                    swiperRef.current.slideTo(index);
+                  }
+                }}
+                className={`flex-shrink-0 w-16 h-12 rounded overflow-hidden border-2 transition-all duration-200 ${
+                  index === activeIndex 
+                    ? 'border-white shadow-lg' 
+                    : 'border-transparent hover:border-white/50'
+                }`}
+              >
+                <img
+                  src={image.src}
+                  alt={`Thumbnail ${index + 1}`}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </button>
+            ))}
+          </div>
         </div>
       </motion.div>
     </motion.div>
