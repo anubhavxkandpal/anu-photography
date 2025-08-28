@@ -34,7 +34,7 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
 }) => {
   const swiperRef = useRef<SwiperType>();
   const [activeIndex, setActiveIndex] = useState(currentIndex);
-  const [swiperReady, setSwiperReady] = useState(false);
+
 
 
   useEffect(() => {
@@ -138,8 +138,6 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
         <Swiper
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
-            // Delay thumbnail rendering until Swiper is ready
-            setTimeout(() => setSwiperReady(true), 300);
           }}
           modules={[Navigation, Keyboard, Mousewheel]}
           initialSlide={currentIndex}
@@ -165,7 +163,7 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
               <div className="relative w-full h-full flex items-center justify-center">
                 <img
                   src={image.src}
-                  alt={image.alt}
+                  alt=""
                   className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
                   style={{ maxHeight: 'calc(100vh - 200px)' }}
                   loading={Math.abs(index - currentIndex) <= 1 ? 'eager' : 'lazy'}
@@ -216,12 +214,11 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
         </div>
 
         {/* Thumbnail Strip */}
-        {swiperReady && (
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 max-w-full">
-            <div className="flex gap-2 px-4 py-3 bg-gray-800/80 backdrop-blur-sm rounded-lg overflow-x-auto max-w-screen-lg">
-              {images.map((image, index) => (
-              <button
-                key={`thumbnail-${Date.now()}-${index}`}
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 max-w-full">
+          <div className="flex gap-2 px-4 py-3 bg-gray-800/80 backdrop-blur-sm rounded-lg overflow-x-auto max-w-screen-lg">
+            {images.map((image, index) => (
+            <button
+              key={`thumb-${index}`}
                 onClick={(e) => {
                   e.stopPropagation();
                   if (swiperRef.current) {
@@ -246,10 +243,9 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
                   }}
                 />
               </button>
-              ))}
-            </div>
+            ))}
           </div>
-        )}
+        </div>
       </motion.div>
     </motion.div>
   );
