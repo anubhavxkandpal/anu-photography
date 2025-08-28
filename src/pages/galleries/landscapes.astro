@@ -1,0 +1,63 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Gallery from '../../components/Gallery.astro';
+
+// Sample placeholder images for landscapes
+const landscapeImages = [
+  {
+    src: '/images/landscapes/mountain-sunset.jpg',
+    alt: 'Mountain sunset with golden light',
+    title: 'Mountain Sunset',
+    location: 'Rocky Mountains, Colorado',
+    date: '2024-08-15',
+    category: 'landscapes'
+  },
+  {
+    src: '/images/landscapes/ocean-waves.jpg',
+    alt: 'Ocean waves crashing on rocky shore',
+    title: 'Ocean Waves',
+    location: 'Big Sur, California',
+    date: '2024-07-22',
+    category: 'landscapes'
+  },
+  {
+    src: '/images/landscapes/desert-dunes.jpg',
+    alt: 'Sand dunes in golden hour light',
+    title: 'Desert Dunes',
+    location: 'Mojave Desert, California',
+    date: '2024-06-10',
+    category: 'landscapes'
+  },
+  {
+    src: '/images/landscapes/forest-mist.jpg',
+    alt: 'Misty forest with tall trees',
+    title: 'Forest Mist',
+    location: 'Olympic National Park, Washington',
+    date: '2024-05-18',
+    category: 'landscapes'
+  },
+  {
+    src: '/images/landscapes/lake-reflection.jpg',
+    alt: 'Mountain lake with perfect reflections',
+    title: 'Lake Reflection',
+    location: 'Lake Tahoe, California',
+    date: '2024-04-25',
+    category: 'landscapes'
+  },
+  {
+    src: '/images/landscapes/canyon-light.jpg',
+    alt: 'Canyon with dramatic lighting',
+    title: 'Canyon Light',
+    location: 'Antelope Canyon, Arizona',
+    date: '2024-03-12',
+    category: 'landscapes'
+  }
+];
+---
+
+<Layout 
+  title="Landscape Photography - Anu Photography"
+  description="Professional landscape photography capturing the natural beauty of mountains, oceans, deserts, and forests. Fine art prints available."
+>
+  <Gallery images={landscapeImages} category="landscapes" />
+</Layout>

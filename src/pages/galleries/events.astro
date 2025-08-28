@@ -1,0 +1,63 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Gallery from '../../components/Gallery.astro';
+
+// Sample placeholder images for event photography
+const eventImages = [
+  {
+    src: '/images/events/wedding-ceremony.jpg',
+    alt: 'Beautiful wedding ceremony moment',
+    title: 'Wedding Ceremony',
+    location: 'Garden Venue',
+    date: '2024-08-17',
+    category: 'events'
+  },
+  {
+    src: '/images/events/corporate-event.jpg',
+    alt: 'Corporate event and networking',
+    title: 'Corporate Event',
+    location: 'Conference Center',
+    date: '2024-07-25',
+    category: 'events'
+  },
+  {
+    src: '/images/events/birthday-celebration.jpg',
+    alt: 'Joyful birthday celebration',
+    title: 'Birthday Celebration',
+    location: 'Private Venue',
+    date: '2024-07-08',
+    category: 'events'
+  },
+  {
+    src: '/images/events/graduation.jpg',
+    alt: 'Graduation ceremony photography',
+    title: 'Graduation',
+    location: 'University Campus',
+    date: '2024-06-15',
+    category: 'events'
+  },
+  {
+    src: '/images/events/concert.jpg',
+    alt: 'Live music concert photography',
+    title: 'Concert',
+    location: 'Music Venue',
+    date: '2024-05-20',
+    category: 'events'
+  },
+  {
+    src: '/images/events/baby-shower.jpg',
+    alt: 'Baby shower celebration',
+    title: 'Baby Shower',
+    location: 'Family Home',
+    date: '2024-04-30',
+    category: 'events'
+  }
+];
+---
+
+<Layout 
+  title="Event Photography - Anu Photography"
+  description="Professional event photography for weddings, corporate events, celebrations, and special occasions. Capturing your memorable moments."
+>
+  <Gallery images={eventImages} category="events" />
+</Layout>

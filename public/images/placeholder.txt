@@ -1,0 +1,10 @@
+This directory will contain placeholder images for the photography portfolio.
+
+Structure:
+/public/images/
+  landscapes/
+  portraits/
+  artsy/
+  events/
+
+For development, we'll use placeholder images or stock photos until real photography is added.

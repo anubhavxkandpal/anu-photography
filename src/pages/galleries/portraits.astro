@@ -1,0 +1,55 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Gallery from '../../components/Gallery.astro';
+
+// Sample placeholder images for portraits
+const portraitImages = [
+  {
+    src: '/images/portraits/professional-headshot.jpg',
+    alt: 'Professional business headshot',
+    title: 'Professional Headshot',
+    location: 'Studio Session',
+    date: '2024-08-20',
+    category: 'portraits'
+  },
+  {
+    src: '/images/portraits/artistic-portrait.jpg',
+    alt: 'Artistic portrait with dramatic lighting',
+    title: 'Artistic Portrait',
+    location: 'Downtown Studio',
+    date: '2024-08-05',
+    category: 'portraits'
+  },
+  {
+    src: '/images/portraits/family-portrait.jpg',
+    alt: 'Warm family portrait session',
+    title: 'Family Portrait',
+    location: 'Park Session',
+    date: '2024-07-15',
+    category: 'portraits'
+  },
+  {
+    src: '/images/portraits/senior-portrait.jpg',
+    alt: 'High school senior portrait',
+    title: 'Senior Portrait',
+    location: 'Urban Location',
+    date: '2024-06-28',
+    category: 'portraits'
+  },
+  {
+    src: '/images/portraits/couple-portrait.jpg',
+    alt: 'Romantic couple portrait',
+    title: 'Couple Portrait',
+    location: 'Beach Session',
+    date: '2024-05-10',
+    category: 'portraits'
+  }
+];
+---
+
+<Layout 
+  title="Portrait Photography - Anu Photography"
+  description="Professional portrait photography for individuals, families, couples, and business headshots. Book your session today."
+>
+  <Gallery images={portraitImages} category="portraits" />
+</Layout>

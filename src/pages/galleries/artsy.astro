@@ -1,0 +1,63 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Gallery from '../../components/Gallery.astro';
+
+// Sample placeholder images for artsy photography
+const artsyImages = [
+  {
+    src: '/images/artsy/abstract-architecture.jpg',
+    alt: 'Abstract architectural photography',
+    title: 'Abstract Architecture',
+    location: 'Modern Art Museum',
+    date: '2024-08-12',
+    category: 'artsy'
+  },
+  {
+    src: '/images/artsy/shadow-play.jpg',
+    alt: 'Creative shadow and light composition',
+    title: 'Shadow Play',
+    location: 'Urban Environment',
+    date: '2024-07-30',
+    category: 'artsy'
+  },
+  {
+    src: '/images/artsy/street-art.jpg',
+    alt: 'Colorful street art and murals',
+    title: 'Street Art',
+    location: 'Arts District',
+    date: '2024-07-18',
+    category: 'artsy'
+  },
+  {
+    src: '/images/artsy/macro-details.jpg',
+    alt: 'Macro photography of textures and patterns',
+    title: 'Macro Details',
+    location: 'Nature Close-up',
+    date: '2024-06-22',
+    category: 'artsy'
+  },
+  {
+    src: '/images/artsy/long-exposure.jpg',
+    alt: 'Long exposure artistic shot',
+    title: 'Long Exposure',
+    location: 'Nighttime Urban',
+    date: '2024-05-14',
+    category: 'artsy'
+  },
+  {
+    src: '/images/artsy/minimalist.jpg',
+    alt: 'Minimalist composition',
+    title: 'Minimalist',
+    location: 'Gallery Space',
+    date: '2024-04-08',
+    category: 'artsy'
+  }
+];
+---
+
+<Layout 
+  title="Artistic Photography - Anu Photography"
+  description="Creative and artistic photography exploring unique perspectives, abstract compositions, and experimental techniques. Limited edition prints available."
+>
+  <Gallery images={artsyImages} category="artsy" />
+</Layout>

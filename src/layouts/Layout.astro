@@ -1,0 +1,139 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Professional photography portfolio featuring landscapes, portraits, artsy shots, and event photography." } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    
+    <!-- Preload key fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+  </head>
+  <body class="bg-white text-gallery-900 font-sans antialiased">
+    <div class="min-h-screen flex flex-col">
+      <!-- Navigation -->
+      <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gallery-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between items-center h-16">
+            <!-- Logo/Brand -->
+            <div class="flex-shrink-0">
+              <a href="/" class="text-xl font-semibold text-gallery-900 hover:text-gallery-700 transition-colors">
+                Anu Photography
+              </a>
+            </div>
+            
+            <!-- Navigation Links -->
+            <div class="hidden md:block">
+              <div class="ml-10 flex items-baseline space-x-8">
+                <a href="/" class="text-gallery-700 hover:text-gallery-900 px-3 py-2 text-sm font-medium transition-colors">
+                  Home
+                </a>
+                <a href="/galleries/landscapes" class="text-gallery-700 hover:text-gallery-900 px-3 py-2 text-sm font-medium transition-colors">
+                  Landscapes
+                </a>
+                <a href="/galleries/portraits" class="text-gallery-700 hover:text-gallery-900 px-3 py-2 text-sm font-medium transition-colors">
+                  Portraits
+                </a>
+                <a href="/galleries/artsy" class="text-gallery-700 hover:text-gallery-900 px-3 py-2 text-sm font-medium transition-colors">
+                  Artsy
+                </a>
+                <a href="/galleries/events" class="text-gallery-700 hover:text-gallery-900 px-3 py-2 text-sm font-medium transition-colors">
+                  Events
+                </a>
+                <a href="/about" class="text-gallery-700 hover:text-gallery-900 px-3 py-2 text-sm font-medium transition-colors">
+                  About
+                </a>
+                <a href="/contact" class="text-gallery-700 hover:text-gallery-900 px-3 py-2 text-sm font-medium transition-colors">
+                  Contact
+                </a>
+              </div>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <div class="md:hidden">
+              <button type="button" class="mobile-menu-button text-gallery-700 hover:text-gallery-900 focus:outline-none focus:text-gallery-900" aria-label="Toggle menu">
+                <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                  <path class="inline" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-menu hidden md:hidden">
+          <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gallery-200">
+            <a href="/" class="block text-gallery-700 hover:text-gallery-900 px-3 py-2 text-base font-medium">Home</a>
+            <a href="/galleries/landscapes" class="block text-gallery-700 hover:text-gallery-900 px-3 py-2 text-base font-medium">Landscapes</a>
+            <a href="/galleries/portraits" class="block text-gallery-700 hover:text-gallery-900 px-3 py-2 text-base font-medium">Portraits</a>
+            <a href="/galleries/artsy" class="block text-gallery-700 hover:text-gallery-900 px-3 py-2 text-base font-medium">Artsy</a>
+            <a href="/galleries/events" class="block text-gallery-700 hover:text-gallery-900 px-3 py-2 text-base font-medium">Events</a>
+            <a href="/about" class="block text-gallery-700 hover:text-gallery-900 px-3 py-2 text-base font-medium">About</a>
+            <a href="/contact" class="block text-gallery-700 hover:text-gallery-900 px-3 py-2 text-base font-medium">Contact</a>
+          </div>
+        </div>
+      </nav>
+      
+      <!-- Main Content -->
+      <main class="flex-1">
+        <slot />
+      </main>
+      
+      <!-- Footer -->
+      <footer class="bg-gallery-50 border-t border-gallery-200 mt-auto">
+        <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="text-gallery-600 text-sm">
+              © 2024 Anu Photography. All rights reserved.
+            </div>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+              <a href="/contact" class="text-gallery-600 hover:text-gallery-900 text-sm transition-colors">
+                Prints Available
+              </a>
+              <a href="/contact" class="text-gallery-600 hover:text-gallery-900 text-sm transition-colors">
+                Book a Session
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <!-- Mobile menu toggle script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        if (mobileMenuButton && mobileMenu) {
+          mobileMenuButton.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
