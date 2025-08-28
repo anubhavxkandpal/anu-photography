@@ -112,23 +112,7 @@ const AnimatedGallery: React.FC<AnimatedGalleryProps> = ({ images, category }) =
                   fetchPriority={index < 2 ? "high" : "auto"}
                 />
                 
-                {/* Hover Overlay */}
-                <motion.div
-                  className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
-                  whileHover={{ opacity: 1 }}
-                >
-                  <motion.div
-                    className="text-white text-center p-4"
-                    initial={{ scale: 0.8, opacity: 0 }}
-                    whileHover={{ scale: 1, opacity: 1 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    <h3 className="font-semibold text-lg mb-1">{image.title}</h3>
-                    {image.location && (
-                      <p className="text-sm opacity-90">{image.location}</p>
-                    )}
-                  </motion.div>
-                </motion.div>
+
 
                 {/* Shadow Enhancement on Hover */}
                 <motion.div
