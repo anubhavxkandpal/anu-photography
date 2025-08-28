@@ -221,7 +221,7 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
             <div className="flex gap-2 px-4 py-3 bg-gray-800/80 backdrop-blur-sm rounded-lg overflow-x-auto max-w-screen-lg">
               {images.map((image, index) => (
               <button
-                key={`thumb-${index}`}
+                key={`thumbnail-${Date.now()}-${index}`}
                 onClick={(e) => {
                   e.stopPropagation();
                   if (swiperRef.current) {
@@ -237,7 +237,13 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
                 <img
                   src={image.src}
                   className="w-full h-full object-cover"
-                  loading="eager"
+                  style={{ 
+                    minHeight: '72px',
+                    background: '#4B5563'
+                  }}
+                  onLoad={(e) => {
+                    e.currentTarget.style.background = 'transparent';
+                  }}
                 />
               </button>
               ))}
