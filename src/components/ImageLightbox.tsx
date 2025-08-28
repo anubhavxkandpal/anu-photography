@@ -220,7 +220,7 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
                     swiperRef.current.slideTo(index);
                   }
                 }}
-                className={`flex-shrink-0 w-16 h-12 rounded overflow-hidden border-2 transition-all duration-200 ${
+                className={`flex-shrink-0 w-20 h-16 rounded overflow-hidden border-2 transition-all duration-200 ${
                   index === activeIndex 
                     ? 'border-white shadow-lg' 
                     : 'border-transparent hover:border-white/50'
@@ -230,7 +230,11 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
                   src={image.src}
                   alt={`Thumbnail ${index + 1}`}
                   className="w-full h-full object-cover"
-                  loading="lazy"
+                  loading="eager"
+                  onError={(e) => {
+                    // Hide broken thumbnails
+                    e.currentTarget.style.display = 'none';
+                  }}
                 />
               </button>
             ))}

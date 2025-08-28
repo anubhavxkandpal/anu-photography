@@ -7,8 +7,17 @@ import Layout from '../layouts/Layout.astro';
   description="Professional photography services including landscapes, portraits, artistic photography, and event coverage."
 >
   <!-- Hero Section -->
-  <section class="relative h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700">
-    <div class="absolute inset-0 bg-black opacity-30"></div>
+  <section class="relative h-screen flex items-center justify-center overflow-hidden">
+    <!-- Hero Background Image -->
+    <div class="absolute inset-0">
+      <img 
+        src="/images/optimized/artsy/IMG_1277-Edit.jpg" 
+        alt="Hero Photography" 
+        class="w-full h-full object-cover"
+        loading="eager"
+      />
+      <div class="absolute inset-0 bg-black opacity-40"></div>
+    </div>
     <div class="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8">
       <h1 class="text-5xl md:text-7xl font-heading font-bold mb-6">
         Anu Photography
@@ -147,6 +156,47 @@ import Layout from '../layouts/Layout.astro';
             </div>
           </div>
         </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About the Photographer Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+        <div class="mb-8 lg:mb-0">
+          <h2 class="text-4xl font-heading font-bold text-gray-900 mb-6">
+            Behind the Lens
+          </h2>
+          <p class="text-gray-600 text-lg mb-6">
+            Every photograph tells a story, and I'm passionate about capturing the moments that matter most. 
+            With years of experience in landscape, portrait, and artistic photography, I bring a unique 
+            perspective to every shoot.
+          </p>
+          <p class="text-gray-600 mb-8">
+            From the serene beauty of natural landscapes to the intimate expressions in portraits, 
+            my goal is to create images that not only document moments but evoke emotions and 
+            preserve memories for generations to come.
+          </p>
+          <a 
+            href="/about" 
+            class="inline-block bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors duration-300"
+          >
+            Learn More About Me
+          </a>
+        </div>
+        <div class="relative">
+          <div class="aspect-[3/4] overflow-hidden rounded-2xl shadow-2xl">
+            <img 
+              src="/images/optimized/artsy/IMG_0536-Edit.jpg" 
+              alt="Artistic Portrait Photography" 
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <!-- Decorative element -->
+          <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-gray-900 rounded-full opacity-10"></div>
+        </div>
       </div>
     </div>
   </section>

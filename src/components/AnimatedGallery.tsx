@@ -102,8 +102,7 @@ const AnimatedGallery: React.FC<AnimatedGalleryProps> = ({ images, category }) =
             >
               <motion.div
                 variants={hoverVariants}
-                className="relative overflow-hidden rounded-lg shadow-lg bg-gallery-200"
-                style={{ aspectRatio: '4/5' }}
+                className="relative overflow-hidden rounded-lg shadow-lg bg-gallery-200 h-80"
               >
                 {/* Loading Skeleton */}
                 {!imageLoaded[index] && (
