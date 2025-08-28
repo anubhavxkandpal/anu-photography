@@ -34,6 +34,7 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
 }) => {
   const swiperRef = useRef<SwiperType>();
   const [activeIndex, setActiveIndex] = useState(currentIndex);
+  const [thumbnailsLoaded, setThumbnailsLoaded] = useState<boolean[]>(new Array(images.length).fill(false));
 
   useEffect(() => {
     // Keyboard navigation
@@ -66,6 +67,30 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
     }
     setActiveIndex(currentIndex);
   }, [currentIndex]);
+
+  // Preload thumbnails
+  useEffect(() => {
+    const preloadThumbnails = () => {
+      images.forEach((image, index) => {
+        const img = new Image();
+        img.onload = () => {
+          setThumbnailsLoaded(prev => {
+            const newLoaded = [...prev];
+            newLoaded[index] = true;
+            return newLoaded;
+          });
+        };
+        img.onerror = () => {
+          console.error(`Failed to preload thumbnail ${index + 1}:`, image.src);
+        };
+        img.src = image.src;
+      });
+    };
+
+    // Small delay to let the main image load first
+    const timer = setTimeout(preloadThumbnails, 100);
+    return () => clearTimeout(timer);
+  }, [images]);
 
   const backdropVariants = {
     hidden: { opacity: 0 },
@@ -111,18 +136,18 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
       initial="hidden"
       animate="visible"
       exit="exit"
-      className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4"
+      className="fixed inset-0 z-50 bg-white flex items-center justify-center p-4"
       onClick={onClose}
     >
       <motion.div
         variants={modalVariants}
-        className="relative w-full h-full max-w-7xl max-h-screen"
+        className="relative w-full h-full max-w-7xl max-h-screen pb-32"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-10 w-12 h-12 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center text-white transition-colors duration-200"
+          className="absolute top-4 right-4 z-10 w-12 h-12 bg-gray-800/80 hover:bg-gray-900 rounded-full flex items-center justify-center text-white transition-colors duration-200"
           aria-label="Close lightbox"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -156,11 +181,12 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
         >
           {images.map((image, index) => (
             <SwiperSlide key={`lightbox-${image.src}-${index}`} className="flex items-center justify-center">
-              <div className="relative max-w-full max-h-full flex items-center justify-center">
+              <div className="relative w-full h-full flex items-center justify-center">
                 <img
                   src={image.src}
                   alt={image.alt}
                   className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
+                  style={{ maxHeight: 'calc(100vh - 200px)' }}
                   loading={Math.abs(index - currentIndex) <= 1 ? 'eager' : 'lazy'}
                 />
                 
@@ -186,7 +212,7 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
 
         {/* Custom Navigation Buttons */}
         <button
-          className="swiper-button-prev-custom absolute left-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center text-white transition-colors duration-200 disabled:opacity-30"
+          className="swiper-button-prev-custom absolute left-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-gray-800/80 hover:bg-gray-900 rounded-full flex items-center justify-center text-white transition-colors duration-200 disabled:opacity-30"
           aria-label="Previous image"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -195,7 +221,7 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
         </button>
 
         <button
-          className="swiper-button-next-custom absolute right-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center text-white transition-colors duration-200 disabled:opacity-30"
+          className="swiper-button-next-custom absolute right-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-gray-800/80 hover:bg-gray-900 rounded-full flex items-center justify-center text-white transition-colors duration-200 disabled:opacity-30"
           aria-label="Next image"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -204,13 +230,13 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
         </button>
 
         {/* Image Counter */}
-        <div className="absolute top-4 left-1/2 -translate-x-1/2 bg-black/50 backdrop-blur-sm rounded-full px-4 py-2 text-white text-sm">
+        <div className="absolute top-4 left-1/2 -translate-x-1/2 bg-gray-800/80 backdrop-blur-sm rounded-full px-4 py-2 text-white text-sm">
           {currentIndex + 1} / {images.length}
         </div>
 
         {/* Thumbnail Strip */}
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 max-w-full">
-          <div className="flex gap-2 px-4 py-3 bg-black/50 backdrop-blur-sm rounded-lg overflow-x-auto max-w-screen-lg">
+          <div className="flex gap-2 px-4 py-3 bg-gray-800/80 backdrop-blur-sm rounded-lg overflow-x-auto max-w-screen-lg">
             {images.map((image, index) => (
               <button
                 key={`thumb-${index}`}
@@ -226,22 +252,18 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
                     : 'border-transparent hover:border-white/50'
                 }`}
               >
-                <img
-                  src={image.src}
-                  alt=""
-                  className="w-full h-full object-cover"
-                  loading="eager"
-                  onLoad={() => {
-                    // Thumbnail loaded successfully
-                    console.log(`Thumbnail ${index + 1} loaded`);
-                  }}
-                  onError={(e) => {
-                    console.error(`Failed to load thumbnail ${index + 1}:`, image.src);
-                    // Show a placeholder instead of hiding
-                    e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQgMTZsNC41ODYtNC41ODZhMiAyIDAgMDEyLjgyOCAwTDE2IDE2bS0yLTJsMS41ODYtMS41ODZhMiAyIDAgMDEyLjgyOCAwTDIwIDE0bS02LTZoLjAxTTYgMjBoMTJhMiAyIDAgMDAyLTJWNmEyIDIgMCAwMC0yLTJINmEyIDIgMCAwMC0yIDJ2MTJhMiAyIDAgMDAyIDJ6IiBzdHJva2U9IiM5Q0E4QjAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=';
-                    e.currentTarget.style.opacity = '0.5';
-                  }}
-                />
+{thumbnailsLoaded[index] ? (
+                  <img
+                    src={image.src}
+                    className="w-full h-full object-cover"
+                    loading="eager"
+                    decoding="sync"
+                  />
+                ) : (
+                  <div className="w-full h-full bg-gray-600 flex items-center justify-center">
+                    <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                  </div>
+                )}
               </button>
             ))}
           </div>

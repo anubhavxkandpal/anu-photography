@@ -1,0 +1,118 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout 
+  title="About - Anu Photography"
+  description="Learn about Anu, a passionate photographer specializing in landscapes, portraits, and artistic photography."
+>
+  <!-- Hero Section -->
+  <section class="relative py-32 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-5xl md:text-6xl font-heading font-bold text-gray-900 mb-8">
+        About Anu
+      </h1>
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+        A passionate photographer dedicated to capturing the beauty of the world through landscapes, 
+        intimate portraits, and creative artistic expressions.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="py-20 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+        <!-- Photo -->
+        <div class="mb-12 lg:mb-0">
+          <div class="relative">
+            <div class="aspect-[3/4] overflow-hidden rounded-2xl shadow-2xl">
+              <img 
+                src="/images/optimized/artsy/IMG_0536-Edit.jpg" 
+                alt="Anu - Professional Photographer" 
+                class="w-full h-full object-cover"
+                loading="eager"
+              />
+            </div>
+            <!-- Decorative element -->
+            <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-gray-900 rounded-full opacity-10"></div>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="space-y-8">
+          <div>
+            <h2 class="text-3xl font-heading font-bold text-gray-900 mb-6">
+              Behind the Camera
+            </h2>
+            <div class="space-y-4 text-gray-600 leading-relaxed">
+              <p>
+                Welcome to my world of photography. I'm Anu, and I've been passionate about 
+                capturing moments and emotions through my lens for over a decade. What started 
+                as a hobby has evolved into a deep artistic pursuit that drives me to explore 
+                new perspectives every day.
+              </p>
+              <p>
+                My photography journey spans across diverse subjects - from the raw beauty of 
+                natural landscapes to the intimate expressions in portrait sessions, and the 
+                creative experiments that push the boundaries of traditional photography.
+              </p>
+              <p>
+                Every image tells a story, and my goal is to create photographs that not only 
+                document moments but evoke emotions and preserve memories that will be 
+                treasured for generations to come.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-2xl font-heading font-semibold text-gray-900 mb-4">
+              My Approach
+            </h3>
+            <div class="space-y-3 text-gray-600">
+              <p>
+                <strong class="text-gray-800">Landscapes:</strong> Patience and timing are everything. 
+                I chase the perfect light and wait for nature to reveal its most stunning moments.
+              </p>
+              <p>
+                <strong class="text-gray-800">Portraits:</strong> Connection is key. I work to make 
+                my subjects comfortable, capturing genuine expressions and authentic personalities.
+              </p>
+              <p>
+                <strong class="text-gray-800">Artistic:</strong> Experimentation and creativity drive 
+                this work, pushing beyond conventional boundaries to create unique visual narratives.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services and Contact CTA -->
+  <section class="py-20 bg-gray-900 text-white">
+    <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+      <h2 class="text-4xl font-heading font-bold mb-6">
+        Let's Create Something Beautiful Together
+      </h2>
+      <p class="text-xl mb-8 opacity-90">
+        Whether you're looking for professional portraits, need coverage for a special event, 
+        or want to commission custom artistic work, I'd love to discuss your vision.
+      </p>
+      <div class="space-x-4">
+        <a 
+          href="/contact" 
+          class="inline-block bg-white text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
+        >
+          Get In Touch
+        </a>
+        <a 
+          href="/galleries/landscapes" 
+          class="inline-block border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300"
+        >
+          View My Work
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
