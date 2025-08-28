@@ -33,7 +33,9 @@ const { title, description = "Professional photography portfolio featuring lands
     <meta property="twitter:description" content={description} />
   </head>
   <body class="bg-white text-gallery-900 font-sans antialiased">
-    <div class="min-h-screen flex flex-col">
+    <!-- Smooth Scroll Provider wraps everything -->
+    <div id="smooth-scroll-wrapper">
+      <div class="min-h-screen flex flex-col">
       <!-- Navigation -->
       <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gallery-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -120,17 +122,30 @@ const { title, description = "Professional photography portfolio featuring lands
           </div>
         </div>
       </footer>
+      </div>
     </div>
     
-    <!-- Mobile menu toggle script -->
+    <!-- Import and initialize SmoothScrollProvider -->
     <script>
+      import SmoothScrollProvider from '../components/SmoothScrollProvider';
+      
+      // Initialize smooth scrolling
       document.addEventListener('DOMContentLoaded', function() {
+        // Mobile menu toggle
         const mobileMenuButton = document.querySelector('.mobile-menu-button');
         const mobileMenu = document.querySelector('.mobile-menu');
         
         if (mobileMenuButton && mobileMenu) {
           mobileMenuButton.addEventListener('click', function() {
             mobileMenu.classList.toggle('hidden');
+          });
+        }
+        
+        // Initialize smooth scrolling
+        const wrapper = document.getElementById('smooth-scroll-wrapper');
+        if (wrapper) {
+          import('../components/SmoothScrollProvider').then(module => {
+            // SmoothScrollProvider will auto-initialize
           });
         }
       });

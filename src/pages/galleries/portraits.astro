@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import Gallery from '../../components/Gallery.astro';
+import AnimatedGallery from '../../components/AnimatedGallery.tsx';
 
 // Sample placeholder images for portraits
 const portraitImages = [
@@ -51,5 +51,5 @@ const portraitImages = [
   title="Portrait Photography - Anu Photography"
   description="Professional portrait photography for individuals, families, couples, and business headshots. Book your session today."
 >
-  <Gallery images={portraitImages} category="portraits" />
+  <AnimatedGallery images={portraitImages} category="portraits" client:load />
 </Layout>
