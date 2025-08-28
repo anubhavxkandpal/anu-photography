@@ -220,7 +220,7 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
                     swiperRef.current.slideTo(index);
                   }
                 }}
-                className={`flex-shrink-0 w-20 h-16 rounded overflow-hidden border-2 transition-all duration-200 ${
+                className={`flex-shrink-0 w-24 h-18 rounded overflow-hidden border-2 transition-all duration-200 ${
                   index === activeIndex 
                     ? 'border-white shadow-lg' 
                     : 'border-transparent hover:border-white/50'
@@ -231,9 +231,15 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
                   alt={`Thumbnail ${index + 1}`}
                   className="w-full h-full object-cover"
                   loading="eager"
+                  onLoad={() => {
+                    // Thumbnail loaded successfully
+                    console.log(`Thumbnail ${index + 1} loaded`);
+                  }}
                   onError={(e) => {
-                    // Hide broken thumbnails
-                    e.currentTarget.style.display = 'none';
+                    console.error(`Failed to load thumbnail ${index + 1}:`, image.src);
+                    // Show a placeholder instead of hiding
+                    e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQgMTZsNC41ODYtNC41ODZhMiAyIDAgMDEyLjgyOCAwTDE2IDE2bS0yLTJsMS41ODYtMS41ODZhMiAyIDAgMDEyLjgyOCAwTDIwIDE0bS02LTZoLjAxTTYgMjBoMTJhMiAyIDAgMDAyLTJWNmEyIDIgMCAwMC0yLTJINmEyIDIgMCAwMC0yIDJ2MTJhMiAyIDAgMDAyIDJ6IiBzdHJva2U9IiM5Q0E4QjAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=';
+                    e.currentTarget.style.opacity = '0.5';
                   }}
                 />
               </button>

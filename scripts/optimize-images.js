@@ -10,6 +10,7 @@ const THUMBNAIL_WIDTH = 400; // For mobile/thumbnail
 async function optimizeImage(inputPath, outputPath, width = MAX_WIDTH, quality = QUALITY) {
   try {
     await sharp(inputPath)
+      .rotate() // Auto-rotate based on EXIF orientation
       .resize(width, null, { 
         withoutEnlargement: true,
         fastShrinkOnLoad: false 
