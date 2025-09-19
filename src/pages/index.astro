@@ -28,13 +28,13 @@ import Layout from '../layouts/Layout.astro';
       <div class="space-x-4">
         <a 
           href="/galleries" 
-          class="inline-block bg-white text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
+          class="inline-block bg-earth-400 text-white px-8 py-3 rounded-lg font-semibold hover:bg-earth-500 transition-colors duration-300 shadow-lg hover:shadow-xl"
         >
           View Galleries
         </a>
         <a 
           href="/contact" 
-          class="inline-block border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300"
+          class="inline-block border-2 border-earth-400 text-earth-400 px-8 py-3 rounded-lg font-semibold hover:bg-earth-400 hover:text-white transition-all duration-300"
         >
           Book Session
         </a>
@@ -59,7 +59,7 @@ import Layout from '../layouts/Layout.astro';
           <div class="aspect-square bg-gray-100 overflow-hidden">
             <img 
               src="/images/optimized/landscapes/IMG_9540.jpg" 
-              alt="Landscape & Nature Photography"
+              alt="Nature & Landscapes Photography"
               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               loading="eager"
             />
@@ -67,7 +67,7 @@ import Layout from '../layouts/Layout.astro';
           <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-80">
             <div class="absolute bottom-0 left-0 right-0 p-6">
               <h3 class="text-white font-heading font-semibold text-xl mb-2">
-                Landscape & Nature
+                Nature & Landscapes
               </h3>
               <p class="text-white text-sm opacity-80">
                 Natural beauty and scenic vistas
@@ -180,7 +180,7 @@ import Layout from '../layouts/Layout.astro';
           </p>
           <a 
             href="/about" 
-            class="inline-block bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors duration-300"
+            class="inline-block bg-forest-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-forest-800 transition-colors duration-300 shadow-lg hover:shadow-xl"
           >
             Learn More About Me
           </a>
@@ -202,44 +202,154 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- Services Section -->
-  <section class="py-20 bg-gray-50">
+  <section class="py-24 bg-earth-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <h2 class="text-4xl font-heading font-bold text-gray-900 mb-4">
-          Photography Services
+      <div class="text-center mb-20">
+        <h2 class="text-5xl font-heading font-bold text-forest-800 mb-6">
+          Let's Create Something Beautiful Together
         </h2>
-        <p class="text-gray-600 text-lg max-w-2xl mx-auto">
-          Professional photography services tailored to capture your unique story
+        <p class="text-forest-600 text-xl max-w-3xl mx-auto leading-relaxed">
+          Every moment deserves to be remembered. Whether it's your love story, personal brand, or life's celebrations, 
+          I'm here to transform fleeting moments into timeless treasures.
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-          <div class="text-4xl mb-4">🏔️</div>
-          <h3 class="text-xl font-heading font-semibold text-gray-900 mb-3">Landscape Photography</h3>
-          <p class="text-gray-600 mb-4">Stunning natural landscapes, from mountain peaks to ocean shores. Fine art prints available.</p>
-          <a href="/galleries/landscapes" class="text-gray-700 hover:text-gray-900 font-medium">View Landscapes →</a>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Events Photography -->
+        <div class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1">
+          <div class="aspect-[4/3] bg-forest-100 overflow-hidden">
+            <img 
+              src="/images/optimized/events/DSC01083-Edit.jpg" 
+              alt="Event Photography" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              loading="eager"
+            />
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-forest-900/90 via-forest-900/40 to-transparent">
+            <div class="absolute bottom-0 left-0 right-0 p-8">
+              <h3 class="text-white font-heading font-bold text-2xl mb-4">
+                Event Photography
+              </h3>
+              <p class="text-white/90 text-lg mb-4 leading-relaxed">
+                Your special day deserves more than just photos—it deserves storytelling. From intimate ceremonies to grand celebrations, 
+                I capture the raw emotions, genuine laughter, and fleeting moments that make your event unforgettable.
+              </p>
+              <p class="text-earth-200 text-sm mb-6">
+                Weddings • Engagements • Corporate Events • Celebrations
+              </p>
+              <a 
+                href="/contact" 
+                class="inline-block bg-earth-400 hover:bg-earth-500 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                Book Your Event
+              </a>
+            </div>
+          </div>
         </div>
 
-        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-          <div class="text-4xl mb-4">👤</div>
-          <h3 class="text-xl font-heading font-semibold text-gray-900 mb-3">Portrait Sessions</h3>
-          <p class="text-gray-600 mb-4">Professional headshots, family portraits, and personal branding photography.</p>
-          <a href="/galleries/portraits" class="text-gray-700 hover:text-gray-900 font-medium">View Portraits →</a>
+        <!-- Portrait Sessions -->
+        <div class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1">
+          <div class="aspect-[4/3] bg-sage-100 overflow-hidden">
+            <img 
+              src="/images/optimized/portraits/IMG_9589-Edit.jpg" 
+              alt="Portrait Photography" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              loading="eager"
+            />
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-forest-900/90 via-forest-900/40 to-transparent">
+            <div class="absolute bottom-0 left-0 right-0 p-8">
+              <h3 class="text-white font-heading font-bold text-2xl mb-4">
+                Portrait Sessions
+              </h3>
+              <p class="text-white/90 text-lg mb-4 leading-relaxed">
+                You are unique, and your portraits should reflect that. Whether for personal branding, family memories, or 
+                professional needs, I create portraits that reveal your authentic self and tell your story.
+              </p>
+              <p class="text-earth-200 text-sm mb-6">
+                Personal Branding • Family Portraits • Professional Headshots
+              </p>
+              <a 
+                href="/contact" 
+                class="inline-block bg-sage-400 hover:bg-sage-500 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                Book Your Session
+              </a>
+            </div>
+          </div>
         </div>
 
-        <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-          <div class="text-4xl mb-4">🎨</div>
-          <h3 class="text-xl font-heading font-semibold text-gray-900 mb-3">Artistic Photography</h3>
-          <p class="text-gray-600 mb-4">Creative and experimental photography exploring unique perspectives and compositions.</p>
-          <a href="/galleries/artsy" class="text-gray-700 hover:text-gray-900 font-medium">View Artsy →</a>
+        <!-- Artistic Photography -->
+        <div class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1">
+          <div class="aspect-[4/3] bg-earth-100 overflow-hidden">
+            <img 
+              src="/images/optimized/artsy/IMG_1267(Forgotten dream).jpg" 
+              alt="Artistic Photography" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              loading="eager"
+            />
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-forest-900/90 via-forest-900/40 to-transparent">
+            <div class="absolute bottom-0 left-0 right-0 p-8">
+              <h3 class="text-white font-heading font-bold text-2xl mb-4">
+                Artistic Photography
+              </h3>
+              <p class="text-white/90 text-lg mb-4 leading-relaxed">
+                Push boundaries and explore creativity without limits. These sessions are about artistic expression, 
+                unconventional perspectives, and creating something truly one-of-a-kind that speaks to your soul.
+              </p>
+              <p class="text-earth-200 text-sm mb-6">
+                Creative Concepts • Fine Art • Experimental Techniques
+              </p>
+              <a 
+                href="/galleries/artsy" 
+                class="inline-block bg-forest-600 hover:bg-forest-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                View Gallery
+              </a>
+            </div>
+          </div>
         </div>
+
+        <!-- Fine Art Prints -->
+        <div class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1">
+          <div class="aspect-[4/3] bg-sage-100 overflow-hidden">
+            <img 
+              src="/images/optimized/landscapes/IMG_0118.jpg" 
+              alt="Fine Art Prints" 
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              loading="eager"
+            />
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-forest-900/90 via-forest-900/40 to-transparent">
+            <div class="absolute bottom-0 left-0 right-0 p-8">
+              <h3 class="text-white font-heading font-bold text-2xl mb-4">
+                Fine Art Prints
+              </h3>
+              <p class="text-white/90 text-lg mb-4 leading-relaxed">
+                Transform your space with breathtaking landscape and nature photography. Whether in your home or office, 
+                these prints provide inspiration that goes beyond just words and ideas.
+              </p>
+              <p class="text-earth-200 text-sm mb-6">
+                Museum Quality • Custom Sizing • Professional Framing Available
+              </p>
+              <a 
+                href="/galleries/landscapes" 
+                class="inline-block bg-earth-600 hover:bg-earth-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                Shop Prints
+              </a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
   <!-- Call to Action -->
-  <section class="py-20 bg-gray-900 text-white">
+  <section class="py-24 bg-forest-900 text-white relative overflow-hidden">
     <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
       <h2 class="text-4xl font-heading font-bold mb-6">
         Ready to Capture Your Story?
@@ -250,15 +360,15 @@ import Layout from '../layouts/Layout.astro';
       <div class="space-x-4">
         <a 
           href="/contact" 
-          class="inline-block bg-white text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
+          class="inline-block bg-earth-400 hover:bg-earth-500 text-white px-10 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl text-lg"
         >
-          Book a Session
+          Start Your Journey
         </a>
         <a 
           href="/about" 
-          class="inline-block border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300"
+          class="inline-block border-2 border-earth-400 text-earth-400 hover:bg-earth-400 hover:text-white px-10 py-4 rounded-lg font-semibold transition-all duration-300 text-lg"
         >
-          About Me
+          Meet Anu
         </a>
       </div>
     </div>

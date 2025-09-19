@@ -115,7 +115,7 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
       initial="hidden"
       animate="visible"
       exit="exit"
-      className="fixed inset-0 z-50 bg-white flex items-center justify-center p-4"
+      className="fixed inset-0 z-50 bg-forest-900 flex items-center justify-center p-4"
       onClick={onClose}
     >
       <motion.div
@@ -193,10 +193,7 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
           </svg>
         </button>
 
-        {/* Image Counter */}
-        <div className="absolute top-4 left-1/2 -translate-x-1/2 bg-gray-800/80 backdrop-blur-sm rounded-full px-4 py-2 text-white text-sm">
-          {currentIndex + 1} / {images.length}
-        </div>
+
 
         {/* Thumbnail Strip */}
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 max-w-full">

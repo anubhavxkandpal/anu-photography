@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
-        display: ['Crimson Text', 'Georgia', 'serif'],
-        heading: ['Crimson Text', 'Georgia', 'serif'],
+        sans: ['Raleway', 'system-ui', '-apple-system', 'sans-serif'],
+        display: ['Playfair Display', 'Georgia', 'serif'],
+        heading: ['Playfair Display', 'Georgia', 'serif'],
       },
       colors: {
         gallery: {
@@ -20,6 +20,42 @@ export default {
           700: '#334155',
           800: '#1e293b',
           900: '#0f172a',
+        },
+        earth: {
+          50: '#faf8f6',
+          100: '#f8f6f2',
+          200: '#f0ebe3',
+          300: '#e3d8c8',
+          400: '#d4a574',
+          500: '#b8935f',
+          600: '#a0804f',
+          700: '#866b42',
+          800: '#6d5535',
+          900: '#5a4629',
+        },
+        sage: {
+          50: '#f6f8f6',
+          100: '#e8f0e8',
+          200: '#d1e1d1',
+          300: '#a8b5a1',
+          400: '#8fa086',
+          500: '#758b6d',
+          600: '#5e7158',
+          700: '#4d5d47',
+          800: '#3d4d39',
+          900: '#2c3a2a',
+        },
+        forest: {
+          50: '#f2f4f2',
+          100: '#e0e6e0',
+          200: '#c1ccc1',
+          300: '#9bb09b',
+          400: '#759375',
+          500: '#5a785a',
+          600: '#3d5a3d',
+          700: '#345034',
+          800: '#2c422c',
+          900: '#253725',
         }
       },
       spacing: {
