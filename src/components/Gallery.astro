@@ -1,4 +1,6 @@
 ---
+import Lightbox from '../../Lightbox.astro';
+
 export interface Props {
   images: Array<{
     src: string;
@@ -86,6 +88,8 @@ const { images, category } = Astro.props;
   )}
 </section>
 
+<Lightbox images={images} />
+
 <style>
   .gallery-grid {
     column-gap: 1rem;
@@ -96,17 +100,3 @@ const { images, category } = Astro.props;
     width: 100%;
   }
 </style>
-
-<script>
-  // Add click handlers for lightbox functionality (to be implemented)
-  document.addEventListener('DOMContentLoaded', function() {
-    const galleryItems = document.querySelectorAll('.gallery-item');
-    
-    galleryItems.forEach((item, index) => {
-      item.addEventListener('click', function() {
-        // TODO: Open lightbox with image at index
-        console.log(`Opening lightbox for image ${index}`);
-      });
-    });
-  });
-</script>
