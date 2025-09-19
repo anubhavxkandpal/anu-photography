@@ -161,14 +161,15 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
           {images.map((image, index) => (
             <SwiperSlide key={`lightbox-${image.src}-${index}`} className="flex items-center justify-center">
               <div className="relative w-full h-full flex items-center justify-center">
-                <img
-                  src={image.src}
-                  alt=""
-                  className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
-                  style={{ maxHeight: 'calc(100vh - 200px)' }}
-                  loading={Math.abs(index - currentIndex) <= 1 ? 'eager' : 'lazy'}
-                />
-
+                <div className="p-4 bg-white rounded-xl shadow-2xl">
+                  <img
+                    src={image.src}
+                    alt=""
+                    className="max-w-full max-h-full object-contain rounded-lg"
+                    style={{ maxHeight: 'calc(100vh - 232px)' }}
+                    loading={Math.abs(index - currentIndex) <= 1 ? 'eager' : 'lazy'}
+                  />
+                </div>
               </div>
             </SwiperSlide>
           ))}

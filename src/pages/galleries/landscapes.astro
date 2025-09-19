@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import AnimatedGallery from '../../components/AnimatedGallery.tsx';
+import MasonryGallery from '../../components/MasonryGallery.tsx';
 
 // Landscape & Nature photography collection
 const landscapeImages = [
@@ -197,5 +197,5 @@ const landscapeImages = [
   title="Nature & Landscapes Photography - Anu Photography"
   description="Professional nature and landscape photography capturing the natural beauty of mountains, oceans, deserts, and forests. Fine art prints available."
 >
-  <AnimatedGallery images={landscapeImages} category="Nature & Landscapes" client:load />
+  <MasonryGallery images={landscapeImages} category="Nature & Landscapes" client:load />
 </Layout>

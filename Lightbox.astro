@@ -1,0 +1,91 @@
+---
+export interface Props {
+  images: Array<{
+    src: string;
+    alt: string;
+    title: string;
+    location?: string;
+    date?: string;
+    category?: string;
+  }>;
+}
+
+const { images } = Astro.props;
+---
+
+<div id="lightbox" class="fixed inset-0 z-50 hidden items-center justify-center bg-earth-900/95 p-4 animate-fade-in">
+  <button id="close-lightbox" class="absolute top-4 right-4 text-white/80 hover:text-white text-4xl font-bold z-50">&times;</button>
+  <button id="prev-image" class="absolute left-4 top-1/2 -translate-y-1/2 text-white/80 hover:text-white text-5xl font-bold z-50">&#8249;</button>
+  <button id="next-image" class="absolute right-4 top-1/2 -translate-y-1/2 text-white/80 hover:text-white text-5xl font-bold z-50">&#8250;</button>
+
+  <div class="relative max-w-4xl max-h-[90vh] w-full h-full flex flex-col items-center justify-center">
+    <img id="lightbox-image" src="" alt="" class="max-w-full max-h-full object-contain rounded-lg shadow-2xl">
+    <div id="lightbox-caption" class="text-center text-white/90 mt-4 p-2 animate-slide-up">
+      <h3 id="lightbox-title" class="font-semibold text-lg"></h3>
+      <p id="lightbox-location" class="text-sm"></p>
+    </div>
+  </div>
+</div>
+
+<script define:vars={{ images }}>
+  document.addEventListener('DOMContentLoaded', () => {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    const lightboxTitle = document.getElementById('lightbox-title');
+    const lightboxLocation = document.getElementById('lightbox-location');
+    const closeButton = document.getElementById('close-lightbox');
+    const prevButton = document.getElementById('prev-image');
+    const nextButton = document.getElementById('next-image');
+
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    let currentIndex = 0;
+
+    function showImage(index) {
+      if (index < 0 || index >= images.length) return;
+      
+      const image = images[index];
+      lightboxImage.src = image.src;
+      lightboxImage.alt = image.alt;
+      lightboxTitle.textContent = image.title;
+      lightboxLocation.textContent = image.location ? `📍 ${image.location}` : '';
+      currentIndex = index;
+    }
+
+    function openLightbox(index) {
+      showImage(index);
+      lightbox.classList.remove('hidden');
+      lightbox.classList.add('flex');
+      document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    }
+
+    function closeLightbox() {
+      lightbox.classList.add('hidden');
+      lightbox.classList.remove('flex');
+      document.body.style.overflow = ''; // Restore scrolling
+    }
+
+    galleryItems.forEach((item, index) => {
+      item.addEventListener('click', () => {
+        openLightbox(index);
+      });
+    });
+
+    closeButton.addEventListener('click', closeLightbox);
+    nextButton.addEventListener('click', () => showImage(currentIndex + 1));
+    prevButton.addEventListener('click', () => showImage(currentIndex - 1));
+
+    // Close with Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeLightbox();
+      }
+    });
+
+    // Close on background click
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        closeLightbox();
+      }
+    });
+  });
+</script>

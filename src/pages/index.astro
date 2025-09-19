@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import HeroSlideshow from '../components/HeroSlideshow.tsx';
 ---
 
 <Layout 
@@ -8,16 +9,8 @@ import Layout from '../layouts/Layout.astro';
 >
   <!-- Hero Section -->
   <section class="relative h-screen flex items-center justify-center overflow-hidden">
-    <!-- Hero Background Image -->
-    <div class="absolute inset-0">
-      <img 
-        src="/images/optimized/artsy/IMG_1277-Edit.jpg" 
-        alt="Hero Photography" 
-        class="w-full h-full object-cover"
-        loading="eager"
-      />
-      <div class="absolute inset-0 bg-black opacity-40"></div>
-    </div>
+    <!-- Hero Background Slideshow -->
+    <HeroSlideshow client:load />
     <div class="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8">
       <h1 class="text-5xl md:text-7xl font-heading font-bold mb-6">
         Anu Photography
