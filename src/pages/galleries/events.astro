@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import AnimatedGallery from '../../components/AnimatedGallery.tsx';
+import MasonryGallery from '../../components/MasonryGallery.tsx';
 
 // Professional event photography collection
 const eventImages = [
@@ -131,5 +131,5 @@ const eventImages = [
   title="Event Photography - Anu Photography"
   description="Professional event photography for weddings, corporate events, celebrations, and special occasions. Capturing your memorable moments."
 >
-  <AnimatedGallery images={eventImages} category="events" client:load />
+  <MasonryGallery images={eventImages} category="Events & Celebrations" client:load />
 </Layout>

@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import AnimatedGallery from '../../components/AnimatedGallery.tsx';
+import MasonryGallery from '../../components/MasonryGallery.tsx';
 
 // Professional portrait photography collection
 const portraitImages = [
@@ -67,5 +67,5 @@ const portraitImages = [
   title="Portrait Photography - Anu Photography"
   description="Professional portrait photography for individuals, families, couples, and business headshots. Book your session today."
 >
-  <AnimatedGallery images={portraitImages} category="portraits" client:load />
+  <MasonryGallery images={portraitImages} category="Portraits" client:load />
 </Layout>

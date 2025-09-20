@@ -21,21 +21,31 @@ const HeroSlideshow: React.FC = () => {
       focusPosition: 'center center'
     },
     {
-      src: '/images/optimized/artsy/IMG_8790-Edit.jpg',
-      alt: 'Artistic photography',
+      src: '/images/optimized/landscapes/kalga_DSC_7632.jpg',
+      alt: 'Mountain landscape from Kalga',
+      focusPosition: 'center center'
+    },
+    {
+      src: '/images/optimized/landscapes/kalga_DSC_7634.jpg',
+      alt: 'Kalga valley view',
+      focusPosition: 'center center'
+    },
+    {
+      src: '/images/optimized/artsy/IMG_0536-Edit.jpg',
+      alt: 'Bridge architectural photography',
+      focusPosition: 'center center'
+    },
+    {
+      src: '/images/optimized/landscapes/IMG_0738-Edit.jpg',
+      alt: 'Water body landscape',
       focusPosition: 'center center'
     },
     {
       src: '/images/optimized/landscapes/IMG_0107-Edit.jpg',
       alt: 'Professional landscape',
       focusPosition: 'center center'
-    },
-    {
-      src: '/images/optimized/artsy/IMG_0100-Edit.jpg',
-      alt: 'Creative vision',
-      focusPosition: 'center center'
     }
-  ];
+  ];;
 
   const [currentIndex, setCurrentIndex] = useState(0);
 

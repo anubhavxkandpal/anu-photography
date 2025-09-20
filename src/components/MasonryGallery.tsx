@@ -19,15 +19,14 @@ interface MasonryGalleryProps {
 
 const MasonryGallery: React.FC<MasonryGalleryProps> = ({ images, category }) => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
-  const [columns, setColumns] = useState(4);
+  const [columns, setColumns] = useState(3);
 
-  // Responsive columns
+  // Responsive columns - max 3 columns for better spacing
   useEffect(() => {
     const updateColumns = () => {
       if (window.innerWidth < 640) setColumns(1);
-      else if (window.innerWidth < 768) setColumns(2);
-      else if (window.innerWidth < 1024) setColumns(3);
-      else setColumns(4);
+      else if (window.innerWidth < 1024) setColumns(2);
+      else setColumns(3); // Max 3 columns even on large screens
     };
 
     updateColumns();
@@ -76,14 +75,14 @@ const MasonryGallery: React.FC<MasonryGalleryProps> = ({ images, category }) => 
 
   return (
     <>
-      <div className="container mx-auto px-6 py-12">
+      <div className="max-w-7xl mx-auto px-8 lg:px-12 py-16">
         {/* Category Header */}
         {category && (
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
-            className="text-center mb-12"
+            className="text-center mb-16"
           >
             <h1 className="text-4xl md:text-5xl font-light text-forest-800 mb-4">
               {category}
@@ -92,33 +91,33 @@ const MasonryGallery: React.FC<MasonryGalleryProps> = ({ images, category }) => 
           </motion.div>
         )}
 
-        {/* Masonry Grid */}
+        {/* Masonry Grid with more spacing */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="flex gap-4 md:gap-6"
+          className="flex gap-8 lg:gap-12"
         >
           {imageColumns.map((column, colIndex) => (
-            <div key={colIndex} className="flex-1 flex flex-col gap-4 md:gap-6">
+            <div key={colIndex} className="flex-1 flex flex-col gap-8 lg:gap-12">
               {column.map((image, imgIndex) => {
                 const originalIndex = images.findIndex(img => img.src === image.src);
                 return (
                   <motion.div
                     key={`${colIndex}-${imgIndex}`}
                     variants={itemVariants}
-                    className="relative group cursor-pointer overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+                    className="relative group cursor-pointer overflow-hidden rounded-lg shadow-md hover:shadow-2xl transition-all duration-300"
                     onClick={() => setSelectedImage(originalIndex)}
                   >
                     <div className="relative overflow-hidden bg-gray-100">
                       <img
                         src={image.src}
                         alt={image.alt}
-                        className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+                        className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110"
                         loading="lazy"
                       />
                       
-                      {/* Overlay on hover */}
+                      {/* Title overlay commented out until proper titles are added
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
                         <h3 className="text-white font-medium text-lg mb-1 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                           {image.title}
@@ -129,6 +128,7 @@ const MasonryGallery: React.FC<MasonryGalleryProps> = ({ images, category }) => 
                           </p>
                         )}
                       </div>
+                      */}
                     </div>
                   </motion.div>
                 );

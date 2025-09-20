@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import AnimatedGallery from '../../components/AnimatedGallery.tsx';
+import MasonryGallery from '../../components/MasonryGallery.tsx';
 
 // Creative and artistic photography collection
 const artsyImages = [
@@ -211,5 +211,5 @@ const artsyImages = [
   title="Artistic Photography - Anu Photography"
   description="Creative and artistic photography exploring unique perspectives, abstract compositions, and experimental techniques. Limited edition prints available."
 >
-  <AnimatedGallery images={artsyImages} category="artsy" client:load />
+  <MasonryGallery images={artsyImages} category="Creative & Artistic" client:load />
 </Layout>
