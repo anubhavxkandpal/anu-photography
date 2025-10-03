@@ -4,10 +4,6 @@
   publish = "dist"
   command = "npm run build"
 
-# Form notifications
-[[plugins]]
-  package = "@netlify/plugin-forms"
-
 # Redirect rules
 [[redirects]]
   from = "/contact-success"
