@@ -11,24 +11,14 @@ const HeroSlideshow: React.FC = () => {
   // Curated list of best hero images
   const heroImages: HeroImage[] = [
     {
-      src: '/images/optimized/landscapes/IMG_9604-Edit.jpg',
-      alt: 'Stunning landscape photography',
-      focusPosition: 'center center'
-    },
-    {
-      src: '/images/optimized/landscapes/IMG_0095-Edit.jpg',
-      alt: 'Natural beauty captured',
-      focusPosition: 'center center'
-    },
-    {
       src: '/images/optimized/landscapes/kalga_DSC_7632.jpg',
       alt: 'Mountain landscape from Kalga',
       focusPosition: 'center center'
     },
     {
-      src: '/images/optimized/landscapes/kalga_DSC_7634.jpg',
-      alt: 'Kalga valley view',
-      focusPosition: 'center center'
+      src: '/images/optimized/artsy/IMG_0494.jpg',
+      alt: 'Artistic photography',
+      focusPosition: 'center 60%'
     },
     {
       src: '/images/optimized/artsy/IMG_0536-Edit.jpg',
@@ -45,7 +35,7 @@ const HeroSlideshow: React.FC = () => {
       alt: 'Professional landscape',
       focusPosition: 'center center'
     }
-  ];;
+  ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
