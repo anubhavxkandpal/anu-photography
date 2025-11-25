@@ -1,0 +1,621 @@
+{
+  "category": {
+    "name": "Creative & Artistic",
+    "slug": "artsy",
+    "description": "Creative and artistic photography exploring unique perspectives, abstract compositions, and experimental techniques."
+  },
+  "images": [
+    {
+      "src": "/images/ANU002352.jpg",
+      "alt": "Motorcycle with temple backdrop",
+      "title": "Modern Meets Ancient",
+      "location": "Temple Grounds",
+      "date": "2025-10-31",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/portraits/ANU002433.jpg",
+      "alt": "Carved stone detail",
+      "title": "Stone Artistry",
+      "location": "Temple Wall",
+      "date": "2025-10-31",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/ANU002495.jpg",
+      "alt": "Stone cairns in water",
+      "title": "Balanced Stones",
+      "location": "River Crossing",
+      "date": "2025-10-31",
+      "category": "artsy",
+      "tier": 1
+    },
+    {
+      "src": "/images/ANU002506.jpg",
+      "alt": "Field of stone cairns",
+      "title": "Cairn Field",
+      "location": "Sacred Site",
+      "date": "2025-10-31",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/ANU002517.jpg",
+      "alt": "Temple towers with landscape",
+      "title": "Architectural Marvel",
+      "location": "Temple Complex",
+      "date": "2025-10-31",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/landscapes/ANU00255.jpg",
+      "alt": "Temple carved detail",
+      "title": "Sacred Carvings",
+      "location": "Temple Interior",
+      "date": "2025-10-31",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/landscapes/ANU00257.jpg",
+      "alt": "Bells with carved stone and tree bark",
+      "title": "Temple Bells",
+      "location": "Temple Entrance",
+      "date": "2025-10-31",
+      "category": "artsy",
+      "tier": 1
+    },
+    {
+      "src": "/images/optimized/portraits/ANU0025810.jpg",
+      "alt": "Ornate temple shrine with carvings",
+      "title": "Divine Shrine",
+      "location": "Temple Altar",
+      "date": "2025-10-31",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/portraits/ANU0026111.jpg",
+      "alt": "Temple structure in forest",
+      "title": "Forest Temple",
+      "location": "Sacred Grove",
+      "date": "2025-10-31",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/ANU0026212.jpg",
+      "alt": "Ornate shrine with carved figures",
+      "title": "Sacred Sculptures",
+      "location": "Temple Complex",
+      "date": "2025-10-31",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/portraits/ANU0026413.jpg",
+      "alt": "Detailed temple wall carving",
+      "title": "Weathered Beauty",
+      "location": "Ancient Temple",
+      "date": "2025-10-31",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/portraits/ANU0026614.jpg",
+      "alt": "Weathered temple with forest backdrop",
+      "title": "Time and Nature",
+      "location": "Forest Temple",
+      "date": "2025-10-31",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/landscapes/ANU0027015.jpg",
+      "alt": "Intricate temple wall carving with deity",
+      "title": "Divine Detail",
+      "location": "Temple Wall",
+      "date": "2025-10-31",
+      "category": "artsy",
+      "tier": 1
+    },
+    {
+      "src": "/images/ANU00349.jpg",
+      "alt": "Motion blur of person on scooter from above",
+      "title": "Urban Motion",
+      "location": "Street Scene",
+      "date": "2025-10-31",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/ANU00389.jpg",
+      "alt": "Backlit leaves on tree trunk with bokeh",
+      "title": "Golden Leaves",
+      "location": "Forest Detail",
+      "date": "2025-10-31",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/DIV15.jpg",
+      "alt": "Temple stupa entwined with tree",
+      "title": "Nature Reclaims",
+      "location": "Ancient Temple",
+      "date": "2025-10-31",
+      "category": "artsy",
+      "tier": 1
+    },
+    {
+      "src": "/images/optimized/artsy/DIV16.jpg",
+      "alt": "Ornate stone lion sculpture",
+      "title": "Guardian Lion",
+      "location": "Temple Architecture",
+      "date": "2025-10-31",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/DIV18.jpg",
+      "alt": "Detailed wooden pillar carving",
+      "title": "Carved Heritage",
+      "location": "Traditional Architecture",
+      "date": "2025-10-31",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/DIV2510.jpg",
+      "alt": "Light beam through brick window",
+      "title": "Divine Light",
+      "location": "Historic Building",
+      "date": "2025-10-31",
+      "category": "artsy",
+      "tier": 1
+    },
+    {
+      "src": "/images/optimized/artsy/DIV2511.jpg",
+      "alt": "Architectural interior with dramatic lighting",
+      "title": "Light and Shadow",
+      "location": "Old Structure",
+      "date": "2025-10-31",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/DIV2512.jpg",
+      "alt": "Abstract close-up of fabric with light",
+      "title": "Fabric of Light",
+      "location": "Detail Study",
+      "date": "2025-10-31",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/IMG_0494.jpg",
+      "alt": "Artistic photography masterpiece",
+      "title": "Creative Expression",
+      "location": "Artistic Session",
+      "date": "2025-10-03",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/IMG_8772-Edit.jpg",
+      "alt": "Artistic composition with professional editing",
+      "title": "Creative Vision",
+      "location": "Artistic Session",
+      "date": "2024-08-12",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/IMG_8625-2-3.jpg",
+      "alt": "Multi-exposure artistic work",
+      "title": "Layered Vision",
+      "location": "Experimental Art",
+      "date": "2024-09-11",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/IMG_0380-Edit.jpg",
+      "alt": "Professional artistic edit",
+      "title": "Edited Artistry",
+      "location": "Digital Art",
+      "date": "2024-08-08",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/IMG_9213-Edit.jpg",
+      "alt": "Creative photography with editing",
+      "title": "Abstract Beauty",
+      "location": "Creative Studio",
+      "date": "2024-08-05",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/IMG_0122.jpg",
+      "alt": "Artistic perspective",
+      "title": "Unique Angle",
+      "location": "Art Project",
+      "date": "2024-08-01",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/IMG_0100-Edit.jpg",
+      "alt": "Stylized artistic image",
+      "title": "Style Statement",
+      "location": "Creative Edit",
+      "date": "2024-07-28",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/IMG_0536-Edit.jpg",
+      "alt": "Artistic post-processing",
+      "title": "Digital Art",
+      "location": "Post Production",
+      "date": "2024-07-25",
+      "category": "artsy",
+      "tier": 3
+    },
+    {
+      "src": "/images/optimized/artsy/IMG_0332-Edit.jpg",
+      "alt": "Creative PNG artwork",
+      "title": "Digital Creation",
+      "location": "Digital Studio",
+      "date": "2024-07-22",
+      "category": "artsy",
+      "tier": 3
+    },
+    {
+      "src": "/images/optimized/artsy/IMG_7734-Edit.jpg",
+      "alt": "Artistic photo manipulation",
+      "title": "Photo Art",
+      "location": "Creative Process",
+      "date": "2024-07-20",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/IMG_1267(Forgotten dream).jpg",
+      "alt": "Dreamy artistic photograph",
+      "title": "Forgotten Dream",
+      "location": "Dream Series",
+      "date": "2024-07-18",
+      "category": "artsy",
+      "tier": 1
+    },
+    {
+      "src": "/images/optimized/artsy/IMG_1262.jpg",
+      "alt": "Contemporary art photography",
+      "title": "Modern Art",
+      "location": "Art Gallery",
+      "date": "2024-07-15",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/IMG_0036.jpg",
+      "alt": "Creative photography",
+      "title": "Artistic Expression",
+      "location": "Creative Space",
+      "date": "2024-07-12",
+      "category": "artsy",
+      "tier": 3
+    },
+    {
+      "src": "/images/optimized/artsy/IMG_1277-Edit.jpg",
+      "alt": "Edited artistic work",
+      "title": "Enhanced Vision",
+      "location": "Digital Art",
+      "date": "2024-07-10",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/IMG_0453-Edit.jpg",
+      "alt": "Professional art edit",
+      "title": "Refined Art",
+      "location": "Studio Edit",
+      "date": "2024-07-08",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/IMG_9607.jpg",
+      "alt": "Artistic photography capture",
+      "title": "Creative Capture",
+      "location": "Artistic Session",
+      "date": "2024-07-05",
+      "category": "artsy",
+      "tier": 3
+    },
+    {
+      "src": "/images/optimized/artsy/IMG_0013-Edit.jpg",
+      "alt": "Professional artistic edit",
+      "title": "Creative Edit",
+      "location": "Digital Art",
+      "date": "2024-09-11",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/IMG_0413.jpg",
+      "alt": "Artistic composition",
+      "title": "Visual Art",
+      "location": "Creative Session",
+      "date": "2024-09-11",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/IMG_1493.jpg",
+      "alt": "Contemporary art photograph",
+      "title": "Modern Expression",
+      "location": "Art Project",
+      "date": "2024-09-11",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/IMG_1505.jpg",
+      "alt": "Creative photography work",
+      "title": "Artistic Vision",
+      "location": "Studio Work",
+      "date": "2024-09-11",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/IMG_20190722_094733.jpg",
+      "alt": "Creative capture from 2019",
+      "title": "Timeless Art",
+      "location": "Artistic Moment",
+      "date": "2019-07-22",
+      "category": "artsy",
+      "tier": 3
+    },
+    {
+      "src": "/images/optimized/artsy/IMG_8631-Edit.jpg",
+      "alt": "Edited artistic photograph",
+      "title": "Enhanced Art",
+      "location": "Digital Processing",
+      "date": "2024-09-11",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/IMG_8790-Edit.jpg",
+      "alt": "Professional art edit",
+      "title": "Refined Vision",
+      "location": "Creative Edit",
+      "date": "2024-09-11",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/IMG_8798.jpg",
+      "alt": "Creative photography",
+      "title": "Artistic Capture",
+      "location": "Art Session",
+      "date": "2024-09-11",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/_MG_8468-2.jpg",
+      "alt": "Professional artistic work",
+      "title": "Studio Art",
+      "location": "Professional Session",
+      "date": "2024-09-11",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/_MG_8472.jpg",
+      "alt": "Creative studio work",
+      "title": "Artistic Expression",
+      "location": "Creative Studio",
+      "date": "2024-09-11",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/A7400591_HDR.jpg",
+      "alt": "HDR artistic composition in Rajasthan",
+      "title": "Desert Dreams",
+      "location": "Rajasthan, India",
+      "date": "2025-11-25",
+      "category": "artsy",
+      "tier": 1
+    },
+    {
+      "src": "/images/optimized/artsy/A7400597.jpg",
+      "alt": "Creative architectural photography",
+      "title": "Architectural Art",
+      "location": "Rajasthan, India",
+      "date": "2025-11-25",
+      "category": "artsy",
+      "tier": 1
+    },
+    {
+      "src": "/images/optimized/artsy/A7400600.jpg",
+      "alt": "Artistic landscape composition",
+      "title": "Desert Canvas",
+      "location": "Rajasthan, India",
+      "date": "2025-11-25",
+      "category": "artsy",
+      "tier": 1
+    },
+    {
+      "src": "/images/optimized/artsy/A7400606.jpg",
+      "alt": "Creative composition study",
+      "title": "Geometric Beauty",
+      "location": "Rajasthan, India",
+      "date": "2025-11-25",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/A7400614.jpg",
+      "alt": "Artistic architectural detail",
+      "title": "Heritage Art",
+      "location": "Rajasthan, India",
+      "date": "2025-11-25",
+      "category": "artsy",
+      "tier": 1
+    },
+    {
+      "src": "/images/optimized/artsy/A7400617.jpg",
+      "alt": "Creative desert landscape",
+      "title": "Desert Minimalism",
+      "location": "Rajasthan, India",
+      "date": "2025-11-25",
+      "category": "artsy",
+      "tier": 1
+    },
+    {
+      "src": "/images/optimized/artsy/A7400622.jpg",
+      "alt": "Artistic vertical composition",
+      "title": "Vertical Art",
+      "location": "Rajasthan, India",
+      "date": "2025-11-25",
+      "category": "artsy",
+      "tier": 3
+    },
+    {
+      "src": "/images/optimized/artsy/A7400625.jpg",
+      "alt": "Creative perspective study",
+      "title": "Desert Perspective",
+      "location": "Rajasthan, India",
+      "date": "2025-11-25",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/ANU00391.jpg",
+      "alt": "Artistic mountain composition in Uttarakhand",
+      "title": "Mountain Abstract",
+      "location": "Uttarakhand, India",
+      "date": "2025-11-25",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/ANU00392.jpg",
+      "alt": "Creative nature study",
+      "title": "Natural Forms",
+      "location": "Uttarakhand, India",
+      "date": "2025-11-25",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/ANU00414.jpg",
+      "alt": "Artistic composition in mountains",
+      "title": "Mountain Geometry",
+      "location": "Uttarakhand, India",
+      "date": "2025-11-25",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/ANU00415.jpg",
+      "alt": "Creative landscape art in Uttarakhand",
+      "title": "Himalayan Art",
+      "location": "Uttarakhand, India",
+      "date": "2025-11-25",
+      "category": "artsy",
+      "tier": 1
+    },
+    {
+      "src": "/images/optimized/artsy/ANU00417.jpg",
+      "alt": "Artistic vertical mountain composition",
+      "title": "Vertical Mountains",
+      "location": "Uttarakhand, India",
+      "date": "2025-11-25",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/ANU00418.jpg",
+      "alt": "Creative mountain perspective",
+      "title": "Mountain Mood",
+      "location": "Uttarakhand, India",
+      "date": "2025-11-25",
+      "category": "artsy",
+      "tier": 1
+    },
+    {
+      "src": "/images/optimized/artsy/ANU00426.jpg",
+      "alt": "Artistic nature composition",
+      "title": "Nature's Art",
+      "location": "Uttarakhand, India",
+      "date": "2025-11-25",
+      "category": "artsy",
+      "tier": 1
+    },
+    {
+      "src": "/images/optimized/artsy/ANU00438.jpg",
+      "alt": "Creative mountain study",
+      "title": "Mountain Study",
+      "location": "Uttarakhand, India",
+      "date": "2025-11-25",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/ANU00456.jpg",
+      "alt": "Artistic landscape perspective",
+      "title": "Artistic Perspective",
+      "location": "Uttarakhand, India",
+      "date": "2025-11-25",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/ANU00461.jpg",
+      "alt": "Creative composition in nature",
+      "title": "Nature's Canvas",
+      "location": "Uttarakhand, India",
+      "date": "2025-11-25",
+      "category": "artsy",
+      "tier": 3
+    },
+    {
+      "src": "/images/optimized/artsy/ANU00465.jpg",
+      "alt": "Artistic mountain landscape",
+      "title": "Mountain Expression",
+      "location": "Uttarakhand, India",
+      "date": "2025-11-25",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/ANU00476.jpg",
+      "alt": "Creative natural composition",
+      "title": "Natural Composition",
+      "location": "Uttarakhand, India",
+      "date": "2025-11-25",
+      "category": "artsy",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/artsy/ANU00559.jpg",
+      "alt": "Striking artistic portrait composition",
+      "title": "Desert Artistry",
+      "location": "Rajasthan, India",
+      "date": "2025-11-25",
+      "category": "artsy",
+      "tier": 1
+    }
+  ]
+}

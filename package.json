@@ -6,7 +6,12 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "optimize": "node scripts/optimize-images.js",
+    "optimize:landscapes": "node scripts/optimize-images.js landscapes",
+    "optimize:portraits": "node scripts/optimize-images.js portraits",
+    "optimize:artsy": "node scripts/optimize-images.js artsy",
+    "optimize:events": "node scripts/optimize-images.js events"
   },
   "dependencies": {
     "@astrojs/react": "^4.3.0",

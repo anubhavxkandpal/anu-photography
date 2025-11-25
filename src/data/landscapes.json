@@ -1,0 +1,558 @@
+{
+  "category": {
+    "name": "Nature & Landscapes",
+    "slug": "landscapes",
+    "description": "Professional nature and landscape photography capturing the natural beauty of mountains, oceans, deserts, and forests."
+  },
+  "images": [
+    {
+      "src": "/images/ANU00281.jpg",
+      "alt": "Misty mountain village at dawn",
+      "title": "Mountain Mist",
+      "location": "Himalayan Village",
+      "date": "2025-10-31",
+      "category": "landscapes",
+      "tier": 1
+    },
+    {
+      "src": "/images/ANU00282.jpg",
+      "alt": "Layered mountains in morning mist",
+      "title": "Misty Layers",
+      "location": "Mountain Range",
+      "date": "2025-10-31",
+      "category": "landscapes",
+      "tier": 1
+    },
+    {
+      "src": "/images/optimized/landscapes/ANU00283.jpg",
+      "alt": "Colorful hillside village in sunlight",
+      "title": "Village in Light",
+      "location": "Hill Station",
+      "date": "2025-10-31",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/ANU00284.jpg",
+      "alt": "Mountain village covered in fog",
+      "title": "Foggy Settlement",
+      "location": "Mountain Town",
+      "date": "2025-10-31",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/ANU00285.jpg",
+      "alt": "Village buildings in dense fog",
+      "title": "In the Clouds",
+      "location": "Hill Village",
+      "date": "2025-10-31",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/ANU00286.jpg",
+      "alt": "Foggy mountain valley with tree silhouettes",
+      "title": "Valley Mist",
+      "location": "Mountain Valley",
+      "date": "2025-10-31",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/ANU00291.jpg",
+      "alt": "Mountain range panorama",
+      "title": "Himalayan Panorama",
+      "location": "Mountain Range",
+      "date": "2025-10-31",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/ANU00292.jpg",
+      "alt": "Snow-capped mountain peak",
+      "title": "Snow Peak",
+      "location": "High Himalayas",
+      "date": "2025-10-31",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/ANU00293.jpg",
+      "alt": "Snow-capped mountain with foliage",
+      "title": "Mountain Glory",
+      "location": "Himalayan Vista",
+      "date": "2025-10-31",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/ANU00299 2.jpg",
+      "alt": "Waterfall with mist in rocky gorge",
+      "title": "Misty Falls",
+      "location": "Mountain Stream",
+      "date": "2025-10-31",
+      "category": "landscapes",
+      "tier": 1
+    },
+    {
+      "src": "/images/ANU00299 3.jpg",
+      "alt": "Waterfall different exposure",
+      "title": "Cascade Flow",
+      "location": "Mountain Stream",
+      "date": "2025-10-31",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/ANU00302.jpg",
+      "alt": "Waterfall view from below",
+      "title": "Looking Up",
+      "location": "Waterfall Base",
+      "date": "2025-10-31",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/landscapes/ANU00303.jpg",
+      "alt": "Rocky river rapids with mist",
+      "title": "River Rapids",
+      "location": "Mountain River",
+      "date": "2025-10-31",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/ANU00311.jpg",
+      "alt": "Mountain valley with bird in sky",
+      "title": "Bird Over Valley",
+      "location": "Mountain Valley",
+      "date": "2025-10-31",
+      "category": "landscapes",
+      "tier": 3
+    },
+    {
+      "src": "/images/ANU00318.jpg",
+      "alt": "Mountain peaks with foliage foreground",
+      "title": "Framed Peaks",
+      "location": "Mountain View",
+      "date": "2025-10-31",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/ANU00321.jpg",
+      "alt": "Mountain peak at dusk",
+      "title": "Dusk Peak",
+      "location": "High Altitude",
+      "date": "2025-10-31",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/ANU00326.jpg",
+      "alt": "Dramatic clouds over mountain ridge",
+      "title": "Mountain Drama",
+      "location": "Ridge Line",
+      "date": "2025-10-31",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/ANU00330.jpg",
+      "alt": "Snow-capped mountain range at golden hour",
+      "title": "Golden Mountains",
+      "location": "Himalayan Range",
+      "date": "2025-10-31",
+      "category": "landscapes",
+      "tier": 1
+    },
+    {
+      "src": "/images/ANU00333.jpg",
+      "alt": "Mountain panorama with village foreground",
+      "title": "Village Vista",
+      "location": "Mountain Settlement",
+      "date": "2025-10-31",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/DIV9.jpg",
+      "alt": "Hillside village with mountains in daylight",
+      "title": "Mountain Town",
+      "location": "Hill Station",
+      "date": "2025-10-31",
+      "category": "landscapes",
+      "tier": 3
+    },
+    {
+      "src": "/images/optimized/landscapes/ANU00156.jpg",
+      "alt": "Pine trees reaching towards blue sky",
+      "title": "Reaching for the Sky",
+      "location": "Mountain Forest",
+      "date": "2025-10-31",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/landscapes/ANU00281.jpg",
+      "alt": "Foggy mountain town at sunrise",
+      "title": "Mountain Mist",
+      "location": "Himalayan Town",
+      "date": "2025-10-31",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/landscapes/DIV19.jpg",
+      "alt": "Snow-capped Himalayan peaks with valley",
+      "title": "Himalayan Vista",
+      "location": "Mountain Range",
+      "date": "2025-10-31",
+      "category": "landscapes",
+      "tier": 1
+    },
+    {
+      "src": "/images/optimized/landscapes/DIV2514.jpg",
+      "alt": "Layered mountains at sunset",
+      "title": "Mountain Layers",
+      "location": "Hill Station",
+      "date": "2025-10-31",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/landscapes/ANU00064.jpg",
+      "alt": "Stunning landscape photography",
+      "title": "Natural Masterpiece",
+      "location": "Scenic Location",
+      "date": "2025-10-03",
+      "category": "landscapes",
+      "tier": 1
+    },
+    {
+      "src": "/images/optimized/landscapes/IMG_0118.jpg",
+      "alt": "Pristine natural environment",
+      "title": "Untouched Nature",
+      "location": "Remote Location",
+      "date": "2024-06-25",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/landscapes/IMG_0095-Edit.jpg",
+      "alt": "Edited landscape photograph",
+      "title": "Perfect Moment",
+      "location": "Nature Photography",
+      "date": "2024-09-11",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/landscapes/IMG_0107-Edit.jpg",
+      "alt": "Professional landscape edit",
+      "title": "Natural Beauty",
+      "location": "Outdoor Session",
+      "date": "2024-09-11",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/landscapes/IMG_8654.jpg",
+      "alt": "Scenic landscape view",
+      "title": "Wilderness",
+      "location": "Nature Reserve",
+      "date": "2024-09-11",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/landscapes/IMG_8952.jpg",
+      "alt": "Stunning natural vista",
+      "title": "Mountain View",
+      "location": "Highland Area",
+      "date": "2024-09-11",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/landscapes/IMG_9604-Edit.jpg",
+      "alt": "Edited nature photograph",
+      "title": "Golden Light",
+      "location": "Scenic Location",
+      "date": "2024-09-11",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/landscapes/IMG_9743-Edit.jpg",
+      "alt": "Professional landscape edit",
+      "title": "Natural Wonder",
+      "location": "Outdoor Photography",
+      "date": "2024-09-11",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/landscapes/DSC_7617.jpg",
+      "alt": "Scenic mountain landscape",
+      "title": "Mountain Vista",
+      "location": "Highland Photography",
+      "date": "2024-09-19",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/landscapes/IMG_0738-Edit.jpg",
+      "alt": "Edited landscape composition",
+      "title": "Natural Beauty",
+      "location": "Outdoor Photography",
+      "date": "2024-09-19",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/landscapes/IMG_0746.jpg",
+      "alt": "Stunning natural scenery",
+      "title": "Scenic Wonder",
+      "location": "Nature Photography",
+      "date": "2024-09-19",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/landscapes/IMG_0748.jpg",
+      "alt": "Beautiful landscape view",
+      "title": "Golden Hour",
+      "location": "Professional Photography",
+      "date": "2024-09-19",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/landscapes/IMG_0880.jpg",
+      "alt": "Dramatic landscape capture",
+      "title": "Wild Beauty",
+      "location": "Outdoor Adventure",
+      "date": "2024-09-19",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/landscapes/IMG_0999.jpg",
+      "alt": "Majestic natural view",
+      "title": "Nature's Majesty",
+      "location": "Wilderness Photography",
+      "date": "2024-09-19",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/landscapes/kalga_DSC_7632.jpg",
+      "alt": "Kalga valley landscape",
+      "title": "Kalga Valley",
+      "location": "Himachal Pradesh",
+      "date": "2024-09-19",
+      "category": "landscapes",
+      "tier": 1
+    },
+    {
+      "src": "/images/optimized/landscapes/kalga_DSC_7634.jpg",
+      "alt": "Kalga mountain scenery",
+      "title": "Mountain Serenity",
+      "location": "Himachal Pradesh",
+      "date": "2024-09-19",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/landscapes/IMG_9552.jpg",
+      "alt": "Beautiful natural scenery",
+      "title": "Scenic Beauty",
+      "location": "Outdoor Photography",
+      "date": "2024-08-10",
+      "category": "landscapes",
+      "tier": 3
+    },
+    {
+      "src": "/images/optimized/landscapes/IMG_0775.jpg",
+      "alt": "Captivating landscape shot",
+      "title": "Natural Wonder",
+      "location": "Landscape Session",
+      "date": "2024-08-05",
+      "category": "landscapes",
+      "tier": 3
+    },
+    {
+      "src": "/images/optimized/landscapes/IMG_0464-Edit.jpg",
+      "alt": "Professionally edited landscape",
+      "title": "Golden Hour",
+      "location": "Nature Photography",
+      "date": "2024-07-28",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/landscapes/IMG_8946.jpg",
+      "alt": "Dramatic landscape composition",
+      "title": "Wild Beauty",
+      "location": "Outdoor Adventure",
+      "date": "2024-07-20",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/landscapes/IMG_9293.jpg",
+      "alt": "Serene natural landscape",
+      "title": "Peaceful Scene",
+      "location": "Nature Preserve",
+      "date": "2024-07-15",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/landscapes/IMG_9285.jpg",
+      "alt": "Majestic landscape view",
+      "title": "Mountain Range",
+      "location": "Highland Photography",
+      "date": "2024-07-10",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/landscapes/IMG_8980.jpg",
+      "alt": "Beautiful outdoor scenery",
+      "title": "Natural Light",
+      "location": "Wilderness Area",
+      "date": "2024-07-05",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/landscapes/IMG_8995.jpg",
+      "alt": "Spectacular landscape capture",
+      "title": "Earth Beauty",
+      "location": "National Park",
+      "date": "2024-06-30",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/landscapes/A7400596.jpg",
+      "alt": "Majestic fort architecture in Rajasthan",
+      "title": "Desert Fort",
+      "location": "Rajasthan, India",
+      "date": "2025-11-25",
+      "category": "landscapes",
+      "tier": 1
+    },
+    {
+      "src": "/images/optimized/landscapes/A7400609.jpg",
+      "alt": "Architectural landscape composition",
+      "title": "Heritage View",
+      "location": "Rajasthan, India",
+      "date": "2025-11-25",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/landscapes/A7400610.jpg",
+      "alt": "Landscape with traditional structures",
+      "title": "Desert Oasis",
+      "location": "Rajasthan, India",
+      "date": "2025-11-25",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/landscapes/A7400612.jpg",
+      "alt": "Scenic architectural landscape",
+      "title": "Royal Landscape",
+      "location": "Rajasthan, India",
+      "date": "2025-11-25",
+      "category": "landscapes",
+      "tier": 3
+    },
+    {
+      "src": "/images/optimized/landscapes/A7400613.jpg",
+      "alt": "Grand desert landscape panorama",
+      "title": "Desert Panorama",
+      "location": "Rajasthan, India",
+      "date": "2025-11-25",
+      "category": "landscapes",
+      "tier": 1
+    },
+    {
+      "src": "/images/optimized/landscapes/A7400633.jpg",
+      "alt": "Dramatic landscape composition",
+      "title": "Desert Light",
+      "location": "Rajasthan, India",
+      "date": "2025-11-25",
+      "category": "landscapes",
+      "tier": 3
+    },
+    {
+      "src": "/images/optimized/landscapes/A7400634.jpg",
+      "alt": "Beautiful architectural landscape view",
+      "title": "Heritage Vista",
+      "location": "Rajasthan, India",
+      "date": "2025-11-25",
+      "category": "landscapes",
+      "tier": 1
+    },
+    {
+      "src": "/images/optimized/landscapes/ANU00371.jpg",
+      "alt": "Mountain landscape in Uttarakhand",
+      "title": "Himalayan Beauty",
+      "location": "Uttarakhand, India",
+      "date": "2025-11-25",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/landscapes/ANU00479.jpg",
+      "alt": "Scenic Himalayan mountain vista",
+      "title": "Mountain Majesty",
+      "location": "Uttarakhand, India",
+      "date": "2025-11-25",
+      "category": "landscapes",
+      "tier": 1
+    },
+    {
+      "src": "/images/optimized/landscapes/ANU00480.jpg",
+      "alt": "Panoramic Himalayan landscape",
+      "title": "Himalayan Expanse",
+      "location": "Uttarakhand, India",
+      "date": "2025-11-25",
+      "category": "landscapes",
+      "tier": 1
+    },
+    {
+      "src": "/images/optimized/landscapes/ANU00511.jpg",
+      "alt": "Mountain peaks in Uttarakhand",
+      "title": "Peak Views",
+      "location": "Uttarakhand, India",
+      "date": "2025-11-25",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/landscapes/ANU00513.jpg",
+      "alt": "Serene mountain landscape",
+      "title": "Mountain Serenity",
+      "location": "Uttarakhand, India",
+      "date": "2025-11-25",
+      "category": "landscapes",
+      "tier": 2
+    },
+    {
+      "src": "/images/optimized/landscapes/ANU00555.jpg",
+      "alt": "Dramatic mountain landscape capture",
+      "title": "Mountain Drama",
+      "location": "Rajasthan, India",
+      "date": "2025-11-25",
+      "category": "landscapes",
+      "tier": 1
+    }
+  ]
+}
