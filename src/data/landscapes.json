@@ -87,15 +87,6 @@
       "tier": 2
     },
     {
-      "src": "/images/ANU00299 2.jpg",
-      "alt": "Waterfall with mist in rocky gorge",
-      "title": "Misty Falls",
-      "location": "Mountain Stream",
-      "date": "2025-10-31",
-      "category": "landscapes",
-      "tier": 1
-    },
-    {
       "src": "/images/ANU00299 3.jpg",
       "alt": "Waterfall different exposure",
       "title": "Cascade Flow",
@@ -129,7 +120,7 @@
       "location": "Mountain Valley",
       "date": "2025-10-31",
       "category": "landscapes",
-      "tier": 3
+      "tier": 1
     },
     {
       "src": "/images/ANU00318.jpg",
@@ -471,7 +462,7 @@
       "location": "Rajasthan, India",
       "date": "2025-11-25",
       "category": "landscapes",
-      "tier": 3
+      "tier": 1
     },
     {
       "src": "/images/optimized/landscapes/A7400613.jpg",
@@ -489,7 +480,7 @@
       "location": "Rajasthan, India",
       "date": "2025-11-25",
       "category": "landscapes",
-      "tier": 3
+      "tier": 1
     },
     {
       "src": "/images/optimized/landscapes/A7400634.jpg",
