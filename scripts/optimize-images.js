@@ -39,7 +39,7 @@ const CONFIG = {
   targetSizeKB: 500,         // Target file size in KB (soft limit)
   minQuality: 70,            // Never go below this quality
   progressive: true,         // Progressive JPEG for faster perceived loading
-  categories: ['landscapes', 'portraits', 'artsy', 'events']
+  categories: ['landscapes', 'wildlife', 'portraits', 'travel', 'artsy', 'events']
 };
 
 const STAGING_DIR = path.join(PROJECT_ROOT, 'public/images/staging');

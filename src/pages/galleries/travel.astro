@@ -1,0 +1,15 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import FilterableGallery from '../../components/FilterableGallery.tsx';
+import travelData from '../../data/travel.json';
+import type { GalleryImage } from '../../data/types';
+
+const images = travelData.images as GalleryImage[];
+---
+
+<Layout 
+  title="Travel Photography - Anu Photography"
+  description={travelData.category.description}
+>
+  <FilterableGallery images={images} category={travelData.category.name} client:load />
+</Layout>

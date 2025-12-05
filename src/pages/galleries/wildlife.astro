@@ -1,0 +1,15 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import FilterableGallery from '../../components/FilterableGallery.tsx';
+import wildlifeData from '../../data/wildlife.json';
+import type { GalleryImage } from '../../data/types';
+
+const images = wildlifeData.images as GalleryImage[];
+---
+
+<Layout 
+  title="Wildlife Photography - Anu Photography"
+  description={wildlifeData.category.description}
+>
+  <FilterableGallery images={images} category={wildlifeData.category.name} client:load />
+</Layout>

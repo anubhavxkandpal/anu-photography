@@ -108,6 +108,7 @@ src/
 1. **Upload Photos**: Add your best work to `/public/images/` folders
 2. **Update Content**: Replace placeholder text with your descriptions
 3. **Custom Domain**: Purchase domain and connect to Netlify
+4. **Integrate Lightbox**: `Lightbox.astro` currently exists in root. Needs to be moved to `src/components/` and integrated into gallery pages.
 
 ### Future Enhancements
 1. **About Page**: Create photographer bio and story

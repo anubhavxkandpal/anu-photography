@@ -1,8 +1,8 @@
 {
   "category": {
-    "name": "Events & Celebrations",
+    "name": "Events",
     "slug": "events",
-    "description": "Professional event photography for weddings, corporate events, celebrations, and special occasions."
+    "description": "Celebrations, gatherings, and special occasions captured."
   },
   "images": [
     {
@@ -12,7 +12,8 @@
       "location": "Event Venue",
       "date": "2024-08-17",
       "category": "events",
-      "tier": 1
+      "tier": 1,
+      "tags": ["people", "candid"]
     },
     {
       "src": "/images/optimized/events/DSC01083-Edit.jpg",
@@ -21,7 +22,8 @@
       "location": "Corporate Venue",
       "date": "2024-08-15",
       "category": "events",
-      "tier": 2
+      "tier": 2,
+      "tags": ["people"]
     },
     {
       "src": "/images/optimized/events/IMG_9287.jpg",
@@ -30,7 +32,8 @@
       "location": "Celebration Hall",
       "date": "2024-08-12",
       "category": "events",
-      "tier": 2
+      "tier": 2,
+      "tags": ["people", "candid"]
     },
     {
       "src": "/images/optimized/events/DSC01096.jpg",
@@ -39,7 +42,8 @@
       "location": "Event Space",
       "date": "2024-08-10",
       "category": "events",
-      "tier": 2
+      "tier": 2,
+      "tags": ["people"]
     },
     {
       "src": "/images/optimized/events/IMG_9454.jpg",
@@ -48,7 +52,8 @@
       "location": "Celebration Venue",
       "date": "2024-08-08",
       "category": "events",
-      "tier": 2
+      "tier": 2,
+      "tags": ["people", "candid"]
     },
     {
       "src": "/images/optimized/events/DSC01095.jpg",
@@ -57,7 +62,8 @@
       "location": "Function Hall",
       "date": "2024-08-05",
       "category": "events",
-      "tier": 2
+      "tier": 2,
+      "tags": ["people"]
     },
     {
       "src": "/images/optimized/events/DSC01092.jpg",
@@ -66,7 +72,8 @@
       "location": "Venue Photography",
       "date": "2024-08-03",
       "category": "events",
-      "tier": 2
+      "tier": 2,
+      "tags": ["people"]
     },
     {
       "src": "/images/optimized/events/DSC01087.jpg",
@@ -75,7 +82,8 @@
       "location": "Party Venue",
       "date": "2024-08-01",
       "category": "events",
-      "tier": 2
+      "tier": 2,
+      "tags": ["people", "candid"]
     },
     {
       "src": "/images/optimized/events/IMG_9273.jpg",
@@ -84,7 +92,8 @@
       "location": "Event Location",
       "date": "2024-07-30",
       "category": "events",
-      "tier": 2
+      "tier": 2,
+      "tags": ["people"]
     },
     {
       "src": "/images/optimized/events/IMG_7256-Final.jpg",
@@ -93,7 +102,8 @@
       "location": "Professional Edit",
       "date": "2024-07-28",
       "category": "events",
-      "tier": 1
+      "tier": 1,
+      "tags": ["people", "dramatic"]
     },
     {
       "src": "/images/optimized/events/DSC01064.jpg",
@@ -102,7 +112,8 @@
       "location": "Event Venue",
       "date": "2024-07-25",
       "category": "events",
-      "tier": 2
+      "tier": 2,
+      "tags": ["people", "candid"]
     },
     {
       "src": "/images/optimized/events/IMG_9117.jpg",
@@ -111,7 +122,8 @@
       "location": "Portrait Area",
       "date": "2024-07-22",
       "category": "events",
-      "tier": 2
+      "tier": 2,
+      "tags": ["people"]
     },
     {
       "src": "/images/optimized/events/DSC01065.jpg",
@@ -120,7 +132,8 @@
       "location": "Story Telling",
       "date": "2024-07-20",
       "category": "events",
-      "tier": 2
+      "tier": 2,
+      "tags": ["people", "candid"]
     },
     {
       "src": "/images/optimized/events/IMG_0021.jpg",
@@ -129,7 +142,8 @@
       "location": "Party Photography",
       "date": "2024-07-18",
       "category": "events",
-      "tier": 2
+      "tier": 2,
+      "tags": ["people", "candid"]
     },
     {
       "src": "/images/optimized/events/IMG_8625-2-3.jpg",
@@ -138,7 +152,8 @@
       "location": "Creative Event Capture",
       "date": "2024-09-11",
       "category": "events",
-      "tier": 1
+      "tier": 1,
+      "tags": ["people", "abstract"]
     }
   ]
 }

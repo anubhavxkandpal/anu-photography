@@ -1,55 +1,10 @@
 {
   "category": {
-    "name": "Portraits",
+    "name": "People & Portraits",
     "slug": "portraits",
-    "description": "Professional portrait photography for individuals, families, couples, and business headshots."
+    "description": "Human subjects, expressions, and stories captured through the lens."
   },
   "images": [
-    {
-      "src": "/images/ANU00098.jpg",
-      "alt": "Bird perched on wooden chair",
-      "title": "Quiet Visitor",
-      "location": "Village Scene",
-      "date": "2025-10-31",
-      "category": "portraits",
-      "tier": 2
-    },
-    {
-      "src": "/images/ANU00119.jpg",
-      "alt": "Bird on rustic table",
-      "title": "Table Companion",
-      "location": "Outdoor Setting",
-      "date": "2025-10-31",
-      "category": "portraits",
-      "tier": 2
-    },
-    {
-      "src": "/images/ANU002464.jpg",
-      "alt": "Monkey on ancient stone sculpture",
-      "title": "Guardian Monkey",
-      "location": "Temple Grounds",
-      "date": "2025-10-31",
-      "category": "portraits",
-      "tier": 1
-    },
-    {
-      "src": "/images/ANU00295.jpg",
-      "alt": "Chickens on stone wall",
-      "title": "Farm Life",
-      "location": "Rural Setting",
-      "date": "2025-10-31",
-      "category": "portraits",
-      "tier": 3
-    },
-    {
-      "src": "/images/ANU00297.jpg",
-      "alt": "Bird perched in tree branches",
-      "title": "Among the Branches",
-      "location": "Forest Edge",
-      "date": "2025-10-31",
-      "category": "portraits",
-      "tier": 2
-    },
     {
       "src": "/images/ANU00315.jpg",
       "alt": "Person sitting with mountain backdrop",
@@ -57,16 +12,8 @@
       "location": "Himalayan Vista",
       "date": "2025-10-31",
       "category": "portraits",
-      "tier": 1
-    },
-    {
-      "src": "/images/ANU00396 1.jpg",
-      "alt": "Bird in motion with soft focus",
-      "title": "Flight Blur",
-      "location": "Garden Setting",
-      "date": "2025-10-31",
-      "category": "portraits",
-      "tier": 3
+      "tier": 1,
+      "tags": ["people", "mountains", "himalayas", "serene"]
     },
     {
       "src": "/images/DIV1.jpg",
@@ -75,7 +22,8 @@
       "location": "Mountain Viewpoint",
       "date": "2025-10-31",
       "category": "portraits",
-      "tier": 1
+      "tier": 1,
+      "tags": ["people", "golden-hour", "mountains", "himalayas"]
     },
     {
       "src": "/images/DIV3.jpg",
@@ -84,7 +32,8 @@
       "location": "Mountain Vista",
       "date": "2025-10-31",
       "category": "portraits",
-      "tier": 1
+      "tier": 1,
+      "tags": ["people", "golden-hour", "mountains", "candid"]
     },
     {
       "src": "/images/DIV4.jpg",
@@ -93,7 +42,8 @@
       "location": "Mountain Town",
       "date": "2025-10-31",
       "category": "portraits",
-      "tier": 2
+      "tier": 2,
+      "tags": ["people", "silhouette", "golden-hour", "dramatic"]
     },
     {
       "src": "/images/DIV8.jpg",
@@ -102,43 +52,8 @@
       "location": "Hill Station",
       "date": "2025-10-31",
       "category": "portraits",
-      "tier": 2
-    },
-    {
-      "src": "/images/optimized/portraits/ANU00151.jpg",
-      "alt": "Street dog on forest road",
-      "title": "Forest Guardian",
-      "location": "Mountain Road",
-      "date": "2025-10-31",
-      "category": "portraits",
-      "tier": 2
-    },
-    {
-      "src": "/images/optimized/portraits/ANU00159.jpg",
-      "alt": "Close-up portrait of street dog",
-      "title": "Watchful Eyes",
-      "location": "Mountain Path",
-      "date": "2025-10-31",
-      "category": "portraits",
-      "tier": 1
-    },
-    {
-      "src": "/images/optimized/portraits/ANU00166.jpg",
-      "alt": "Dog resting peacefully",
-      "title": "Peaceful Rest",
-      "location": "Roadside",
-      "date": "2025-10-31",
-      "category": "portraits",
-      "tier": 2
-    },
-    {
-      "src": "/images/optimized/portraits/DIV17.jpg",
-      "alt": "Two birds perched on window sill",
-      "title": "Feathered Friends",
-      "location": "Window View",
-      "date": "2025-10-31",
-      "category": "portraits",
-      "tier": 2
+      "tier": 2,
+      "tags": ["people", "silhouette", "mountains", "dramatic"]
     },
     {
       "src": "/images/optimized/portraits/DIV20.jpg",
@@ -147,7 +62,8 @@
       "location": "Village Garden",
       "date": "2025-10-31",
       "category": "portraits",
-      "tier": 2
+      "tier": 2,
+      "tags": ["people", "candid", "rural"]
     },
     {
       "src": "/images/optimized/portraits/IMG_9020.jpg",
@@ -156,7 +72,8 @@
       "location": "Portrait Studio",
       "date": "2024-08-20",
       "category": "portraits",
-      "tier": 2
+      "tier": 2,
+      "tags": ["people"]
     },
     {
       "src": "/images/optimized/portraits/IMG_9589-Edit.jpg",
@@ -165,7 +82,8 @@
       "location": "Creative Session",
       "date": "2024-08-15",
       "category": "portraits",
-      "tier": 1
+      "tier": 1,
+      "tags": ["people", "abstract"]
     },
     {
       "src": "/images/optimized/portraits/_MG_8501-2.jpg",
@@ -174,7 +92,8 @@
       "location": "Outdoor Session",
       "date": "2024-08-10",
       "category": "portraits",
-      "tier": 2
+      "tier": 2,
+      "tags": ["people"]
     },
     {
       "src": "/images/optimized/portraits/IMG_9511.jpg",
@@ -183,7 +102,8 @@
       "location": "Studio Setting",
       "date": "2024-08-05",
       "category": "portraits",
-      "tier": 2
+      "tier": 2,
+      "tags": ["people"]
     },
     {
       "src": "/images/optimized/portraits/IMG_9117.jpg",
@@ -192,7 +112,8 @@
       "location": "Portrait Session",
       "date": "2024-07-30",
       "category": "portraits",
-      "tier": 2
+      "tier": 2,
+      "tags": ["people"]
     },
     {
       "src": "/images/optimized/portraits/IMG_9372.jpg",
@@ -201,7 +122,8 @@
       "location": "Urban Setting",
       "date": "2024-07-25",
       "category": "portraits",
-      "tier": 2
+      "tier": 2,
+      "tags": ["people", "urban"]
     },
     {
       "src": "/images/optimized/portraits/IMG_9655-Edit.jpg",
@@ -210,7 +132,8 @@
       "location": "Studio Edit",
       "date": "2024-07-20",
       "category": "portraits",
-      "tier": 2
+      "tier": 2,
+      "tags": ["people"]
     },
     {
       "src": "/images/optimized/portraits/A7400620.jpg",
@@ -219,7 +142,8 @@
       "location": "Rajasthan, India",
       "date": "2025-11-25",
       "category": "portraits",
-      "tier": 1
+      "tier": 1,
+      "tags": ["people", "golden-hour"]
     },
     {
       "src": "/images/optimized/portraits/A7400629.jpg",
@@ -228,7 +152,8 @@
       "location": "Rajasthan, India",
       "date": "2025-11-25",
       "category": "portraits",
-      "tier": 1
+      "tier": 1,
+      "tags": ["people", "dramatic"]
     },
     {
       "src": "/images/optimized/portraits/A7400630.jpg",
@@ -237,7 +162,8 @@
       "location": "Rajasthan, India",
       "date": "2025-11-25",
       "category": "portraits",
-      "tier": 3
+      "tier": 3,
+      "tags": ["people"]
     },
     {
       "src": "/images/optimized/portraits/ANU00381.jpg",
@@ -246,7 +172,8 @@
       "location": "Uttarakhand, India",
       "date": "2025-11-25",
       "category": "portraits",
-      "tier": 2
+      "tier": 2,
+      "tags": ["people", "mountains", "himalayas"]
     },
     {
       "src": "/images/optimized/portraits/ANU00432.jpg",
@@ -255,7 +182,8 @@
       "location": "Uttarakhand, India",
       "date": "2025-11-25",
       "category": "portraits",
-      "tier": 2
+      "tier": 2,
+      "tags": ["people", "mountains", "himalayas"]
     },
     {
       "src": "/images/optimized/portraits/ANU00447.jpg",
@@ -264,7 +192,8 @@
       "location": "Uttarakhand, India",
       "date": "2025-11-25",
       "category": "portraits",
-      "tier": 1
+      "tier": 1,
+      "tags": ["people", "candid", "himalayas"]
     },
     {
       "src": "/images/optimized/portraits/ANU00477.jpg",
@@ -273,7 +202,8 @@
       "location": "Uttarakhand, India",
       "date": "2025-11-25",
       "category": "portraits",
-      "tier": 2
+      "tier": 2,
+      "tags": ["people", "himalayas"]
     },
     {
       "src": "/images/optimized/portraits/ANU00523.jpg",
@@ -282,7 +212,8 @@
       "location": "Rajasthan, India",
       "date": "2025-11-25",
       "category": "portraits",
-      "tier": 3
+      "tier": 3,
+      "tags": ["people"]
     },
     {
       "src": "/images/optimized/portraits/ANU00557.jpg",
@@ -291,7 +222,8 @@
       "location": "Rajasthan, India",
       "date": "2025-11-25",
       "category": "portraits",
-      "tier": 2
+      "tier": 2,
+      "tags": ["people"]
     },
     {
       "src": "/images/optimized/portraits/ANU00559.jpg",
@@ -300,7 +232,8 @@
       "location": "Rajasthan, India",
       "date": "2025-11-25",
       "category": "portraits",
-      "tier": 1
+      "tier": 1,
+      "tags": ["people", "dramatic"]
     },
     {
       "src": "/images/optimized/portraits/ANU00561 1.jpg",
@@ -309,7 +242,8 @@
       "location": "Rajasthan, India",
       "date": "2025-11-25",
       "category": "portraits",
-      "tier": 1
+      "tier": 1,
+      "tags": ["people"]
     },
     {
       "src": "/images/optimized/portraits/ANU00561.jpg",
@@ -318,7 +252,8 @@
       "location": "Rajasthan, India",
       "date": "2025-11-25",
       "category": "portraits",
-      "tier": 1
+      "tier": 1,
+      "tags": ["people"]
     },
     {
       "src": "/images/optimized/portraits/ANU00563.jpg",
@@ -327,7 +262,8 @@
       "location": "Rajasthan, India",
       "date": "2025-11-25",
       "category": "portraits",
-      "tier": 2
+      "tier": 2,
+      "tags": ["people", "candid"]
     },
     {
       "src": "/images/optimized/portraits/ANU00564.jpg",
@@ -336,7 +272,8 @@
       "location": "Rajasthan, India",
       "date": "2025-11-25",
       "category": "portraits",
-      "tier": 1
+      "tier": 1,
+      "tags": ["people"]
     }
   ]
 }

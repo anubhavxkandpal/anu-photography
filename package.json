@@ -9,11 +9,18 @@
     "astro": "astro",
     "optimize": "node scripts/optimize-images.js",
     "optimize:landscapes": "node scripts/optimize-images.js landscapes",
+    "optimize:wildlife": "node scripts/optimize-images.js wildlife",
     "optimize:portraits": "node scripts/optimize-images.js portraits",
+    "optimize:travel": "node scripts/optimize-images.js travel",
     "optimize:artsy": "node scripts/optimize-images.js artsy",
-    "optimize:events": "node scripts/optimize-images.js events"
+    "optimize:events": "node scripts/optimize-images.js events",
+    "auto-tag": "node scripts/auto-tag.js",
+    "auto-tag:existing": "node scripts/auto-tag.js --existing",
+    "auto-tag:force": "node scripts/auto-tag.js --existing --force",
+    "apply-tags": "node scripts/apply-tags.js"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.52.0",
     "@astrojs/react": "^4.3.0",
     "@astrojs/tailwind": "^6.0.2",
     "@studio-freight/lenis": "^1.0.42",

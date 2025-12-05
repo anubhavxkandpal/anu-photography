@@ -1,21 +1,15 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import MasonryGallery from '../../components/MasonryGallery.tsx';
+import FilterableGallery from '../../components/FilterableGallery.tsx';
 import artsyData from '../../data/artsy.json';
 import type { GalleryImage } from '../../data/types';
 
-// Sort images: tier 1 first, then 2, then 3; within each tier, newest first
-const sortedImages = [...artsyData.images].sort((a, b) => {
-  if (a.tier !== b.tier) {
-    return a.tier - b.tier;
-  }
-  return new Date(b.date).getTime() - new Date(a.date).getTime();
-}) as GalleryImage[];
+const images = artsyData.images as GalleryImage[];
 ---
 
 <Layout 
-  title="Artistic Photography - Anu Photography"
+  title="Creative & Artsy Photography - Anu Photography"
   description={artsyData.category.description}
 >
-  <MasonryGallery images={sortedImages} category={artsyData.category.name} client:load />
+  <FilterableGallery images={images} category={artsyData.category.name} client:load />
 </Layout>

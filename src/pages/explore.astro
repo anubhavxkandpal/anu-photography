@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FilterableGallery from '../components/FilterableGallery.tsx';
+import landscapeData from '../data/landscapes.json';
+import wildlifeData from '../data/wildlife.json';
+import portraitData from '../data/portraits.json';
+import travelData from '../data/travel.json';
+import artsyData from '../data/artsy.json';
+import eventsData from '../data/events.json';
+import type { GalleryImage } from '../data/types';
+
+// Combine all images from all categories
+const allImages: GalleryImage[] = [
+  ...landscapeData.images,
+  ...wildlifeData.images,
+  ...portraitData.images,
+  ...travelData.images,
+  ...artsyData.images,
+  ...eventsData.images,
+] as GalleryImage[];
+---
+
+<Layout 
+  title="Explore All Photography - Anu Photography"
+  description="Browse and filter through the complete photography collection. Discover landscapes, wildlife, portraits, travel, and artistic photography."
+>
+  <FilterableGallery 
+    images={allImages} 
+    category="Explore" 
+    showAllTags={true}
+    client:load 
+  />
+</Layout>

@@ -5,7 +5,7 @@ import HeroSlideshow from '../components/HeroSlideshow.tsx';
 
 <Layout 
   title="Anu Photography - Professional Photography Portfolio"
-  description="Professional photography services including landscapes, portraits, artistic photography, and event coverage."
+  description="Professional photography portfolio featuring landscapes, wildlife, portraits, travel, and artistic photography from across India."
 >
   <!-- Hero Section -->
   <section class="relative h-screen flex items-center justify-center overflow-hidden">
@@ -20,10 +20,10 @@ import HeroSlideshow from '../components/HeroSlideshow.tsx';
       </p>
       <div class="space-x-4">
         <a 
-          href="/galleries" 
+          href="/explore" 
           class="inline-block bg-earth-400 text-white px-8 py-3 rounded-lg font-semibold hover:bg-earth-500 transition-colors duration-300 shadow-lg hover:shadow-xl"
         >
-          View Galleries
+          Explore Gallery
         </a>
         <a 
           href="/contact" 
@@ -42,14 +42,15 @@ import HeroSlideshow from '../components/HeroSlideshow.tsx';
         Photography Collections
       </h2>
       <p class="text-gray-600 text-lg max-w-2xl mx-auto">
-        Explore different styles and subjects through curated collections of professional photography
+        Explore different styles and subjects through curated collections
       </p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Landscapes -->
       <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
         <a href="/galleries/landscapes" class="block">
-          <div class="aspect-square bg-gray-100 overflow-hidden">
+          <div class="aspect-[4/3] bg-gray-100 overflow-hidden">
             <img 
               src="/images/optimized/landscapes/kalga_DSC_7632.jpg" 
               alt="Nature & Landscapes Photography"
@@ -57,25 +58,47 @@ import HeroSlideshow from '../components/HeroSlideshow.tsx';
               loading="eager"
             />
           </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-80">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent">
             <div class="absolute bottom-0 left-0 right-0 p-6">
               <h3 class="text-white font-heading font-semibold text-xl mb-2">
                 Nature & Landscapes
               </h3>
-              <p class="text-white text-sm opacity-80">
-                Natural beauty and scenic vistas
+              <p class="text-white/80 text-sm">
+                Mountains, valleys, and natural vistas
               </p>
-              <div class="mt-3 text-white text-sm font-medium opacity-90 group-hover:opacity-100 transition-opacity">
-                View Gallery →
-              </div>
             </div>
           </div>
         </a>
       </div>
 
+      <!-- Wildlife -->
+      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+        <a href="/galleries/wildlife" class="block">
+          <div class="aspect-[4/3] bg-gray-100 overflow-hidden">
+            <img 
+              src="/images/optimized/portraits/ANU00159.jpg" 
+              alt="Wildlife Photography"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              loading="eager"
+            />
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent">
+            <div class="absolute bottom-0 left-0 right-0 p-6">
+              <h3 class="text-white font-heading font-semibold text-xl mb-2">
+                Wildlife
+              </h3>
+              <p class="text-white/80 text-sm">
+                Birds, animals, and creatures
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Portraits -->
       <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
         <a href="/galleries/portraits" class="block">
-          <div class="aspect-square bg-gray-100 overflow-hidden">
+          <div class="aspect-[4/3] bg-gray-100 overflow-hidden">
             <img 
               src="/images/optimized/portraits/IMG_9589-Edit.jpg" 
               alt="Portrait Photography"
@@ -83,69 +106,83 @@ import HeroSlideshow from '../components/HeroSlideshow.tsx';
               loading="eager"
             />
           </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-80">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent">
             <div class="absolute bottom-0 left-0 right-0 p-6">
               <h3 class="text-white font-heading font-semibold text-xl mb-2">
-                Portraits
+                People & Portraits
               </h3>
-              <p class="text-white text-sm opacity-80">
-                Professional and personal portraits
+              <p class="text-white/80 text-sm">
+                Human subjects and expressions
               </p>
-              <div class="mt-3 text-white text-sm font-medium opacity-90 group-hover:opacity-100 transition-opacity">
-                View Gallery →
-              </div>
             </div>
           </div>
         </a>
       </div>
 
+      <!-- Travel -->
+      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+        <a href="/galleries/travel" class="block">
+          <div class="aspect-[4/3] bg-gray-100 overflow-hidden">
+            <img 
+              src="/images/optimized/landscapes/A7400596.jpg" 
+              alt="Travel Photography"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              loading="eager"
+            />
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent">
+            <div class="absolute bottom-0 left-0 right-0 p-6">
+              <h3 class="text-white font-heading font-semibold text-xl mb-2">
+                Travel
+              </h3>
+              <p class="text-white/80 text-sm">
+                Places, streets, and journeys
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Artsy -->
       <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
         <a href="/galleries/artsy" class="block">
-          <div class="aspect-square bg-gray-100 overflow-hidden">
+          <div class="aspect-[4/3] bg-gray-100 overflow-hidden">
             <img 
-              src="/images/optimized/artsy/IMG_8772-Edit.jpg" 
+              src="/images/optimized/artsy/DIV2510.jpg" 
               alt="Artistic Photography"
               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               loading="eager"
             />
           </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-80">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent">
             <div class="absolute bottom-0 left-0 right-0 p-6">
               <h3 class="text-white font-heading font-semibold text-xl mb-2">
-                Artsy
+                Creative & Artsy
               </h3>
-              <p class="text-white text-sm opacity-80">
-                Creative and artistic expressions
+              <p class="text-white/80 text-sm">
+                Abstract and experimental work
               </p>
-              <div class="mt-3 text-white text-sm font-medium opacity-90 group-hover:opacity-100 transition-opacity">
-                View Gallery →
-              </div>
             </div>
           </div>
         </a>
       </div>
 
-      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
-        <a href="/galleries/events" class="block">
-          <div class="aspect-square bg-gray-100 overflow-hidden">
-            <img 
-              src="/images/optimized/events/IMG_8625-2-3.jpg" 
-              alt="Event Photography"
-              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-              loading="eager"
-            />
-          </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-80">
-            <div class="absolute bottom-0 left-0 right-0 p-6">
-              <h3 class="text-white font-heading font-semibold text-xl mb-2">
-                Events
-              </h3>
-              <p class="text-white text-sm opacity-80">
-                Special moments and celebrations
-              </p>
-              <div class="mt-3 text-white text-sm font-medium opacity-90 group-hover:opacity-100 transition-opacity">
-                View Gallery →
+      <!-- Explore All -->
+      <div class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 bg-gradient-to-br from-earth-400 to-forest-600">
+        <a href="/explore" class="block">
+          <div class="aspect-[4/3] flex items-center justify-center">
+            <div class="text-center p-6">
+              <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-white/20 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
               </div>
+              <h3 class="text-white font-heading font-semibold text-xl mb-2">
+                Explore All
+              </h3>
+              <p class="text-white/80 text-sm">
+                Browse & filter the complete collection
+              </p>
             </div>
           </div>
         </a>
@@ -187,7 +224,6 @@ import HeroSlideshow from '../components/HeroSlideshow.tsx';
               loading="lazy"
             />
           </div>
-          <!-- Decorative element -->
           <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-gray-900 rounded-full opacity-10"></div>
         </div>
       </div>
@@ -209,38 +245,6 @@ import HeroSlideshow from '../components/HeroSlideshow.tsx';
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         
-        <!-- Events Photography -->
-        <div class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1">
-          <div class="aspect-[4/3] bg-forest-100 overflow-hidden">
-            <img 
-              src="/images/optimized/events/IMG_8625-2-3.jpg" 
-              alt="Event Photography" 
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-              loading="eager"
-            />
-          </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-forest-900/90 via-forest-900/40 to-transparent">
-            <div class="absolute bottom-0 left-0 right-0 p-8">
-              <h3 class="text-white font-heading font-bold text-2xl mb-4">
-                Event Photography
-              </h3>
-              <p class="text-white/90 text-lg mb-4 leading-relaxed">
-                Your special day deserves more than just photos—it deserves storytelling. From intimate ceremonies to grand celebrations, 
-                I capture the raw emotions, genuine laughter, and fleeting moments that make your event unforgettable.
-              </p>
-              <p class="text-earth-200 text-sm mb-6">
-                Weddings • Engagements • Corporate Events • Celebrations
-              </p>
-              <a 
-                href="/contact" 
-                class="inline-block bg-earth-400 hover:bg-earth-500 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
-              >
-                Book Your Event
-              </a>
-            </div>
-          </div>
-        </div>
-
         <!-- Portrait Sessions -->
         <div class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1">
           <div class="aspect-[4/3] bg-sage-100 overflow-hidden">
@@ -258,7 +262,7 @@ import HeroSlideshow from '../components/HeroSlideshow.tsx';
               </h3>
               <p class="text-white/90 text-lg mb-4 leading-relaxed">
                 You are unique, and your portraits should reflect that. Whether for personal branding, family memories, or 
-                professional needs, I create portraits that reveal your authentic self and tell your story.
+                professional needs, I create portraits that reveal your authentic self.
               </p>
               <p class="text-earth-200 text-sm mb-6">
                 Personal Branding • Family Portraits • Professional Headshots
@@ -268,38 +272,6 @@ import HeroSlideshow from '../components/HeroSlideshow.tsx';
                 class="inline-block bg-sage-400 hover:bg-sage-500 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
               >
                 Book Your Session
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Artistic Photography -->
-        <div class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1">
-          <div class="aspect-[4/3] bg-earth-100 overflow-hidden">
-            <img 
-              src="/images/optimized/artsy/IMG_8772-Edit.jpg" 
-              alt="Artistic Photography" 
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-              loading="eager"
-            />
-          </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-forest-900/90 via-forest-900/40 to-transparent">
-            <div class="absolute bottom-0 left-0 right-0 p-8">
-              <h3 class="text-white font-heading font-bold text-2xl mb-4">
-                Artistic Photography
-              </h3>
-              <p class="text-white/90 text-lg mb-4 leading-relaxed">
-                Push boundaries and explore creativity without limits. These sessions are about artistic expression, 
-                unconventional perspectives, and creating something truly one-of-a-kind that speaks to your soul.
-              </p>
-              <p class="text-earth-200 text-sm mb-6">
-                Creative Concepts • Fine Art • Experimental Techniques
-              </p>
-              <a 
-                href="/galleries/artsy" 
-                class="inline-block bg-forest-600 hover:bg-forest-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
-              >
-                View Gallery
               </a>
             </div>
           </div>
@@ -321,8 +293,8 @@ import HeroSlideshow from '../components/HeroSlideshow.tsx';
                 Fine Art Prints
               </h3>
               <p class="text-white/90 text-lg mb-4 leading-relaxed">
-                Transform your space with breathtaking landscape and nature photography. Whether in your home or office, 
-                these prints provide inspiration that goes beyond just words and ideas.
+                Transform your space with breathtaking landscape and nature photography. Museum-quality prints 
+                that bring the beauty of nature into your home or office.
               </p>
               <p class="text-earth-200 text-sm mb-6">
                 Museum Quality • Custom Sizing • Professional Framing Available

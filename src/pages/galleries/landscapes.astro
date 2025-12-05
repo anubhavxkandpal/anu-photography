@@ -1,21 +1,15 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import MasonryGallery from '../../components/MasonryGallery.tsx';
+import FilterableGallery from '../../components/FilterableGallery.tsx';
 import landscapeData from '../../data/landscapes.json';
 import type { GalleryImage } from '../../data/types';
 
-// Sort images: tier 1 first, then 2, then 3; within each tier, newest first
-const sortedImages = [...landscapeData.images].sort((a, b) => {
-  if (a.tier !== b.tier) {
-    return a.tier - b.tier;
-  }
-  return new Date(b.date).getTime() - new Date(a.date).getTime();
-}) as GalleryImage[];
+const images = landscapeData.images as GalleryImage[];
 ---
 
 <Layout 
   title="Nature & Landscapes Photography - Anu Photography"
   description={landscapeData.category.description}
 >
-  <MasonryGallery images={sortedImages} category={landscapeData.category.name} client:load />
+  <FilterableGallery images={images} category={landscapeData.category.name} client:load />
 </Layout>

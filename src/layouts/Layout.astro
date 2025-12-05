@@ -4,7 +4,7 @@ export interface Props {
   description?: string;
 }
 
-const { title, description = "Professional photography portfolio featuring landscapes, portraits, artsy shots, and event photography." } = Astro.props;
+const { title, description = "Professional photography portfolio featuring landscapes, wildlife, portraits, travel, and artistic photography." } = Astro.props;
 ---
 
 <!doctype html>
@@ -48,34 +48,40 @@ const { title, description = "Professional photography portfolio featuring lands
             </div>
             
             <!-- Navigation Links -->
-            <div class="hidden md:block">
-              <div class="ml-10 flex items-baseline space-x-8">
-                <a href="/" class="text-gallery-700 hover:text-gallery-900 px-3 py-2 text-sm font-medium transition-colors">
+            <div class="hidden lg:block">
+              <div class="ml-10 flex items-baseline space-x-6">
+                <a href="/" class="text-gallery-700 hover:text-gallery-900 px-2 py-2 text-sm font-medium transition-colors">
                   Home
                 </a>
-                <a href="/galleries/landscapes" class="text-gallery-700 hover:text-gallery-900 px-3 py-2 text-sm font-medium transition-colors">
-                  Nature & Landscapes
+                <a href="/explore" class="text-earth-600 hover:text-earth-700 px-2 py-2 text-sm font-semibold transition-colors">
+                  Explore
                 </a>
-                <a href="/galleries/portraits" class="text-gallery-700 hover:text-gallery-900 px-3 py-2 text-sm font-medium transition-colors">
+                <a href="/galleries/landscapes" class="text-gallery-700 hover:text-gallery-900 px-2 py-2 text-sm font-medium transition-colors">
+                  Landscapes
+                </a>
+                <a href="/galleries/wildlife" class="text-gallery-700 hover:text-gallery-900 px-2 py-2 text-sm font-medium transition-colors">
+                  Wildlife
+                </a>
+                <a href="/galleries/portraits" class="text-gallery-700 hover:text-gallery-900 px-2 py-2 text-sm font-medium transition-colors">
                   Portraits
                 </a>
-                <a href="/galleries/artsy" class="text-gallery-700 hover:text-gallery-900 px-3 py-2 text-sm font-medium transition-colors">
+                <a href="/galleries/travel" class="text-gallery-700 hover:text-gallery-900 px-2 py-2 text-sm font-medium transition-colors">
+                  Travel
+                </a>
+                <a href="/galleries/artsy" class="text-gallery-700 hover:text-gallery-900 px-2 py-2 text-sm font-medium transition-colors">
                   Artsy
                 </a>
-                <a href="/galleries/events" class="text-gallery-700 hover:text-gallery-900 px-3 py-2 text-sm font-medium transition-colors">
-                  Events
-                </a>
-                <a href="/about" class="text-gallery-700 hover:text-gallery-900 px-3 py-2 text-sm font-medium transition-colors">
+                <a href="/about" class="text-gallery-700 hover:text-gallery-900 px-2 py-2 text-sm font-medium transition-colors">
                   About
                 </a>
-                <a href="/contact" class="text-gallery-700 hover:text-gallery-900 px-3 py-2 text-sm font-medium transition-colors">
+                <a href="/contact" class="text-gallery-700 hover:text-gallery-900 px-2 py-2 text-sm font-medium transition-colors">
                   Contact
                 </a>
               </div>
             </div>
             
             <!-- Mobile menu button -->
-            <div class="md:hidden">
+            <div class="lg:hidden">
               <button type="button" class="mobile-menu-button text-gallery-700 hover:text-gallery-900 focus:outline-none focus:text-gallery-900" aria-label="Toggle menu">
                 <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                   <path class="inline" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -86,13 +92,18 @@ const { title, description = "Professional photography portfolio featuring lands
         </div>
         
         <!-- Mobile Navigation Menu -->
-        <div class="mobile-menu hidden md:hidden">
+        <div class="mobile-menu hidden lg:hidden">
           <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gallery-200">
             <a href="/" class="block text-gallery-700 hover:text-gallery-900 px-3 py-2 text-base font-medium">Home</a>
-            <a href="/galleries/landscapes" class="block text-gallery-700 hover:text-gallery-900 px-3 py-2 text-base font-medium">Nature & Landscapes</a>
+            <a href="/explore" class="block text-earth-600 hover:text-earth-700 px-3 py-2 text-base font-semibold">Explore All</a>
+            <div class="border-t border-gallery-100 my-2"></div>
+            <a href="/galleries/landscapes" class="block text-gallery-700 hover:text-gallery-900 px-3 py-2 text-base font-medium">Landscapes</a>
+            <a href="/galleries/wildlife" class="block text-gallery-700 hover:text-gallery-900 px-3 py-2 text-base font-medium">Wildlife</a>
             <a href="/galleries/portraits" class="block text-gallery-700 hover:text-gallery-900 px-3 py-2 text-base font-medium">Portraits</a>
+            <a href="/galleries/travel" class="block text-gallery-700 hover:text-gallery-900 px-3 py-2 text-base font-medium">Travel</a>
             <a href="/galleries/artsy" class="block text-gallery-700 hover:text-gallery-900 px-3 py-2 text-base font-medium">Artsy</a>
             <a href="/galleries/events" class="block text-gallery-700 hover:text-gallery-900 px-3 py-2 text-base font-medium">Events</a>
+            <div class="border-t border-gallery-100 my-2"></div>
             <a href="/about" class="block text-gallery-700 hover:text-gallery-900 px-3 py-2 text-base font-medium">About</a>
             <a href="/contact" class="block text-gallery-700 hover:text-gallery-900 px-3 py-2 text-base font-medium">Contact</a>
           </div>
