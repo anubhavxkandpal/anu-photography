@@ -2,7 +2,7 @@
   "category": {
     "name": "Nature & Landscapes",
     "slug": "landscapes",
-    "description": "Professional nature and landscape photography capturing the natural beauty of mountains, oceans, deserts, and forests."
+    "description": "Mountains, valleys, forests, and natural vistas from across India."
   },
   "images": [
     {
@@ -12,7 +12,8 @@
       "location": "Himalayan Village",
       "date": "2025-10-31",
       "category": "landscapes",
-      "tier": 1
+      "tier": 1,
+      "tags": ["mountains", "misty", "himalayas", "rural"]
     },
     {
       "src": "/images/ANU00282.jpg",
@@ -21,7 +22,8 @@
       "location": "Mountain Range",
       "date": "2025-10-31",
       "category": "landscapes",
-      "tier": 1
+      "tier": 1,
+      "tags": ["mountains", "misty", "himalayas", "serene"]
     },
     {
       "src": "/images/optimized/landscapes/ANU00283.jpg",
@@ -30,7 +32,8 @@
       "location": "Hill Station",
       "date": "2025-10-31",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["mountains", "rural", "himalayas"]
     },
     {
       "src": "/images/ANU00284.jpg",
@@ -39,7 +42,8 @@
       "location": "Mountain Town",
       "date": "2025-10-31",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["mountains", "misty", "rural", "himalayas"]
     },
     {
       "src": "/images/ANU00285.jpg",
@@ -48,7 +52,8 @@
       "location": "Hill Village",
       "date": "2025-10-31",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["mountains", "misty", "rural"]
     },
     {
       "src": "/images/ANU00286.jpg",
@@ -57,7 +62,8 @@
       "location": "Mountain Valley",
       "date": "2025-10-31",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["mountains", "misty", "forest", "silhouette"]
     },
     {
       "src": "/images/ANU00291.jpg",
@@ -66,7 +72,8 @@
       "location": "Mountain Range",
       "date": "2025-10-31",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["mountains", "himalayas", "dramatic"]
     },
     {
       "src": "/images/ANU00292.jpg",
@@ -75,7 +82,8 @@
       "location": "High Himalayas",
       "date": "2025-10-31",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["mountains", "himalayas", "dramatic"]
     },
     {
       "src": "/images/ANU00293.jpg",
@@ -84,7 +92,8 @@
       "location": "Himalayan Vista",
       "date": "2025-10-31",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["mountains", "himalayas", "forest"]
     },
     {
       "src": "/images/ANU00299 3.jpg",
@@ -93,7 +102,8 @@
       "location": "Mountain Stream",
       "date": "2025-10-31",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["water", "himalayas", "dramatic"]
     },
     {
       "src": "/images/ANU00302.jpg",
@@ -102,7 +112,8 @@
       "location": "Waterfall Base",
       "date": "2025-10-31",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["water", "dramatic", "himalayas"]
     },
     {
       "src": "/images/optimized/landscapes/ANU00303.jpg",
@@ -111,7 +122,8 @@
       "location": "Mountain River",
       "date": "2025-10-31",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["water", "misty", "himalayas"]
     },
     {
       "src": "/images/ANU00311.jpg",
@@ -120,7 +132,8 @@
       "location": "Mountain Valley",
       "date": "2025-10-31",
       "category": "landscapes",
-      "tier": 1
+      "tier": 1,
+      "tags": ["mountains", "himalayas", "serene"]
     },
     {
       "src": "/images/ANU00318.jpg",
@@ -129,7 +142,8 @@
       "location": "Mountain View",
       "date": "2025-10-31",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["mountains", "forest", "himalayas"]
     },
     {
       "src": "/images/ANU00321.jpg",
@@ -138,7 +152,8 @@
       "location": "High Altitude",
       "date": "2025-10-31",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["mountains", "golden-hour", "himalayas"]
     },
     {
       "src": "/images/ANU00326.jpg",
@@ -147,7 +162,8 @@
       "location": "Ridge Line",
       "date": "2025-10-31",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["mountains", "dramatic", "himalayas"]
     },
     {
       "src": "/images/ANU00330.jpg",
@@ -156,7 +172,8 @@
       "location": "Himalayan Range",
       "date": "2025-10-31",
       "category": "landscapes",
-      "tier": 1
+      "tier": 1,
+      "tags": ["mountains", "golden-hour", "himalayas", "dramatic"]
     },
     {
       "src": "/images/ANU00333.jpg",
@@ -165,7 +182,8 @@
       "location": "Mountain Settlement",
       "date": "2025-10-31",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["mountains", "rural", "himalayas"]
     },
     {
       "src": "/images/DIV9.jpg",
@@ -174,7 +192,8 @@
       "location": "Hill Station",
       "date": "2025-10-31",
       "category": "landscapes",
-      "tier": 3
+      "tier": 3,
+      "tags": ["mountains", "rural", "himalayas"]
     },
     {
       "src": "/images/optimized/landscapes/ANU00156.jpg",
@@ -183,16 +202,8 @@
       "location": "Mountain Forest",
       "date": "2025-10-31",
       "category": "landscapes",
-      "tier": 2
-    },
-    {
-      "src": "/images/optimized/landscapes/ANU00281.jpg",
-      "alt": "Foggy mountain town at sunrise",
-      "title": "Mountain Mist",
-      "location": "Himalayan Town",
-      "date": "2025-10-31",
-      "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["forest", "himalayas", "serene"]
     },
     {
       "src": "/images/optimized/landscapes/DIV19.jpg",
@@ -201,7 +212,8 @@
       "location": "Mountain Range",
       "date": "2025-10-31",
       "category": "landscapes",
-      "tier": 1
+      "tier": 1,
+      "tags": ["mountains", "himalayas", "dramatic"]
     },
     {
       "src": "/images/optimized/landscapes/DIV2514.jpg",
@@ -210,7 +222,8 @@
       "location": "Hill Station",
       "date": "2025-10-31",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["mountains", "golden-hour", "himalayas"]
     },
     {
       "src": "/images/optimized/landscapes/ANU00064.jpg",
@@ -219,7 +232,8 @@
       "location": "Scenic Location",
       "date": "2025-10-03",
       "category": "landscapes",
-      "tier": 1
+      "tier": 1,
+      "tags": ["mountains", "serene"]
     },
     {
       "src": "/images/optimized/landscapes/IMG_0118.jpg",
@@ -228,7 +242,8 @@
       "location": "Remote Location",
       "date": "2024-06-25",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["forest", "serene"]
     },
     {
       "src": "/images/optimized/landscapes/IMG_0095-Edit.jpg",
@@ -237,7 +252,8 @@
       "location": "Nature Photography",
       "date": "2024-09-11",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["serene"]
     },
     {
       "src": "/images/optimized/landscapes/IMG_0107-Edit.jpg",
@@ -246,7 +262,8 @@
       "location": "Outdoor Session",
       "date": "2024-09-11",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["serene"]
     },
     {
       "src": "/images/optimized/landscapes/IMG_8654.jpg",
@@ -255,7 +272,8 @@
       "location": "Nature Reserve",
       "date": "2024-09-11",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["forest", "serene"]
     },
     {
       "src": "/images/optimized/landscapes/IMG_8952.jpg",
@@ -264,7 +282,8 @@
       "location": "Highland Area",
       "date": "2024-09-11",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["mountains", "serene"]
     },
     {
       "src": "/images/optimized/landscapes/IMG_9604-Edit.jpg",
@@ -273,7 +292,8 @@
       "location": "Scenic Location",
       "date": "2024-09-11",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["golden-hour", "serene"]
     },
     {
       "src": "/images/optimized/landscapes/IMG_9743-Edit.jpg",
@@ -282,7 +302,8 @@
       "location": "Outdoor Photography",
       "date": "2024-09-11",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["serene"]
     },
     {
       "src": "/images/optimized/landscapes/DSC_7617.jpg",
@@ -291,7 +312,8 @@
       "location": "Highland Photography",
       "date": "2024-09-19",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["mountains", "himalayas"]
     },
     {
       "src": "/images/optimized/landscapes/IMG_0738-Edit.jpg",
@@ -300,7 +322,8 @@
       "location": "Outdoor Photography",
       "date": "2024-09-19",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["serene"]
     },
     {
       "src": "/images/optimized/landscapes/IMG_0746.jpg",
@@ -309,7 +332,8 @@
       "location": "Nature Photography",
       "date": "2024-09-19",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["serene"]
     },
     {
       "src": "/images/optimized/landscapes/IMG_0748.jpg",
@@ -318,7 +342,8 @@
       "location": "Professional Photography",
       "date": "2024-09-19",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["golden-hour", "serene"]
     },
     {
       "src": "/images/optimized/landscapes/IMG_0880.jpg",
@@ -327,7 +352,8 @@
       "location": "Outdoor Adventure",
       "date": "2024-09-19",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["dramatic"]
     },
     {
       "src": "/images/optimized/landscapes/IMG_0999.jpg",
@@ -336,7 +362,8 @@
       "location": "Wilderness Photography",
       "date": "2024-09-19",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["forest", "serene"]
     },
     {
       "src": "/images/optimized/landscapes/kalga_DSC_7632.jpg",
@@ -345,7 +372,8 @@
       "location": "Himachal Pradesh",
       "date": "2024-09-19",
       "category": "landscapes",
-      "tier": 1
+      "tier": 1,
+      "tags": ["mountains", "himalayas", "rural", "serene"]
     },
     {
       "src": "/images/optimized/landscapes/kalga_DSC_7634.jpg",
@@ -354,7 +382,8 @@
       "location": "Himachal Pradesh",
       "date": "2024-09-19",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["mountains", "himalayas", "serene"]
     },
     {
       "src": "/images/optimized/landscapes/IMG_9552.jpg",
@@ -363,7 +392,8 @@
       "location": "Outdoor Photography",
       "date": "2024-08-10",
       "category": "landscapes",
-      "tier": 3
+      "tier": 3,
+      "tags": ["serene"]
     },
     {
       "src": "/images/optimized/landscapes/IMG_0775.jpg",
@@ -372,7 +402,8 @@
       "location": "Landscape Session",
       "date": "2024-08-05",
       "category": "landscapes",
-      "tier": 3
+      "tier": 3,
+      "tags": ["serene"]
     },
     {
       "src": "/images/optimized/landscapes/IMG_0464-Edit.jpg",
@@ -381,7 +412,8 @@
       "location": "Nature Photography",
       "date": "2024-07-28",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["golden-hour"]
     },
     {
       "src": "/images/optimized/landscapes/IMG_8946.jpg",
@@ -390,7 +422,8 @@
       "location": "Outdoor Adventure",
       "date": "2024-07-20",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["dramatic"]
     },
     {
       "src": "/images/optimized/landscapes/IMG_9293.jpg",
@@ -399,7 +432,8 @@
       "location": "Nature Preserve",
       "date": "2024-07-15",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["serene"]
     },
     {
       "src": "/images/optimized/landscapes/IMG_9285.jpg",
@@ -408,7 +442,8 @@
       "location": "Highland Photography",
       "date": "2024-07-10",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["mountains"]
     },
     {
       "src": "/images/optimized/landscapes/IMG_8980.jpg",
@@ -417,7 +452,8 @@
       "location": "Wilderness Area",
       "date": "2024-07-05",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["forest", "serene"]
     },
     {
       "src": "/images/optimized/landscapes/IMG_8995.jpg",
@@ -426,35 +462,9 @@
       "location": "National Park",
       "date": "2024-06-30",
       "category": "landscapes",
-      "tier": 2
-    },
-    {
-      "src": "/images/optimized/landscapes/A7400596.jpg",
-      "alt": "Majestic fort architecture in Rajasthan",
-      "title": "Desert Fort",
-      "location": "Rajasthan, India",
-      "date": "2025-11-25",
-      "category": "landscapes",
-      "tier": 1
-    },
-    {
-      "src": "/images/optimized/landscapes/A7400609.jpg",
-      "alt": "Architectural landscape composition",
-      "title": "Heritage View",
-      "location": "Rajasthan, India",
-      "date": "2025-11-25",
-      "category": "landscapes",
-      "tier": 2
-    },
-    {
-      "src": "/images/optimized/landscapes/A7400610.jpg",
-      "alt": "Landscape with traditional structures",
-      "title": "Desert Oasis",
-      "location": "Rajasthan, India",
-      "date": "2025-11-25",
-      "category": "landscapes",
-      "tier": 2
-    },
+      "tier": 2,
+      "tags": ["serene"]
+    }
     {
       "src": "/images/optimized/landscapes/A7400612.jpg",
       "alt": "Scenic architectural landscape",
@@ -462,26 +472,9 @@
       "location": "Rajasthan, India",
       "date": "2025-11-25",
       "category": "landscapes",
-      "tier": 1
-    },
-    {
-      "src": "/images/optimized/landscapes/A7400613.jpg",
-      "alt": "Grand desert landscape panorama",
-      "title": "Desert Panorama",
-      "location": "Rajasthan, India",
-      "date": "2025-11-25",
-      "category": "landscapes",
-      "tier": 1
-    },
-    {
-      "src": "/images/optimized/landscapes/A7400633.jpg",
-      "alt": "Dramatic landscape composition",
-      "title": "Desert Light",
-      "location": "Rajasthan, India",
-      "date": "2025-11-25",
-      "category": "landscapes",
-      "tier": 1
-    },
+      "tier": 1,
+      "tags": ["architecture", "dramatic"]
+    }
     {
       "src": "/images/optimized/landscapes/A7400634.jpg",
       "alt": "Beautiful architectural landscape view",
@@ -489,7 +482,8 @@
       "location": "Rajasthan, India",
       "date": "2025-11-25",
       "category": "landscapes",
-      "tier": 1
+      "tier": 1,
+      "tags": ["architecture"]
     },
     {
       "src": "/images/optimized/landscapes/ANU00371.jpg",
@@ -498,7 +492,8 @@
       "location": "Uttarakhand, India",
       "date": "2025-11-25",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["mountains", "himalayas"]
     },
     {
       "src": "/images/optimized/landscapes/ANU00479.jpg",
@@ -507,7 +502,8 @@
       "location": "Uttarakhand, India",
       "date": "2025-11-25",
       "category": "landscapes",
-      "tier": 1
+      "tier": 1,
+      "tags": ["mountains", "himalayas", "dramatic"]
     },
     {
       "src": "/images/optimized/landscapes/ANU00480.jpg",
@@ -516,7 +512,8 @@
       "location": "Uttarakhand, India",
       "date": "2025-11-25",
       "category": "landscapes",
-      "tier": 1
+      "tier": 1,
+      "tags": ["mountains", "himalayas", "dramatic"]
     },
     {
       "src": "/images/optimized/landscapes/ANU00511.jpg",
@@ -525,7 +522,8 @@
       "location": "Uttarakhand, India",
       "date": "2025-11-25",
       "category": "landscapes",
-      "tier": 2
+      "tier": 2,
+      "tags": ["mountains", "himalayas"]
     },
     {
       "src": "/images/optimized/landscapes/ANU00513.jpg",
@@ -534,16 +532,8 @@
       "location": "Uttarakhand, India",
       "date": "2025-11-25",
       "category": "landscapes",
-      "tier": 2
-    },
-    {
-      "src": "/images/optimized/landscapes/ANU00555.jpg",
-      "alt": "Dramatic mountain landscape capture",
-      "title": "Mountain Drama",
-      "location": "Rajasthan, India",
-      "date": "2025-11-25",
-      "category": "landscapes",
-      "tier": 1
+      "tier": 2,
+      "tags": ["mountains", "himalayas", "serene"]
     }
   ]
 }

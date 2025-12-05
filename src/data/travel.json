@@ -1,0 +1,149 @@
+{
+  "category": {
+    "name": "Travel",
+    "slug": "travel",
+    "description": "Places, streets, and moments from journeys across India and beyond."
+  },
+  "images": [
+    {
+      "src": "/images/optimized/landscapes/A7400596.jpg",
+      "alt": "Majestic fort architecture in Rajasthan",
+      "title": "Desert Fort",
+      "location": "Rajasthan, India",
+      "date": "2025-11-25",
+      "category": "travel",
+      "tier": 1,
+      "tags": ["architecture", "dramatic"]
+    },
+    {
+      "src": "/images/optimized/landscapes/A7400609.jpg",
+      "alt": "Architectural landscape composition",
+      "title": "Heritage View",
+      "location": "Rajasthan, India",
+      "date": "2025-11-25",
+      "category": "travel",
+      "tier": 2,
+      "tags": ["architecture"]
+    },
+    {
+      "src": "/images/optimized/landscapes/A7400610.jpg",
+      "alt": "Landscape with traditional structures",
+      "title": "Desert Oasis",
+      "location": "Rajasthan, India",
+      "date": "2025-11-25",
+      "category": "travel",
+      "tier": 2,
+      "tags": ["architecture", "serene"]
+    },
+    {
+      "src": "/images/optimized/landscapes/A7400613.jpg",
+      "alt": "Grand desert landscape panorama",
+      "title": "Desert Panorama",
+      "location": "Rajasthan, India",
+      "date": "2025-11-25",
+      "category": "travel",
+      "tier": 1,
+      "tags": ["architecture", "dramatic"]
+    },
+    {
+      "src": "/images/optimized/landscapes/A7400633.jpg",
+      "alt": "Dramatic landscape composition",
+      "title": "Desert Light",
+      "location": "Rajasthan, India",
+      "date": "2025-11-25",
+      "category": "travel",
+      "tier": 1,
+      "tags": ["golden-hour", "dramatic"]
+    },
+    {
+      "src": "/images/optimized/landscapes/ANU00555.jpg",
+      "alt": "Dramatic mountain landscape capture",
+      "title": "Mountain Drama",
+      "location": "Rajasthan, India",
+      "date": "2025-11-25",
+      "category": "travel",
+      "tier": 1,
+      "tags": ["mountains", "dramatic"]
+    },
+    {
+      "src": "/images/ANU002352.jpg",
+      "alt": "Motorcycle with temple backdrop",
+      "title": "Modern Meets Ancient",
+      "location": "Temple Grounds",
+      "date": "2025-10-31",
+      "category": "travel",
+      "tier": 2,
+      "tags": ["temples", "streets", "abstract"]
+    },
+    {
+      "src": "/images/ANU002495.jpg",
+      "alt": "Stone cairns in water",
+      "title": "Balanced Stones",
+      "location": "River Crossing",
+      "date": "2025-10-31",
+      "category": "travel",
+      "tier": 1,
+      "tags": ["water", "abstract", "serene"]
+    },
+    {
+      "src": "/images/optimized/landscapes/ANU00255.jpg",
+      "alt": "Temple carved detail",
+      "title": "Sacred Carvings",
+      "location": "Temple Interior",
+      "date": "2025-10-31",
+      "category": "travel",
+      "tier": 2,
+      "tags": ["temples", "architecture", "abstract"]
+    },
+    {
+      "src": "/images/ANU0026212.jpg",
+      "alt": "Ornate shrine with carved figures",
+      "title": "Sacred Sculptures",
+      "location": "Temple Complex",
+      "date": "2025-10-31",
+      "category": "travel",
+      "tier": 2,
+      "tags": ["temples", "architecture"]
+    },
+    {
+      "src": "/images/optimized/landscapes/ANU0027015.jpg",
+      "alt": "Intricate temple wall carving with deity",
+      "title": "Divine Detail",
+      "location": "Temple Wall",
+      "date": "2025-10-31",
+      "category": "travel",
+      "tier": 1,
+      "tags": ["temples", "architecture", "abstract"]
+    },
+    {
+      "src": "/images/optimized/artsy/A7400597.jpg",
+      "alt": "Creative architectural photography",
+      "title": "Architectural Art",
+      "location": "Rajasthan, India",
+      "date": "2025-11-25",
+      "category": "travel",
+      "tier": 1,
+      "tags": ["architecture", "abstract"]
+    },
+    {
+      "src": "/images/optimized/artsy/A7400600.jpg",
+      "alt": "Artistic landscape composition",
+      "title": "Desert Canvas",
+      "location": "Rajasthan, India",
+      "date": "2025-11-25",
+      "category": "travel",
+      "tier": 1,
+      "tags": ["abstract", "dramatic"]
+    },
+    {
+      "src": "/images/optimized/portraits/ANU00559.jpg",
+      "alt": "Striking portrait composition",
+      "title": "Desert Spirit",
+      "location": "Rajasthan, India",
+      "date": "2025-11-25",
+      "category": "travel",
+      "tier": 1,
+      "tags": ["people", "dramatic"]
+    }
+  ]
+}
