@@ -130,7 +130,6 @@ const FilterableGallery: React.FC<FilterableGalleryProps> = ({
                   {formatTag(tag)}
                 </button>
               ))}
-            </div>
                   </div>
                   
                   {/* Active filter count */}
