@@ -115,12 +115,12 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
       initial="hidden"
       animate="visible"
       exit="exit"
-      className="fixed inset-0 z-50 bg-forest-900 flex items-center justify-center p-4"
+      className="fixed inset-0 z-50 bg-stone-950 flex items-center justify-center p-4"
       onClick={onClose}
     >
       <motion.div
         variants={modalVariants}
-        className="relative w-full h-full max-w-7xl max-h-screen pb-32"
+        className="relative w-full h-full max-w-7xl max-h-screen"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
@@ -195,40 +195,6 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
         </button>
 
 
-
-        {/* Thumbnail Strip */}
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 max-w-full">
-          <div className="flex gap-1.5 sm:gap-2 px-2 sm:px-4 py-2 sm:py-3 bg-gray-800/80 backdrop-blur-sm rounded-lg overflow-x-auto max-w-full sm:max-w-screen-lg">
-            {images.map((image, index) => (
-            <button
-              key={`thumb-${index}`}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  if (swiperRef.current) {
-                    swiperRef.current.slideTo(index);
-                  }
-                }}
-                className={`flex-shrink-0 w-16 h-12 sm:w-20 sm:h-15 md:w-24 md:h-18 rounded overflow-hidden border-2 transition-all duration-200 ${
-                  index === activeIndex 
-                    ? 'border-white shadow-lg' 
-                    : 'border-transparent hover:border-white/50'
-                }`}
-              >
-                <img
-                  src={image.src}
-                  className="w-full h-full object-cover"
-                  style={{ 
-                    minHeight: '72px',
-                    background: '#4B5563'
-                  }}
-                  onLoad={(e) => {
-                    e.currentTarget.style.background = 'transparent';
-                  }}
-                />
-              </button>
-            ))}
-          </div>
-        </div>
       </motion.div>
     </motion.div>
   );

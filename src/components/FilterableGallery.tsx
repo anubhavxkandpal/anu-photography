@@ -160,11 +160,11 @@ const FilterableGallery: React.FC<FilterableGalleryProps> = ({
                   <img
                     src={image.src}
                     alt={image.alt}
-                    className="w-full h-auto object-contain transition-all duration-700 opacity-0 hover:opacity-90"
+                    className="w-full h-auto object-contain transition-opacity duration-700 hover:opacity-90"
+                    style={{ opacity: 0 }}
                     loading="lazy"
                     onLoad={(e) => {
-                      (e.target as HTMLImageElement).classList.remove('opacity-0');
-                      (e.target as HTMLImageElement).classList.add('opacity-100');
+                      (e.target as HTMLImageElement).style.opacity = '1';
                     }}
                   />
                 </motion.div>
