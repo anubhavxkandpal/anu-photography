@@ -25,3 +25,6 @@ pnpm-debug.log*
 
 # Serena MCP memories
 .serena/memories/
+
+# Windows reserved filename
+nul

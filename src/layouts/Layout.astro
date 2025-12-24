@@ -1,4 +1,6 @@
 ---
+import { ViewTransitions } from 'astro:transitions';
+
 export interface Props {
   title: string;
   description?: string;
@@ -31,6 +33,9 @@ const { title, description = "Professional photography portfolio featuring lands
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
+    
+    <!-- View Transitions for smooth page navigation -->
+    <ViewTransitions />
   </head>
   <body class="bg-white text-gallery-900 font-sans antialiased">
     <!-- Smooth Scroll Provider wraps everything -->

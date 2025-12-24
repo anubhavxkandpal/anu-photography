@@ -1,5 +1,5 @@
-import React, { useState, useMemo } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { useState, useMemo, useRef } from 'react';
+import { motion, AnimatePresence, useInView } from 'framer-motion';
 import type { GalleryImage, Tag } from '../data/types';
 import { getAvailableTags } from '../data/types';
 import ImageLightbox from './ImageLightbox';
@@ -9,6 +9,67 @@ interface FilterableGalleryProps {
   category?: string;
   showAllTags?: boolean; // Show all tags or just those present in images
 }
+
+// Helper component for scroll-triggered image reveals
+interface GalleryImageItemProps {
+  image: GalleryImage;
+  onClick: () => void;
+  formatTag: (tag: string) => string;
+}
+
+const GalleryImageItem: React.FC<GalleryImageItemProps> = ({ image, onClick, formatTag }) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  return (
+    <motion.div
+      ref={ref}
+      key={image.src}
+      layout
+      initial={{ opacity: 0, y: 50 }}
+      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+      exit={{ opacity: 0, scale: 0.9 }}
+      transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
+      className="relative group cursor-pointer overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+      onClick={onClick}
+    >
+      <img
+        src={image.src}
+        alt={image.alt}
+        className="w-full h-auto object-cover transition-all duration-700 opacity-0 group-hover:scale-105"
+        loading="lazy"
+        onLoad={(e) => {
+          (e.target as HTMLImageElement).classList.remove('opacity-0');
+        }}
+      />
+
+      {/* Hover overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300">
+        <div className="absolute bottom-0 left-0 right-0 p-4">
+          <h3 className="text-white font-heading font-semibold text-lg">
+            {image.title}
+          </h3>
+          <p className="text-white/80 text-sm">
+            {image.location}
+          </p>
+          {/* Show tags on hover */}
+          {image.tags && image.tags.length > 0 && (
+            <div className="flex flex-wrap gap-1 mt-2">
+              {image.tags.slice(0, 3).map(tag => (
+                <span
+                  key={tag}
+                  className="text-xs px-2 py-0.5 bg-white/20 rounded-full text-white/90"
+                >
+                  {formatTag(tag)}
+                </span>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+    </motion.div>
+  );
+};
 
 const FilterableGallery: React.FC<FilterableGalleryProps> = ({ 
   images, 
@@ -165,48 +226,12 @@ const FilterableGallery: React.FC<FilterableGalleryProps> = ({
                 {column.map((image) => {
                   const globalIndex = filteredImages.findIndex(img => img.src === image.src);
                   return (
-                    <motion.div
+                    <GalleryImageItem
                       key={image.src}
-                      layout
-                      initial={{ opacity: 0, scale: 0.9 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      exit={{ opacity: 0, scale: 0.9 }}
-                      transition={{ duration: 0.4 }}
-                      className="relative group cursor-pointer overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"
+                      image={image}
                       onClick={() => setSelectedImage(globalIndex)}
-                    >
-                      <img
-                        src={image.src}
-                        alt={image.alt}
-                        className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
-                        loading="lazy"
-                      />
-                      
-                      {/* Hover overlay */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300">
-                        <div className="absolute bottom-0 left-0 right-0 p-4">
-                          <h3 className="text-white font-heading font-semibold text-lg">
-                            {image.title}
-                          </h3>
-                          <p className="text-white/80 text-sm">
-                            {image.location}
-                          </p>
-                          {/* Show tags on hover */}
-                          {image.tags && image.tags.length > 0 && (
-                            <div className="flex flex-wrap gap-1 mt-2">
-                              {image.tags.slice(0, 3).map(tag => (
-                                <span 
-                                  key={tag}
-                                  className="text-xs px-2 py-0.5 bg-white/20 rounded-full text-white/90"
-                                >
-                                  {formatTag(tag)}
-                                </span>
-                              ))}
-                            </div>
-                          )}
-                        </div>
-                      </div>
-                    </motion.div>
+                      formatTag={formatTag}
+                    />
                   );
                 })}
               </AnimatePresence>
