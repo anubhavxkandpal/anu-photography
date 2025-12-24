@@ -17,6 +17,7 @@ const FilterableGallery: React.FC<FilterableGalleryProps> = ({
 }) => {
   const [selectedTags, setSelectedTags] = useState<Tag[]>([]);
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
+  const [showFilters, setShowFilters] = useState(false);
   const [columns, setColumns] = useState(3);
 
   // Get available tags from the images
@@ -81,15 +82,28 @@ const FilterableGallery: React.FC<FilterableGalleryProps> = ({
           </motion.div>
         )}
 
-        {/* Filter Pills */}
+        {/* Filter Toggle Button */}
         {availableTags.length > 0 && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="mb-10"
-          >
-            <div className="flex flex-wrap items-center justify-center gap-2">
+          <div className="mb-10">
+            <div className="text-center mb-4">
+              <button
+                onClick={() => setShowFilters(!showFilters)}
+                className="text-sm text-gray-400 hover:text-gray-200 transition-colors duration-200 uppercase tracking-wider"
+              >
+                {showFilters ? '− Hide Filters' : '+ Filter Photos'}
+              </button>
+            </div>
+
+            <AnimatePresence>
+              {showFilters && (
+                <motion.div
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: 'auto', opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="overflow-hidden"
+                >
+                  <div className="flex flex-wrap items-center justify-center gap-2">
               {/* All button */}
               <button
                 onClick={clearFilters}
@@ -117,14 +131,18 @@ const FilterableGallery: React.FC<FilterableGalleryProps> = ({
                 </button>
               ))}
             </div>
-            
-            {/* Active filter count */}
-            {selectedTags.length > 0 && (
-              <p className="text-center text-sm text-gray-400 mt-4">
-                Showing {filteredImages.length} of {images.length} photos
-              </p>
-            )}
-          </motion.div>
+                  </div>
+                  
+                  {/* Active filter count */}
+                  {selectedTags.length > 0 && (
+                    <p className="text-center text-sm text-gray-400 mt-4">
+                      Showing {filteredImages.length} of {images.length} photos
+                    </p>
+                  )}
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
         )}
 
         {/* Single Column Gallery */}
@@ -140,33 +158,29 @@ const FilterableGallery: React.FC<FilterableGalleryProps> = ({
             }
           }}
         >
-          <AnimatePresence mode="popLayout">
-            {filteredImages.map((image, index) => {
-              const ref = useRef(null);
-              const isInView = useInView(ref, { once: true, margin: "-100px" });
-              
-              return (
-                <motion.div
-                  key={image.src}
-                  ref={ref}
-                  layout
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-                  exit={{ opacity: 0, scale: 0.95 }}
-                  transition={{ duration: 0.7, ease: [0.4, 0, 0.2, 1] }}
-                  className="cursor-pointer"
-                  onClick={() => setSelectedImage(index)}
-                >
-                  <img
-                    src={image.src}
-                    alt={image.alt}
-                    className="w-full h-auto object-contain hover:opacity-90 transition-opacity duration-300"
-                    loading="lazy"
-                  />
-                </motion.div>
-              );
-            })}
-          </AnimatePresence>
+          {filteredImages.map((image, index) => {
+            const isFeatured = 'featured' in image && image.featured === true;
+            
+            return (
+              <div
+                key={image.src}
+                className={`cursor-pointer hover:opacity-90 transition-opacity duration-300 ${
+                  isFeatured ? 'my-8 sm:my-12 lg:my-16' : ''
+                }`}
+                onClick={() => setSelectedImage(index)}
+              >
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className={isFeatured 
+                    ? "w-full max-h-[85vh] object-contain" 
+                    : "w-full h-auto"
+                  }
+                  loading="lazy"
+                />
+              </div>
+            );
+          })}
         </motion.div>
 
         {/* Empty state */}

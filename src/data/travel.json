@@ -13,7 +13,8 @@
       "date": "2025-11-25",
       "category": "travel",
       "tier": 1,
-      "tags": ["architecture", "dramatic"]
+      "tags": ["architecture", "dramatic"],
+      "featured": true
     },
     {
       "src": "/images/optimized/landscapes/A7400609.jpg",
