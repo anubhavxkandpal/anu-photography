@@ -161,7 +161,7 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
           {images.map((image, index) => (
             <SwiperSlide key={`lightbox-${image.src}-${index}`} className="flex items-center justify-center">
               <div className="relative w-full h-full flex items-center justify-center">
-                <div className="p-4 bg-white rounded-xl shadow-2xl">
+                <div className="p-2 bg-white rounded-lg shadow-2xl">
                   <img
                     src={image.src}
                     alt=""
@@ -177,7 +177,7 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
 
         {/* Custom Navigation Buttons */}
         <button
-          className="swiper-button-prev-custom absolute left-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-gray-800/80 hover:bg-gray-900 rounded-full flex items-center justify-center text-white transition-colors duration-200 disabled:opacity-30"
+          className="swiper-button-prev-custom absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 bg-gray-800/80 hover:bg-gray-900 rounded-full flex items-center justify-center text-white transition-colors duration-200 disabled:opacity-30"
           aria-label="Previous image"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -186,7 +186,7 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
         </button>
 
         <button
-          className="swiper-button-next-custom absolute right-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-gray-800/80 hover:bg-gray-900 rounded-full flex items-center justify-center text-white transition-colors duration-200 disabled:opacity-30"
+          className="swiper-button-next-custom absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 bg-gray-800/80 hover:bg-gray-900 rounded-full flex items-center justify-center text-white transition-colors duration-200 disabled:opacity-30"
           aria-label="Next image"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -198,7 +198,7 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
 
         {/* Thumbnail Strip */}
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 max-w-full">
-          <div className="flex gap-2 px-4 py-3 bg-gray-800/80 backdrop-blur-sm rounded-lg overflow-x-auto max-w-screen-lg">
+          <div className="flex gap-1.5 sm:gap-2 px-2 sm:px-4 py-2 sm:py-3 bg-gray-800/80 backdrop-blur-sm rounded-lg overflow-x-auto max-w-full sm:max-w-screen-lg">
             {images.map((image, index) => (
             <button
               key={`thumb-${index}`}
@@ -208,7 +208,7 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
                     swiperRef.current.slideTo(index);
                   }
                 }}
-                className={`flex-shrink-0 w-24 h-18 rounded overflow-hidden border-2 transition-all duration-200 ${
+                className={`flex-shrink-0 w-16 h-12 sm:w-20 sm:h-15 md:w-24 md:h-18 rounded overflow-hidden border-2 transition-all duration-200 ${
                   index === activeIndex 
                     ? 'border-white shadow-lg' 
                     : 'border-transparent hover:border-white/50'

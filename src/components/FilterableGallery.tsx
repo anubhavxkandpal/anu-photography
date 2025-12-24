@@ -43,8 +43,7 @@ const FilterableGallery: React.FC<FilterableGalleryProps> = ({
   // Responsive columns
   React.useEffect(() => {
     const updateColumns = () => {
-      if (window.innerWidth < 640) setColumns(1);
-      else if (window.innerWidth < 1024) setColumns(2);
+      if (window.innerWidth < 1024) setColumns(2);
       else setColumns(3);
     };
 
@@ -85,7 +84,7 @@ const FilterableGallery: React.FC<FilterableGalleryProps> = ({
 
   return (
     <>
-      <div className="max-w-7xl mx-auto px-8 lg:px-12 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 py-8 sm:py-12 lg:py-16">
         {/* Category Header */}
         {category && (
           <motion.div
@@ -149,7 +148,7 @@ const FilterableGallery: React.FC<FilterableGalleryProps> = ({
 
         {/* Masonry Grid */}
         <motion.div 
-          className="flex gap-6 lg:gap-8"
+          className="flex gap-3 sm:gap-4 lg:gap-6"
           initial="hidden"
           animate="visible"
           variants={{
@@ -161,7 +160,7 @@ const FilterableGallery: React.FC<FilterableGalleryProps> = ({
           }}
         >
           {imageColumns.map((column, colIndex) => (
-            <div key={colIndex} className="flex-1 flex flex-col gap-6 lg:gap-8">
+            <div key={colIndex} className="flex-1 flex flex-col gap-3 sm:gap-4 lg:gap-6">
               <AnimatePresence mode="popLayout">
                 {column.map((image) => {
                   const globalIndex = filteredImages.findIndex(img => img.src === image.src);
@@ -184,7 +183,7 @@ const FilterableGallery: React.FC<FilterableGalleryProps> = ({
                       />
                       
                       {/* Hover overlay */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300">
                         <div className="absolute bottom-0 left-0 right-0 p-4">
                           <h3 className="text-white font-heading font-semibold text-lg">
                             {image.title}
