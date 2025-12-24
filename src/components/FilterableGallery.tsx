@@ -66,7 +66,7 @@ const FilterableGallery: React.FC<FilterableGalleryProps> = ({
 
   return (
     <>
-      <div className="max-w-5xl mx-auto px-6 sm:px-8 py-16 sm:py-20">
+      <div className="max-w-5xl mx-auto px-3 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
         {/* Category Header */}
         {category && (
           <motion.div

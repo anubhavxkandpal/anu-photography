@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import FilterableGallery from '../components/FilterableGallery.tsx';
+import ParallaxHero from '../components/ParallaxHero.tsx';
 import landscapeData from '../data/landscapes.json';
 import wildlifeData from '../data/wildlife.json';
 import portraitData from '../data/portraits.json';
@@ -18,16 +19,62 @@ const allImages: GalleryImage[] = [
   ...artsyData.images,
   ...eventsData.images,
 ] as GalleryImage[];
+
+// Hero image - from home page slideshow
+const heroImage = "/images/optimized/landscapes/kalga_DSC_7632.jpg";
 ---
 
-<Layout 
+<Layout
   title="Explore All Photography - Anu Photography"
   description="Browse and filter through the complete photography collection. Discover landscapes, wildlife, portraits, travel, and artistic photography."
 >
-  <FilterableGallery 
-    images={allImages} 
-    category="Explore" 
-    showAllTags={true}
-    client:load 
+  <!-- Parallax Hero -->
+  <ParallaxHero
+    client:load
+    imageSrc={heroImage}
+    title="EXPLORE"
+    subtitle="Complete Collection"
   />
+
+  <!-- Content that scrolls over the hero -->
+  <div class="relative bg-stone-950 min-h-screen">
+    <!-- Subtle top edge shadow for depth -->
+    <div class="absolute inset-x-0 -top-8 h-8 bg-gradient-to-b from-transparent to-black/30 pointer-events-none"></div>
+
+    <!-- Rounded top corners for elegance -->
+    <div class="bg-stone-950 rounded-t-3xl pt-16 pb-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Section intro -->
+        <div class="text-center mb-12">
+          <p class="text-gray-300 text-lg max-w-2xl mx-auto leading-relaxed">
+            Browse the complete photography collection — filter by tags to discover landscapes, wildlife,
+            portraits, travel, events, and artistic work all in one place.
+          </p>
+        </div>
+
+        <!-- Gallery -->
+        <FilterableGallery
+          images={allImages}
+          category="Explore"
+          showAllTags={true}
+          client:load
+        />
+
+      </div>
+    </div>
+  </div>
+
 </Layout>
+
+<style>
+  /* Ensure the fixed hero doesn't cause horizontal scroll */
+  :global(body) {
+    overflow-x: hidden;
+  }
+
+  /* Smooth scroll behavior */
+  :global(html) {
+    scroll-behavior: smooth;
+  }
+</style>

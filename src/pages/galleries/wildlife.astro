@@ -1,15 +1,82 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import FilterableGallery from '../../components/FilterableGallery.tsx';
+import ParallaxHero from '../../components/ParallaxHero.tsx';
 import wildlifeData from '../../data/wildlife.json';
 import type { GalleryImage } from '../../data/types';
 
 const images = wildlifeData.images as GalleryImage[];
+
+// Hero image - Watchful Eyes (tier 1, striking dog portrait)
+const heroImage = "/images/optimized/portraits/ANU00159.jpg";
 ---
 
-<Layout 
+<Layout
   title="Wildlife Photography - Anu Photography"
   description={wildlifeData.category.description}
 >
-  <FilterableGallery images={images} category={wildlifeData.category.name} client:load />
+  <!-- Parallax Hero -->
+  <ParallaxHero
+    client:load
+    imageSrc={heroImage}
+    title="WILDLIFE"
+    subtitle="Creatures & Nature"
+  />
+
+  <!-- Content that scrolls over the hero -->
+  <div class="relative bg-stone-950 min-h-screen">
+    <!-- Subtle top edge shadow for depth -->
+    <div class="absolute inset-x-0 -top-8 h-8 bg-gradient-to-b from-transparent to-black/30 pointer-events-none"></div>
+
+    <!-- Rounded top corners for elegance -->
+    <div class="bg-stone-950 rounded-t-3xl pt-16 pb-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Section intro -->
+        <div class="text-center mb-12">
+          <p class="text-gray-300 text-lg max-w-2xl mx-auto leading-relaxed">
+            Life in the wild — from birds in flight to creatures in their natural habitat,
+            capturing the untamed beauty and spirit of the animal kingdom.
+          </p>
+        </div>
+
+        <!-- Gallery -->
+        <FilterableGallery
+          client:load
+          images={images}
+          category={wildlifeData.category.name}
+        />
+
+        <!-- Gallery Navigation -->
+        <nav class="flex justify-between items-center mt-20 pt-8 border-t border-gray-800">
+          <a href="/galleries/landscapes" class="text-gray-400 hover:text-gray-200 transition-colors duration-200 flex items-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+            <span>Landscapes</span>
+          </a>
+          <a href="/galleries/travel" class="text-gray-400 hover:text-gray-200 transition-colors duration-200 flex items-center gap-2">
+            <span>Travel</span>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </nav>
+
+      </div>
+    </div>
+  </div>
+
 </Layout>
+
+<style>
+  /* Ensure the fixed hero doesn't cause horizontal scroll */
+  :global(body) {
+    overflow-x: hidden;
+  }
+
+  /* Smooth scroll behavior */
+  :global(html) {
+    scroll-behavior: smooth;
+  }
+</style>

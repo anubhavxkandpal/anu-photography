@@ -1,15 +1,82 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import FilterableGallery from '../../components/FilterableGallery.tsx';
+import ParallaxHero from '../../components/ParallaxHero.tsx';
 import landscapeData from '../../data/landscapes.json';
 import type { GalleryImage } from '../../data/types';
 
 const images = landscapeData.images as GalleryImage[];
+
+// Hero image - Golden Mountains (tier 1, golden hour, dramatic)
+const heroImage = "/images/ANU00330.jpg";
 ---
 
-<Layout 
+<Layout
   title="Nature & Landscapes Photography - Anu Photography"
   description={landscapeData.category.description}
 >
-  <FilterableGallery images={images} category={landscapeData.category.name} client:load />
+  <!-- Parallax Hero -->
+  <ParallaxHero
+    client:load
+    imageSrc={heroImage}
+    title="LANDSCAPES"
+    subtitle="Nature & Vistas"
+  />
+
+  <!-- Content that scrolls over the hero -->
+  <div class="relative bg-stone-950 min-h-screen">
+    <!-- Subtle top edge shadow for depth -->
+    <div class="absolute inset-x-0 -top-8 h-8 bg-gradient-to-b from-transparent to-black/30 pointer-events-none"></div>
+
+    <!-- Rounded top corners for elegance -->
+    <div class="bg-stone-950 rounded-t-3xl pt-16 pb-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Section intro -->
+        <div class="text-center mb-12">
+          <p class="text-gray-300 text-lg max-w-2xl mx-auto leading-relaxed">
+            The grandeur of nature — from misty Himalayan peaks to serene valleys,
+            each landscape reveals the raw beauty and majesty of our natural world.
+          </p>
+        </div>
+
+        <!-- Gallery -->
+        <FilterableGallery
+          client:load
+          images={images}
+          category={landscapeData.category.name}
+        />
+
+        <!-- Gallery Navigation -->
+        <nav class="flex justify-between items-center mt-20 pt-8 border-t border-gray-800">
+          <a href="/galleries/portraits" class="text-gray-400 hover:text-gray-200 transition-colors duration-200 flex items-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+            <span>Portraits</span>
+          </a>
+          <a href="/galleries/wildlife" class="text-gray-400 hover:text-gray-200 transition-colors duration-200 flex items-center gap-2">
+            <span>Wildlife</span>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </nav>
+
+      </div>
+    </div>
+  </div>
+
 </Layout>
+
+<style>
+  /* Ensure the fixed hero doesn't cause horizontal scroll */
+  :global(body) {
+    overflow-x: hidden;
+  }
+
+  /* Smooth scroll behavior */
+  :global(html) {
+    scroll-behavior: smooth;
+  }
+</style>
