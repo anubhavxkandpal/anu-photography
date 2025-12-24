@@ -115,12 +115,12 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
       initial="hidden"
       animate="visible"
       exit="exit"
-      className="fixed inset-0 z-50 bg-stone-950 flex items-center justify-center p-4"
+      className="fixed inset-0 z-[9999] bg-stone-950 flex items-center justify-center p-0"
       onClick={onClose}
     >
       <motion.div
         variants={modalVariants}
-        className="relative w-full h-full max-w-7xl max-h-screen"
+        className="relative w-full h-full"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
@@ -160,16 +160,13 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
         >
           {images.map((image, index) => (
             <SwiperSlide key={`lightbox-${image.src}-${index}`} className="flex items-center justify-center">
-              <div className="relative w-full h-full flex items-center justify-center">
-                <div className="p-2 bg-black rounded-lg shadow-2xl">
-                  <img
-                    src={image.src}
-                    alt=""
-                    className="max-w-full max-h-full object-contain rounded-lg"
-                    style={{ maxHeight: 'calc(100vh - 232px)' }}
-                    loading={Math.abs(index - currentIndex) <= 1 ? 'eager' : 'lazy'}
-                  />
-                </div>
+              <div className="relative w-full h-full flex items-center justify-center p-4">
+                <img
+                  src={image.src}
+                  alt=""
+                  className="max-w-full max-h-full object-contain"
+                  loading={Math.abs(index - currentIndex) <= 1 ? 'eager' : 'lazy'}
+                />
               </div>
             </SwiperSlide>
           ))}
