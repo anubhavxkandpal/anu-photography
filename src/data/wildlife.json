@@ -62,7 +62,7 @@
       "location": "Garden Setting",
       "date": "2025-10-31",
       "category": "wildlife",
-      "tier": 3,
+      "tier": 1,
       "tags": ["birds", "wildlife", "abstract"]
     },
     {
@@ -104,6 +104,156 @@
       "category": "wildlife",
       "tier": 2,
       "tags": ["birds", "wildlife", "candid"]
+    },
+    {
+      "src": "/images/optimized/wildlife/A7400614.jpg",
+      "alt": "Wildlife in Rajasthan",
+      "title": "Desert Wildlife",
+      "location": "Rajasthan, India",
+      "date": "2025-11-25",
+      "category": "wildlife",
+      "tier": 2,
+      "tags": ["wildlife"]
+    },
+    {
+      "src": "/images/optimized/wildlife/A7400617.jpg",
+      "alt": "Wildlife in Rajasthan",
+      "title": "Desert Creatures",
+      "location": "Rajasthan, India",
+      "date": "2025-11-25",
+      "category": "wildlife",
+      "tier": 2,
+      "tags": ["wildlife"]
+    },
+    {
+      "src": "/images/optimized/wildlife/ANU00417.jpg",
+      "alt": "Wildlife in Uttarakhand",
+      "title": "Himalayan Wildlife",
+      "location": "Uttarakhand, India",
+      "date": "2025-11-25",
+      "category": "wildlife",
+      "tier": 2,
+      "tags": ["wildlife", "himalayas"]
+    },
+    {
+      "src": "/images/optimized/wildlife/ANU00418.jpg",
+      "alt": "Wildlife in Uttarakhand",
+      "title": "Mountain Creature",
+      "location": "Uttarakhand, India",
+      "date": "2025-11-25",
+      "category": "wildlife",
+      "tier": 2,
+      "tags": ["wildlife", "himalayas"]
+    },
+    {
+      "src": "/images/optimized/wildlife/ANU00426.jpg",
+      "alt": "Wildlife in Uttarakhand",
+      "title": "Forest Wildlife",
+      "location": "Uttarakhand, India",
+      "date": "2025-11-25",
+      "category": "wildlife",
+      "tier": 2,
+      "tags": ["wildlife", "forest"]
+    },
+    {
+      "src": "/images/optimized/wildlife/ANU00456.jpg",
+      "alt": "Wildlife in Uttarakhand",
+      "title": "Nature's Creatures",
+      "location": "Uttarakhand, India",
+      "date": "2025-11-25",
+      "category": "wildlife",
+      "tier": 2,
+      "tags": ["wildlife", "himalayas"]
+    },
+    {
+      "src": "/images/optimized/wildlife/IMG_0100-Edit.jpg",
+      "alt": "Wildlife photography",
+      "title": "Wildlife Portrait",
+      "location": "Wildlife",
+      "date": "2025-11-25",
+      "category": "wildlife",
+      "tier": 2,
+      "tags": ["wildlife"]
+    },
+    {
+      "src": "/images/optimized/wildlife/A7400900.jpg",
+      "alt": "Wildlife photograph",
+      "title": "Wildlife A7400900",
+      "location": "Rajasthan, India",
+      "date": "2025-12-28",
+      "category": "wildlife",
+      "tier": 1,
+      "tags": ["wildlife"]
+    },
+    {
+      "src": "/images/optimized/wildlife/A7400901.jpg",
+      "alt": "Wildlife photograph",
+      "title": "Wildlife A7400901",
+      "location": "Rajasthan, India",
+      "date": "2025-12-28",
+      "category": "wildlife",
+      "tier": 1,
+      "tags": ["wildlife"]
+    },
+    {
+      "src": "/images/optimized/wildlife/A7400911.jpg",
+      "alt": "Wildlife photograph",
+      "title": "Wildlife A7400911",
+      "location": "Rajasthan, India",
+      "date": "2025-12-28",
+      "category": "wildlife",
+      "tier": 1,
+      "tags": ["wildlife"]
+    },
+    {
+      "src": "/images/optimized/wildlife/A7400912.jpg",
+      "alt": "Wildlife photograph",
+      "title": "Wildlife A7400912",
+      "location": "Rajasthan, India",
+      "date": "2025-12-28",
+      "category": "wildlife",
+      "tier": 1,
+      "tags": ["wildlife"]
+    },
+    {
+      "src": "/images/optimized/wildlife/A7400920.jpg",
+      "alt": "Wildlife photograph",
+      "title": "Wildlife A7400920",
+      "location": "Rajasthan, India",
+      "date": "2025-12-28",
+      "category": "wildlife",
+      "tier": 1,
+      "tags": ["wildlife"]
+    },
+    {
+      "src": "/images/optimized/wildlife/A7400921.jpg",
+      "alt": "Wildlife photograph",
+      "title": "Wildlife A7400921",
+      "location": "Rajasthan, India",
+      "date": "2025-12-28",
+      "category": "wildlife",
+      "tier": 1,
+      "tags": ["wildlife"]
+    },
+    {
+      "src": "/images/optimized/wildlife/A7400925.jpg",
+      "alt": "Wildlife photograph",
+      "title": "Wildlife A7400925",
+      "location": "Rajasthan, India",
+      "date": "2025-12-28",
+      "category": "wildlife",
+      "tier": 1,
+      "tags": ["wildlife"]
+    },
+    {
+      "src": "/images/optimized/wildlife/A7400959.jpg",
+      "alt": "Wildlife photograph",
+      "title": "Wildlife A7400959",
+      "location": "Rajasthan, India",
+      "date": "2025-12-28",
+      "category": "wildlife",
+      "tier": 1,
+      "tags": ["wildlife"]
     }
   ]
 }

@@ -47,12 +47,12 @@
     },
     {
       "src": "/images/ANU00285.jpg",
-      "alt": "Village buildings in dense fog",
-      "title": "In the Clouds",
-      "location": "Hill Village",
+      "alt": "Close-up of snow-capped peak",
+      "title": "Peak Detail",
+      "location": "High Himalayas",
       "date": "2025-10-31",
       "category": "landscapes",
-      "tier": 2,
+      "tier": 1,
       "tags": ["mountains", "misty", "rural"]
     },
     {
@@ -67,12 +67,12 @@
     },
     {
       "src": "/images/ANU00291.jpg",
-      "alt": "Mountain range panorama",
-      "title": "Himalayan Panorama",
-      "location": "Mountain Range",
+      "alt": "Snow-capped mountain peak",
+      "title": "Snow Peak",
+      "location": "High Himalayas",
       "date": "2025-10-31",
       "category": "landscapes",
-      "tier": 2,
+      "tier": 1,
       "tags": ["mountains", "himalayas", "dramatic"]
     },
     {
@@ -92,7 +92,7 @@
       "location": "Himalayan Vista",
       "date": "2025-10-31",
       "category": "landscapes",
-      "tier": 2,
+      "tier": 1,
       "tags": ["mountains", "himalayas", "forest"]
     },
     {
@@ -102,7 +102,7 @@
       "location": "Mountain Stream",
       "date": "2025-10-31",
       "category": "landscapes",
-      "tier": 2,
+      "tier": 1,
       "tags": ["water", "himalayas", "dramatic"]
     },
     {
@@ -466,16 +466,6 @@
       "tags": ["serene"]
     },
     {
-      "src": "/images/optimized/landscapes/A7400612.jpg",
-      "alt": "Scenic architectural landscape",
-      "title": "Royal Landscape",
-      "location": "Rajasthan, India",
-      "date": "2025-11-25",
-      "category": "landscapes",
-      "tier": 1,
-      "tags": ["architecture", "dramatic"]
-    },
-    {
       "src": "/images/optimized/landscapes/A7400634.jpg",
       "alt": "Beautiful architectural landscape view",
       "title": "Heritage Vista",
@@ -534,6 +524,96 @@
       "category": "landscapes",
       "tier": 2,
       "tags": ["mountains", "himalayas", "serene"]
+    },
+    {
+      "src": "/images/optimized/landscapes/A7400906.jpg",
+      "alt": "Landscape photograph",
+      "title": "Landscape A7400906",
+      "location": "Rajasthan, India",
+      "date": "2025-12-28",
+      "category": "landscapes",
+      "tier": 1,
+      "tags": ["nature"]
+    },
+    {
+      "src": "/images/optimized/landscapes/A7400955.jpg",
+      "alt": "Landscape photograph",
+      "title": "Landscape A7400955",
+      "location": "Rajasthan, India",
+      "date": "2025-12-28",
+      "category": "landscapes",
+      "tier": 1,
+      "tags": ["nature"]
+    },
+    {
+      "src": "/images/optimized/landscapes/A7400982.jpg",
+      "alt": "Landscape photograph",
+      "title": "Landscape A7400982",
+      "location": "Rajasthan, India",
+      "date": "2025-12-28",
+      "category": "landscapes",
+      "tier": 1,
+      "tags": ["nature"]
+    },
+    {
+      "src": "/images/optimized/landscapes/A7400984.jpg",
+      "alt": "Landscape photograph",
+      "title": "Landscape A7400984",
+      "location": "Rajasthan, India",
+      "date": "2025-12-28",
+      "category": "landscapes",
+      "tier": 1,
+      "tags": ["nature"]
+    },
+    {
+      "src": "/images/optimized/landscapes/A7400985.jpg",
+      "alt": "Landscape photograph",
+      "title": "Landscape A7400985",
+      "location": "Rajasthan, India",
+      "date": "2025-12-28",
+      "category": "landscapes",
+      "tier": 1,
+      "tags": ["nature"]
+    },
+    {
+      "src": "/images/optimized/landscapes/A7400987.jpg",
+      "alt": "Landscape photograph",
+      "title": "Landscape A7400987",
+      "location": "Rajasthan, India",
+      "date": "2025-12-28",
+      "category": "landscapes",
+      "tier": 1,
+      "tags": ["nature"]
+    },
+    {
+      "src": "/images/optimized/landscapes/A7400989.jpg",
+      "alt": "Landscape photograph",
+      "title": "Landscape A7400989",
+      "location": "Rajasthan, India",
+      "date": "2025-12-28",
+      "category": "landscapes",
+      "tier": 1,
+      "tags": ["nature"]
+    },
+    {
+      "src": "/images/optimized/landscapes/A7401002.jpg",
+      "alt": "Landscape photograph",
+      "title": "Landscape A7401002",
+      "location": "Rajasthan, India",
+      "date": "2025-12-28",
+      "category": "landscapes",
+      "tier": 1,
+      "tags": ["nature"]
+    },
+    {
+      "src": "/images/optimized/landscapes/ANU00363.jpg",
+      "alt": "Landscape photograph",
+      "title": "Landscape ANU00363",
+      "location": "India",
+      "date": "2025-12-28",
+      "category": "landscapes",
+      "tier": 1,
+      "tags": ["nature"]
     }
   ]
 }

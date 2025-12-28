@@ -206,26 +206,6 @@
       "tags": ["abstract", "dramatic"]
     },
     {
-      "src": "/images/optimized/artsy/A7400614.jpg",
-      "alt": "Artistic architectural detail",
-      "title": "Heritage Art",
-      "location": "Rajasthan, India",
-      "date": "2025-11-25",
-      "category": "artsy",
-      "tier": 1,
-      "tags": ["architecture", "abstract"]
-    },
-    {
-      "src": "/images/optimized/artsy/A7400617.jpg",
-      "alt": "Creative desert landscape",
-      "title": "Desert Minimalism",
-      "location": "Rajasthan, India",
-      "date": "2025-11-25",
-      "category": "artsy",
-      "tier": 1,
-      "tags": ["abstract", "serene"]
-    },
-    {
       "src": "/images/optimized/artsy/A7400622.jpg",
       "alt": "Artistic vertical composition",
       "title": "Vertical Art",
@@ -246,26 +226,6 @@
       "tags": ["mountains", "himalayas", "abstract"]
     },
     {
-      "src": "/images/optimized/artsy/ANU00418.jpg",
-      "alt": "Creative mountain perspective",
-      "title": "Mountain Mood",
-      "location": "Uttarakhand, India",
-      "date": "2025-11-25",
-      "category": "artsy",
-      "tier": 1,
-      "tags": ["mountains", "himalayas", "misty"]
-    },
-    {
-      "src": "/images/optimized/artsy/ANU00426.jpg",
-      "alt": "Artistic nature composition",
-      "title": "Nature's Art",
-      "location": "Uttarakhand, India",
-      "date": "2025-11-25",
-      "category": "artsy",
-      "tier": 1,
-      "tags": ["forest", "abstract", "serene"]
-    },
-    {
       "src": "/images/optimized/artsy/ANU00461.jpg",
       "alt": "Creative composition in nature",
       "title": "Nature's Canvas",
@@ -284,6 +244,156 @@
       "category": "artsy",
       "tier": 1,
       "tags": ["people", "dramatic", "abstract"]
+    },
+    {
+      "src": "/images/optimized/artsy/A7400676.jpg",
+      "alt": "Artistic composition",
+      "title": "Artsy A7400676",
+      "location": "Rajasthan, India",
+      "date": "2025-12-28",
+      "category": "artsy",
+      "tier": 1,
+      "tags": ["abstract"]
+    },
+    {
+      "src": "/images/optimized/artsy/A7400691.jpg",
+      "alt": "Artistic composition",
+      "title": "Artsy A7400691",
+      "location": "Rajasthan, India",
+      "date": "2025-12-28",
+      "category": "artsy",
+      "tier": 1,
+      "tags": ["abstract"]
+    },
+    {
+      "src": "/images/optimized/artsy/A7400720.jpg",
+      "alt": "Artistic composition",
+      "title": "Artsy A7400720",
+      "location": "Rajasthan, India",
+      "date": "2025-12-28",
+      "category": "artsy",
+      "tier": 1,
+      "tags": ["abstract"]
+    },
+    {
+      "src": "/images/optimized/artsy/A7400732.jpg",
+      "alt": "Artistic composition",
+      "title": "Artsy A7400732",
+      "location": "Rajasthan, India",
+      "date": "2025-12-28",
+      "category": "artsy",
+      "tier": 1,
+      "tags": ["abstract"]
+    },
+    {
+      "src": "/images/optimized/artsy/A7400743.jpg",
+      "alt": "Artistic composition",
+      "title": "Artsy A7400743",
+      "location": "Rajasthan, India",
+      "date": "2025-12-28",
+      "category": "artsy",
+      "tier": 1,
+      "tags": ["abstract"]
+    },
+    {
+      "src": "/images/optimized/artsy/A7400745.jpg",
+      "alt": "Artistic composition",
+      "title": "Artsy A7400745",
+      "location": "Rajasthan, India",
+      "date": "2025-12-28",
+      "category": "artsy",
+      "tier": 1,
+      "tags": ["abstract"]
+    },
+    {
+      "src": "/images/optimized/artsy/A7400754.jpg",
+      "alt": "Artistic composition",
+      "title": "Artsy A7400754",
+      "location": "Rajasthan, India",
+      "date": "2025-12-28",
+      "category": "artsy",
+      "tier": 1,
+      "tags": ["abstract"]
+    },
+    {
+      "src": "/images/optimized/artsy/A7400780.jpg",
+      "alt": "Artistic composition",
+      "title": "Artsy A7400780",
+      "location": "Rajasthan, India",
+      "date": "2025-12-28",
+      "category": "artsy",
+      "tier": 1,
+      "tags": ["abstract"]
+    },
+    {
+      "src": "/images/optimized/artsy/A7400785.jpg",
+      "alt": "Artistic composition",
+      "title": "Artsy A7400785",
+      "location": "Rajasthan, India",
+      "date": "2025-12-28",
+      "category": "artsy",
+      "tier": 1,
+      "tags": ["abstract"]
+    },
+    {
+      "src": "/images/optimized/artsy/A7400793.jpg",
+      "alt": "Artistic composition",
+      "title": "Artsy A7400793",
+      "location": "Rajasthan, India",
+      "date": "2025-12-28",
+      "category": "artsy",
+      "tier": 1,
+      "tags": ["abstract"]
+    },
+    {
+      "src": "/images/optimized/artsy/A7400961.jpg",
+      "alt": "Artistic composition",
+      "title": "Artsy A7400961",
+      "location": "Rajasthan, India",
+      "date": "2025-12-28",
+      "category": "artsy",
+      "tier": 1,
+      "tags": ["abstract"]
+    },
+    {
+      "src": "/images/optimized/artsy/A7400968.jpg",
+      "alt": "Artistic composition",
+      "title": "Artsy A7400968",
+      "location": "Rajasthan, India",
+      "date": "2025-12-28",
+      "category": "artsy",
+      "tier": 1,
+      "tags": ["abstract"]
+    },
+    {
+      "src": "/images/optimized/artsy/A7400969.jpg",
+      "alt": "Artistic composition",
+      "title": "Artsy A7400969",
+      "location": "Rajasthan, India",
+      "date": "2025-12-28",
+      "category": "artsy",
+      "tier": 1,
+      "tags": ["abstract"]
+    },
+    {
+      "src": "/images/optimized/artsy/A7401039.jpg",
+      "alt": "Artistic composition",
+      "title": "Artsy A7401039",
+      "location": "Rajasthan, India",
+      "date": "2025-12-28",
+      "category": "artsy",
+      "tier": 1,
+      "tags": ["abstract"]
+    },
+    {
+      "src": "/images/optimized/artsy/ANU00316.jpg",
+      "alt": "Artistic composition",
+      "title": "Artsy ANU00316",
+      "location": "India",
+      "date": "2025-12-28",
+      "category": "artsy",
+      "tier": 1,
+      "tags": ["abstract"]
     }
   ]
 }

@@ -26,5 +26,8 @@ pnpm-debug.log*
 # Serena MCP memories
 .serena/memories/
 
+# MCP configuration (contains API keys)
+.mcp.json
+
 # Windows reserved filename
 nul
