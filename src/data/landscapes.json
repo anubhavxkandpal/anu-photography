@@ -216,6 +216,16 @@
       "tags": ["mountains", "himalayas", "dramatic"]
     },
     {
+      "src": "/images/optimized/landscapes/A7400955.jpg",
+      "alt": "Landscape photograph",
+      "title": "Landscape A7400955",
+      "location": "Rajasthan, India",
+      "date": "2025-12-28",
+      "category": "landscapes",
+      "tier": 1,
+      "tags": ["nature"]
+    },
+    {
       "src": "/images/optimized/landscapes/DIV2514.jpg",
       "alt": "Layered mountains at sunset",
       "title": "Mountain Layers",
@@ -529,16 +539,6 @@
       "src": "/images/optimized/landscapes/A7400906.jpg",
       "alt": "Landscape photograph",
       "title": "Landscape A7400906",
-      "location": "Rajasthan, India",
-      "date": "2025-12-28",
-      "category": "landscapes",
-      "tier": 1,
-      "tags": ["nature"]
-    },
-    {
-      "src": "/images/optimized/landscapes/A7400955.jpg",
-      "alt": "Landscape photograph",
-      "title": "Landscape A7400955",
       "location": "Rajasthan, India",
       "date": "2025-12-28",
       "category": "landscapes",
