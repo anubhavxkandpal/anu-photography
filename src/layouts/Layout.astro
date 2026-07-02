@@ -7,6 +7,26 @@ export interface Props {
 }
 
 const { title, description = "Professional photography portfolio featuring landscapes, wildlife, portraits, travel, and artistic photography." } = Astro.props;
+
+const galleryLinks = [
+  { href: '/galleries/landscapes', label: 'Landscapes' },
+  { href: '/galleries/wildlife', label: 'Wildlife' },
+  { href: '/galleries/portraits', label: 'Portraits' },
+  { href: '/galleries/travel', label: 'Travel' },
+  { href: '/galleries/artsy', label: 'Artsy' },
+  { href: '/galleries/events', label: 'Events' },
+];
+
+const navLinks = [
+  { href: '/', label: 'Home' },
+  { href: '/explore', label: 'Explore' },
+  { href: '/about', label: 'About' },
+  { href: '/contact', label: 'Contact' },
+];
+
+const pathname = Astro.url.pathname;
+const isActive = (href: string) => href === '/' ? pathname === '/' : pathname.startsWith(href);
+const isGalleriesActive = pathname.startsWith('/galleries');
 ---
 
 <!doctype html>
@@ -54,34 +74,58 @@ const { title, description = "Professional photography portfolio featuring lands
 
             <!-- Navigation Links -->
             <div class="hidden lg:block">
-              <div class="ml-10 flex items-baseline space-x-6">
-                <a href="/" class="text-gray-400 hover:text-gray-100 px-2 py-2 text-sm font-medium transition-colors">
-                  Home
-                </a>
-                <a href="/explore" class="text-earth-400 hover:text-earth-300 px-2 py-2 text-sm font-semibold transition-colors">
-                  Explore
-                </a>
-                <a href="/galleries/landscapes" class="text-gray-400 hover:text-gray-100 px-2 py-2 text-sm font-medium transition-colors">
-                  Landscapes
-                </a>
-                <a href="/galleries/wildlife" class="text-gray-400 hover:text-gray-100 px-2 py-2 text-sm font-medium transition-colors">
-                  Wildlife
-                </a>
-                <a href="/galleries/portraits" class="text-gray-400 hover:text-gray-100 px-2 py-2 text-sm font-medium transition-colors">
-                  Portraits
-                </a>
-                <a href="/galleries/travel" class="text-gray-400 hover:text-gray-100 px-2 py-2 text-sm font-medium transition-colors">
-                  Travel
-                </a>
-                <a href="/galleries/artsy" class="text-gray-400 hover:text-gray-100 px-2 py-2 text-sm font-medium transition-colors">
-                  Artsy
-                </a>
-                <a href="/about" class="text-gray-400 hover:text-gray-100 px-2 py-2 text-sm font-medium transition-colors">
-                  About
-                </a>
-                <a href="/contact" class="text-gray-400 hover:text-gray-100 px-2 py-2 text-sm font-medium transition-colors">
-                  Contact
-                </a>
+              <div class="ml-10 flex items-center space-x-6">
+                {navLinks.map((link) => (
+                  link.href === '/explore' ? (
+                    <a
+                      href={link.href}
+                      class="text-earth-400 hover:text-earth-300 px-2 py-2 text-sm font-semibold transition-colors"
+                    >
+                      {link.label}
+                    </a>
+                  ) : (
+                    <a
+                      href={link.href}
+                      class:list={[
+                        'px-2 py-2 text-sm font-medium transition-colors',
+                        isActive(link.href) ? 'text-gray-100' : 'text-gray-400 hover:text-gray-100',
+                      ]}
+                    >
+                      {link.label}
+                    </a>
+                  )
+                ))}
+
+                <!-- Galleries dropdown -->
+                <div class="relative galleries-dropdown">
+                  <button
+                    type="button"
+                    class:list={[
+                      'galleries-trigger inline-flex items-center gap-1 px-2 py-2 text-sm font-medium transition-colors focus:outline-none',
+                      isGalleriesActive ? 'text-gray-100' : 'text-gray-400 hover:text-gray-100',
+                    ]}
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Galleries
+                    <svg class="galleries-chevron h-4 w-4 transition-transform duration-200" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                  </button>
+                  <div class="galleries-panel hidden absolute right-0 mt-2 w-48 bg-stone-950 border border-gray-800 rounded-lg shadow-xl py-1">
+                    {galleryLinks.map((link) => (
+                      <a
+                        href={link.href}
+                        class:list={[
+                          'block px-4 py-2 text-sm hover:bg-stone-900 transition-colors',
+                          isActive(link.href) ? 'text-gray-100' : 'text-gray-400 hover:text-gray-100',
+                        ]}
+                      >
+                        {link.label}
+                      </a>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -99,18 +143,29 @@ const { title, description = "Professional photography portfolio featuring lands
         <!-- Mobile Navigation Menu -->
         <div class="mobile-menu hidden lg:hidden">
           <div class="px-2 pt-2 pb-3 space-y-1 bg-stone-950 border-t border-gray-800">
-            <a href="/" class="block text-gray-400 hover:text-gray-100 px-3 py-2 text-base font-medium">Home</a>
+            <a
+              href="/"
+              class:list={['block px-3 py-2 text-base font-medium', isActive('/') ? 'text-gray-100' : 'text-gray-400 hover:text-gray-100']}
+            >Home</a>
             <a href="/explore" class="block text-earth-400 hover:text-earth-300 px-3 py-2 text-base font-semibold">Explore All</a>
             <div class="border-t border-gray-800 my-2"></div>
-            <a href="/galleries/landscapes" class="block text-gray-400 hover:text-gray-100 px-3 py-2 text-base font-medium">Landscapes</a>
-            <a href="/galleries/wildlife" class="block text-gray-400 hover:text-gray-100 px-3 py-2 text-base font-medium">Wildlife</a>
-            <a href="/galleries/portraits" class="block text-gray-400 hover:text-gray-100 px-3 py-2 text-base font-medium">Portraits</a>
-            <a href="/galleries/travel" class="block text-gray-400 hover:text-gray-100 px-3 py-2 text-base font-medium">Travel</a>
-            <a href="/galleries/artsy" class="block text-gray-400 hover:text-gray-100 px-3 py-2 text-base font-medium">Artsy</a>
-            <a href="/galleries/events" class="block text-gray-400 hover:text-gray-100 px-3 py-2 text-base font-medium">Events</a>
+            {galleryLinks.map((link) => (
+              <a
+                href={link.href}
+                class:list={['block px-3 py-2 text-base font-medium', isActive(link.href) ? 'text-gray-100' : 'text-gray-400 hover:text-gray-100']}
+              >
+                {link.label}
+              </a>
+            ))}
             <div class="border-t border-gray-800 my-2"></div>
-            <a href="/about" class="block text-gray-400 hover:text-gray-100 px-3 py-2 text-base font-medium">About</a>
-            <a href="/contact" class="block text-gray-400 hover:text-gray-100 px-3 py-2 text-base font-medium">Contact</a>
+            <a
+              href="/about"
+              class:list={['block px-3 py-2 text-base font-medium', isActive('/about') ? 'text-gray-100' : 'text-gray-400 hover:text-gray-100']}
+            >About</a>
+            <a
+              href="/contact"
+              class:list={['block px-3 py-2 text-base font-medium', isActive('/contact') ? 'text-gray-100' : 'text-gray-400 hover:text-gray-100']}
+            >Contact</a>
           </div>
         </div>
       </nav>
@@ -161,6 +216,48 @@ const { title, description = "Professional photography portfolio featuring lands
           // Close the menu when a navigation link is chosen
           mobileMenu.querySelectorAll('a').forEach((link) => {
             link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+          });
+        }
+
+        // Galleries dropdown
+        const galleriesTrigger = document.querySelector<HTMLButtonElement>('.galleries-trigger');
+        const galleriesPanel = document.querySelector<HTMLElement>('.galleries-panel');
+        const galleriesChevron = document.querySelector<SVGElement>('.galleries-chevron');
+        const galleriesWrapper = document.querySelector<HTMLElement>('.galleries-dropdown');
+
+        if (galleriesTrigger && galleriesPanel && galleriesWrapper) {
+          const closeDropdown = () => {
+            galleriesPanel.classList.add('hidden');
+            galleriesTrigger.setAttribute('aria-expanded', 'false');
+            galleriesChevron?.classList.remove('rotate-180');
+          };
+
+          const openDropdown = () => {
+            galleriesPanel.classList.remove('hidden');
+            galleriesTrigger.setAttribute('aria-expanded', 'true');
+            galleriesChevron?.classList.add('rotate-180');
+          };
+
+          galleriesTrigger.addEventListener('click', (event) => {
+            event.stopPropagation();
+            const isOpen = galleriesTrigger.getAttribute('aria-expanded') === 'true';
+            if (isOpen) {
+              closeDropdown();
+            } else {
+              openDropdown();
+            }
+          });
+
+          document.addEventListener('click', (event) => {
+            if (!galleriesWrapper.contains(event.target as Node)) {
+              closeDropdown();
+            }
+          });
+
+          document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+              closeDropdown();
+            }
           });
         }
 
