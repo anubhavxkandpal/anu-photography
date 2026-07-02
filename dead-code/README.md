@@ -10,4 +10,4 @@ Files moved here in July 2026 during a codebase cleanup. Nothing in `src/` impor
 - [galleries.astro](galleries.astro) — `/galleries` landing page. Only showed 4 of the 6 categories and nothing in the nav linked to it (the one link from `contact-success.astro` now points to `/explore`).
 - [galleryMigration.ts](galleryMigration.ts) — note-to-self file documenting an already-completed component swap.
 
-Note: `MasonryGallery.tsx` remains in `src/components/` (unused but intentionally kept) — it is the planned basis for a multi-column grid on the Explore page.
+- [MasonryGallery.tsx](MasonryGallery.tsx) — its planned revival happened as a `layout="masonry"` mode inside `FilterableGallery` in July 2026, so it's now fully superseded.

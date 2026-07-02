@@ -9,13 +9,21 @@ interface FilterableGalleryProps {
   category?: string;
   showAllTags?: boolean; // Show all tags or just those present in images
   defaultFiltersOpen?: boolean;
+  layout?: 'single' | 'masonry';
 }
+
+const getColumnCountForWidth = (width: number) => {
+  if (width < 640) return 1;
+  if (width < 1024) return 2;
+  return 3;
+};
 
 const FilterableGallery: React.FC<FilterableGalleryProps> = ({
   images,
   category,
   showAllTags = false,
   defaultFiltersOpen = false,
+  layout = 'single',
 }) => {
   // Get available tags from the images
   const availableTags = useMemo(() => getAvailableTags(images), [images]);
@@ -30,7 +38,18 @@ const FilterableGallery: React.FC<FilterableGalleryProps> = ({
   });
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
   const [showFilters, setShowFilters] = useState(defaultFiltersOpen);
-  const [columns, setColumns] = useState(3);
+  const [columnCount, setColumnCount] = useState(() =>
+    typeof window === 'undefined' ? 3 : getColumnCountForWidth(window.innerWidth)
+  );
+
+  // Track viewport width for the masonry column count (SSR-safe)
+  useEffect(() => {
+    if (layout !== 'masonry' || typeof window === 'undefined') return;
+    const handleResize = () => setColumnCount(getColumnCountForWidth(window.innerWidth));
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [layout]);
 
   // Keep the URL query string in sync with the current filter selection
   useEffect(() => {
@@ -62,7 +81,34 @@ const FilterableGallery: React.FC<FilterableGalleryProps> = ({
     });
   }, [images, selectedTags]);
 
-  // Single column layout - no masonry
+  // Map of image src -> index in filteredImages, so masonry columns can
+  // report the correct lightbox index regardless of column position.
+  const filteredIndexBySrc = useMemo(() => {
+    const map = new Map<string, number>();
+    filteredImages.forEach((image, index) => map.set(image.src, index));
+    return map;
+  }, [filteredImages]);
+
+  // Distribute images into columns by balancing running column heights
+  // (based on aspect ratio) rather than round-robin, so column bottoms
+  // stay roughly even.
+  const masonryColumns = useMemo(() => {
+    if (layout !== 'masonry') return [];
+    const columns: GalleryImage[][] = Array.from({ length: columnCount }, () => []);
+    const columnHeights = new Array(columnCount).fill(0);
+
+    filteredImages.forEach((image) => {
+      const ratio = image.width && image.height ? image.height / image.width : 1;
+      let shortestIndex = 0;
+      for (let i = 1; i < columnHeights.length; i++) {
+        if (columnHeights[i] < columnHeights[shortestIndex]) shortestIndex = i;
+      }
+      columns[shortestIndex].push(image);
+      columnHeights[shortestIndex] += ratio;
+    });
+
+    return columns;
+  }, [layout, filteredImages, columnCount]);
 
   const toggleTag = (tag: Tag) => {
     setSelectedTags(prev => 
@@ -165,45 +211,82 @@ const FilterableGallery: React.FC<FilterableGalleryProps> = ({
           </div>
         )}
 
-        {/* Single Column Gallery */}
-        <motion.div 
-          className="flex flex-col gap-12 sm:gap-16 lg:gap-20"
-          initial="hidden"
-          animate="visible"
-          variants={{
-            hidden: { opacity: 0 },
-            visible: {
-              opacity: 1,
-              transition: { staggerChildren: 0.08, delayChildren: 0.1 }
-            }
-          }}
-        >
-          {filteredImages.map((image, index) => {
-            const isFeatured = 'featured' in image && image.featured === true;
-            
-            return (
-              <div
-                key={image.src}
-                className={`cursor-pointer hover:opacity-90 transition-opacity duration-300 ${
-                  isFeatured ? 'my-8 sm:my-12 lg:my-16' : ''
-                }`}
-                onClick={() => setSelectedImage(index)}
-              >
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  width={image.width}
-                  height={image.height}
-                  className={isFeatured
-                    ? "w-full max-h-[85vh] object-contain"
-                    : "w-full h-auto"
+        {/* Gallery */}
+        {layout === 'masonry' ? (
+          <div className="flex gap-4">
+            {masonryColumns.map((column, columnIndex) => (
+              <motion.div
+                key={columnIndex}
+                className="flex-1 flex flex-col gap-4 min-w-0"
+                initial="hidden"
+                animate="visible"
+                variants={{
+                  hidden: { opacity: 0 },
+                  visible: {
+                    opacity: 1,
+                    transition: { staggerChildren: 0.08, delayChildren: 0.1 }
                   }
-                  loading="lazy"
-                />
-              </div>
-            );
-          })}
-        </motion.div>
+                }}
+              >
+                {column.map((image) => (
+                  <div
+                    key={image.src}
+                    className="cursor-pointer hover:opacity-90 transition-opacity"
+                    onClick={() => setSelectedImage(filteredIndexBySrc.get(image.src) ?? 0)}
+                  >
+                    <img
+                      src={image.src}
+                      alt={image.alt}
+                      width={image.width}
+                      height={image.height}
+                      className="w-full h-auto rounded-sm"
+                      loading="lazy"
+                    />
+                  </div>
+                ))}
+              </motion.div>
+            ))}
+          </div>
+        ) : (
+          <motion.div
+            className="flex flex-col gap-12 sm:gap-16 lg:gap-20"
+            initial="hidden"
+            animate="visible"
+            variants={{
+              hidden: { opacity: 0 },
+              visible: {
+                opacity: 1,
+                transition: { staggerChildren: 0.08, delayChildren: 0.1 }
+              }
+            }}
+          >
+            {filteredImages.map((image, index) => {
+              const isFeatured = 'featured' in image && image.featured === true;
+
+              return (
+                <div
+                  key={image.src}
+                  className={`cursor-pointer hover:opacity-90 transition-opacity duration-300 ${
+                    isFeatured ? 'my-8 sm:my-12 lg:my-16' : ''
+                  }`}
+                  onClick={() => setSelectedImage(index)}
+                >
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    width={image.width}
+                    height={image.height}
+                    className={isFeatured
+                      ? "w-full max-h-[85vh] object-contain"
+                      : "w-full h-auto"
+                    }
+                    loading="lazy"
+                  />
+                </div>
+              );
+            })}
+          </motion.div>
+        )}
 
         {/* Empty state */}
         {filteredImages.length === 0 && (
