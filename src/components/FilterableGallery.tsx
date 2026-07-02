@@ -228,22 +228,25 @@ const FilterableGallery: React.FC<FilterableGalleryProps> = ({
                   }
                 }}
               >
-                {column.map((image) => (
-                  <div
-                    key={image.src}
-                    className="cursor-pointer hover:opacity-90 transition-opacity"
-                    onClick={() => setSelectedImage(filteredIndexBySrc.get(image.src) ?? 0)}
-                  >
-                    <img
-                      src={image.src}
-                      alt={image.alt}
-                      width={image.width}
-                      height={image.height}
-                      className="w-full h-auto rounded-sm"
-                      loading="lazy"
-                    />
-                  </div>
-                ))}
+                {column.map((image) => {
+                  const filteredIndex = filteredIndexBySrc.get(image.src) ?? 0;
+                  return (
+                    <div
+                      key={image.src}
+                      className="cursor-pointer hover:opacity-90 transition-opacity"
+                      onClick={() => setSelectedImage(filteredIndex)}
+                    >
+                      <img
+                        src={image.src}
+                        alt={image.alt}
+                        width={image.width}
+                        height={image.height}
+                        className="w-full h-auto rounded-sm"
+                        loading={filteredIndex < 2 ? 'eager' : 'lazy'}
+                      />
+                    </div>
+                  );
+                })}
               </motion.div>
             ))}
           </div>
@@ -280,7 +283,7 @@ const FilterableGallery: React.FC<FilterableGalleryProps> = ({
                       ? "w-full max-h-[85vh] object-contain"
                       : "w-full h-auto"
                     }
-                    loading="lazy"
+                    loading={index < 2 ? 'eager' : 'lazy'}
                   />
                 </div>
               );

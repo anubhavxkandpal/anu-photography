@@ -58,12 +58,13 @@ const HeroSlideshow: React.FC = () => {
           transition={{ duration: 1.5, ease: 'easeInOut' }}
           className="absolute inset-0"
         >
-          <img 
+          <img
             src={heroImages[currentIndex].src}
             alt={heroImages[currentIndex].alt}
             className="w-full h-full object-cover"
             style={{ objectPosition: heroImages[currentIndex].focusPosition }}
             loading="eager"
+            fetchPriority={currentIndex === 0 ? 'high' : undefined}
           />
         </motion.div>
       </AnimatePresence>

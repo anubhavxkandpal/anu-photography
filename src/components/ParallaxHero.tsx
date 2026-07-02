@@ -30,6 +30,8 @@ export default function ParallaxHero({ imageSrc, title, subtitle }: ParallaxHero
           src={imageSrc}
           alt={title}
           className="w-full h-full object-cover"
+          fetchPriority="high"
+          loading="eager"
         />
         <div className="absolute inset-0 bg-black/30" />
       </div>

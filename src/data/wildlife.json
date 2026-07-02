@@ -6,7 +6,7 @@
   },
   "images": [
     {
-      "src": "/images/ANU00098.jpg",
+      "src": "/images/optimized/wildlife/ANU00098.jpg",
       "alt": "Bird perched on wooden chair",
       "title": "Quiet Visitor",
       "location": "Village Scene",
@@ -22,7 +22,7 @@
       "height": 1920
     },
     {
-      "src": "/images/ANU00119.jpg",
+      "src": "/images/optimized/wildlife/ANU00119.jpg",
       "alt": "Bird on rustic table",
       "title": "Table Companion",
       "location": "Outdoor Setting",
@@ -38,7 +38,7 @@
       "height": 898
     },
     {
-      "src": "/images/ANU002464.jpg",
+      "src": "/images/optimized/wildlife/ANU002464.jpg",
       "alt": "Monkey on ancient stone sculpture",
       "title": "Guardian Monkey",
       "location": "Temple Grounds",
@@ -54,7 +54,7 @@
       "height": 1920
     },
     {
-      "src": "/images/ANU00295.jpg",
+      "src": "/images/optimized/wildlife/ANU00295.jpg",
       "alt": "Chickens on stone wall",
       "title": "Farm Life",
       "location": "Rural Setting",
@@ -70,7 +70,7 @@
       "height": 1920
     },
     {
-      "src": "/images/ANU00297.jpg",
+      "src": "/images/optimized/wildlife/ANU00297.jpg",
       "alt": "Bird perched in tree branches",
       "title": "Among the Branches",
       "location": "Forest Edge",
@@ -86,7 +86,7 @@
       "height": 647
     },
     {
-      "src": "/images/ANU00396 1.jpg",
+      "src": "/images/optimized/wildlife/ANU00396 1.jpg",
       "alt": "Bird in motion with soft focus",
       "title": "Flight Blur",
       "location": "Garden Setting",

@@ -6,7 +6,7 @@
   },
   "images": [
     {
-      "src": "/images/ANU00315.jpg",
+      "src": "/images/optimized/portraits/ANU00315.jpg",
       "alt": "Person sitting with mountain backdrop",
       "title": "Mountain Contemplation",
       "location": "Himalayan Vista",
@@ -23,7 +23,7 @@
       "height": 1887
     },
     {
-      "src": "/images/DIV1.jpg",
+      "src": "/images/optimized/portraits/DIV1.jpg",
       "alt": "Woman in traditional shawl at golden hour",
       "title": "Golden Hour Grace",
       "location": "Mountain Viewpoint",
@@ -40,7 +40,7 @@
       "height": 1920
     },
     {
-      "src": "/images/DIV3.jpg",
+      "src": "/images/optimized/portraits/DIV3.jpg",
       "alt": "Woman smiling at sunset",
       "title": "Warm Smile",
       "location": "Mountain Vista",
@@ -57,7 +57,7 @@
       "height": 1920
     },
     {
-      "src": "/images/DIV4.jpg",
+      "src": "/images/optimized/portraits/DIV4.jpg",
       "alt": "Silhouette at sunset with mountains",
       "title": "Sunset Silhouette",
       "location": "Mountain Town",
@@ -74,7 +74,7 @@
       "height": 1920
     },
     {
-      "src": "/images/DIV8.jpg",
+      "src": "/images/optimized/portraits/DIV8.jpg",
       "alt": "Silhouette at dusk with layered mountains",
       "title": "Dusk Profile",
       "location": "Hill Station",
