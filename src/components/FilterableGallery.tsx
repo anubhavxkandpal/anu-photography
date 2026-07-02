@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useRef } from 'react';
+import React, { useState, useMemo, useRef, useEffect } from 'react';
 import { motion, AnimatePresence, useInView } from 'framer-motion';
 import type { GalleryImage, Tag } from '../data/types';
 import { getAvailableTags } from '../data/types';
@@ -8,20 +8,41 @@ interface FilterableGalleryProps {
   images: GalleryImage[];
   category?: string;
   showAllTags?: boolean; // Show all tags or just those present in images
+  defaultFiltersOpen?: boolean;
 }
 
-const FilterableGallery: React.FC<FilterableGalleryProps> = ({ 
-  images, 
+const FilterableGallery: React.FC<FilterableGalleryProps> = ({
+  images,
   category,
-  showAllTags = false 
+  showAllTags = false,
+  defaultFiltersOpen = false,
 }) => {
-  const [selectedTags, setSelectedTags] = useState<Tag[]>([]);
-  const [selectedImage, setSelectedImage] = useState<number | null>(null);
-  const [showFilters, setShowFilters] = useState(false);
-  const [columns, setColumns] = useState(3);
-
   // Get available tags from the images
   const availableTags = useMemo(() => getAvailableTags(images), [images]);
+
+  const [selectedTags, setSelectedTags] = useState<Tag[]>(() => {
+    if (typeof window === 'undefined') return [];
+    const params = new URLSearchParams(window.location.search);
+    const tagsParam = params.get('tags');
+    if (!tagsParam) return [];
+    const requested = tagsParam.split(',') as Tag[];
+    return requested.filter(tag => availableTags.includes(tag));
+  });
+  const [selectedImage, setSelectedImage] = useState<number | null>(null);
+  const [showFilters, setShowFilters] = useState(defaultFiltersOpen);
+  const [columns, setColumns] = useState(3);
+
+  // Keep the URL query string in sync with the current filter selection
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const url = new URL(window.location.href);
+    if (selectedTags.length > 0) {
+      url.searchParams.set('tags', selectedTags.join(','));
+    } else {
+      url.searchParams.delete('tags');
+    }
+    window.history.replaceState({}, '', url);
+  }, [selectedTags]);
 
   // Filter and sort images
   const filteredImages = useMemo(() => {

@@ -134,6 +134,11 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
           </svg>
         </button>
 
+        {/* Photo Counter */}
+        <div className="absolute top-4 left-4 z-10 text-gray-400 text-sm pointer-events-none">
+          {activeIndex + 1} / {images.length}
+        </div>
+
         {/* Swiper Gallery */}
         <Swiper
           onSwiper={(swiper) => {
@@ -191,7 +196,13 @@ const ImageLightbox: React.FC<ImageLightboxProps> = ({
           </svg>
         </button>
 
-
+        {/* Caption Bar */}
+        <div className="absolute bottom-0 left-0 right-0 z-10 pointer-events-none bg-gradient-to-t from-black/70 to-transparent pt-12 pb-6 sm:pb-8 px-4 text-center">
+          <p className="text-gray-200 text-sm font-medium">{images[activeIndex]?.title}</p>
+          {images[activeIndex]?.location && (
+            <p className="text-gray-500 text-xs mt-1">{images[activeIndex].location}</p>
+          )}
+        </div>
       </motion.div>
     </motion.div>
   );
