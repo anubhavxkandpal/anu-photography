@@ -1,0 +1,153 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import FilterableGallery from '../../components/FilterableGallery.tsx';
+import ParallaxHero from '../../components/ParallaxHero.tsx';
+import landscapesData from '../../data/landscapes.json';
+import wildlifeData from '../../data/wildlife.json';
+import portraitsData from '../../data/portraits.json';
+import travelData from '../../data/travel.json';
+import artsyData from '../../data/artsy.json';
+import eventsData from '../../data/events.json';
+import type { GalleryImage, CategoryData } from '../../data/types';
+
+interface PageConfig {
+  data: CategoryData;
+  heroImage: string;
+  heroTitle: string;
+  heroSubtitle: string;
+  intro: string;
+}
+
+// Order here defines the prev/next navigation chain (circular)
+const GALLERY_PAGES: Record<string, PageConfig> = {
+  landscapes: {
+    data: landscapesData as CategoryData,
+    heroImage: '/images/ANU00330.jpg',
+    heroTitle: 'LANDSCAPES',
+    heroSubtitle: 'Nature & Vistas',
+    intro:
+      'The grandeur of nature — from misty Himalayan peaks to serene valleys, each landscape reveals the raw beauty and majesty of our natural world.',
+  },
+  wildlife: {
+    data: wildlifeData as CategoryData,
+    heroImage: '/images/optimized/portraits/ANU00159.jpg',
+    heroTitle: 'WILDLIFE',
+    heroSubtitle: 'Creatures & Nature',
+    intro:
+      'Life in the wild — from birds in flight to creatures in their natural habitat, capturing the untamed beauty and spirit of the animal kingdom.',
+  },
+  portraits: {
+    data: portraitsData as CategoryData,
+    heroImage: '/images/optimized/portraits/A7400629.jpg',
+    heroTitle: 'PORTRAITS',
+    heroSubtitle: 'People & Expressions',
+    intro:
+      'Capturing the essence of human expression — from intimate portraits to candid moments, each photograph tells a unique story of character and emotion.',
+  },
+  travel: {
+    data: travelData as CategoryData,
+    heroImage: '/images/optimized/landscapes/A7400596.jpg',
+    heroTitle: 'TRAVEL',
+    heroSubtitle: 'Places & Journeys',
+    intro:
+      'Exploring the world through the lens — from ancient temples to desert fortresses, capturing the spirit of places and the stories they hold.',
+  },
+  artsy: {
+    data: artsyData as CategoryData,
+    heroImage: '/images/optimized/artsy/DIV2510.jpg',
+    heroTitle: 'ARTSY',
+    heroSubtitle: 'Creative & Experimental',
+    intro:
+      'Exploring the boundaries of visual storytelling — abstract compositions, experimental techniques, and artistic perspectives that challenge conventional photography.',
+  },
+  events: {
+    data: eventsData as CategoryData,
+    heroImage: '/images/optimized/events/IMG_7256-Final.jpg',
+    heroTitle: 'EVENTS',
+    heroSubtitle: 'Celebrations & Gatherings',
+    intro:
+      'Moments that matter — from intimate gatherings to grand celebrations, preserving the joy, emotion, and connections that make events unforgettable.',
+  },
+};
+
+export function getStaticPaths() {
+  return ['landscapes', 'wildlife', 'portraits', 'travel', 'artsy', 'events'].map(
+    (category) => ({ params: { category } })
+  );
+}
+
+const { category } = Astro.params;
+const config = GALLERY_PAGES[category!];
+const images = config.data.images as GalleryImage[];
+
+const slugs = Object.keys(GALLERY_PAGES);
+const index = slugs.indexOf(category!);
+const prevSlug = slugs[(index - 1 + slugs.length) % slugs.length];
+const nextSlug = slugs[(index + 1) % slugs.length];
+const prevName = GALLERY_PAGES[prevSlug].data.category.name;
+const nextName = GALLERY_PAGES[nextSlug].data.category.name;
+---
+
+<Layout
+  title={`${config.data.category.name} Photography - Anu Photography`}
+  description={config.data.category.description}
+>
+  <!-- Parallax Hero -->
+  <ParallaxHero
+    client:load
+    imageSrc={config.heroImage}
+    title={config.heroTitle}
+    subtitle={config.heroSubtitle}
+  />
+
+  <!-- Content that scrolls over the hero -->
+  <div class="relative bg-stone-950 min-h-screen">
+    <!-- Subtle top edge shadow for depth -->
+    <div class="absolute inset-x-0 -top-8 h-8 bg-gradient-to-b from-transparent to-black/30 pointer-events-none"></div>
+
+    <!-- Rounded top corners for elegance -->
+    <div class="bg-stone-950 rounded-t-3xl pt-16 pb-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Section intro -->
+        <div class="text-center mb-12">
+          <p class="text-gray-300 text-lg max-w-2xl mx-auto leading-relaxed">
+            {config.intro}
+          </p>
+        </div>
+
+        <!-- Gallery -->
+        <FilterableGallery
+          client:load
+          images={images}
+          category={config.data.category.name}
+        />
+
+        <!-- Gallery Navigation -->
+        <nav class="flex justify-between items-center mt-20 pt-8 border-t border-gray-800">
+          <a href={`/galleries/${prevSlug}`} class="text-gray-400 hover:text-gray-200 transition-colors duration-200 flex items-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+            <span>{prevName}</span>
+          </a>
+          <a href={`/galleries/${nextSlug}`} class="text-gray-400 hover:text-gray-200 transition-colors duration-200 flex items-center gap-2">
+            <span>{nextName}</span>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </nav>
+
+      </div>
+    </div>
+  </div>
+
+</Layout>
+
+<style>
+  /* Ensure the fixed hero doesn't cause horizontal scroll */
+  :global(body) {
+    overflow-x: hidden;
+  }
+</style>

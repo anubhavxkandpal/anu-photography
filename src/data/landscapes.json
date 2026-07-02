@@ -13,7 +13,14 @@
       "date": "2025-10-31",
       "category": "landscapes",
       "tier": 1,
-      "tags": ["mountains", "misty", "himalayas", "rural"]
+      "tags": [
+        "mountains",
+        "misty",
+        "himalayas",
+        "rural"
+      ],
+      "width": 1920,
+      "height": 1172
     },
     {
       "src": "/images/ANU00282.jpg",
@@ -23,7 +30,14 @@
       "date": "2025-10-31",
       "category": "landscapes",
       "tier": 1,
-      "tags": ["mountains", "misty", "himalayas", "serene"]
+      "tags": [
+        "mountains",
+        "misty",
+        "himalayas",
+        "serene"
+      ],
+      "width": 1920,
+      "height": 998
     },
     {
       "src": "/images/optimized/landscapes/ANU00283.jpg",
@@ -33,7 +47,13 @@
       "date": "2025-10-31",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["mountains", "rural", "himalayas"]
+      "tags": [
+        "mountains",
+        "rural",
+        "himalayas"
+      ],
+      "width": 1209,
+      "height": 1920
     },
     {
       "src": "/images/ANU00284.jpg",
@@ -43,7 +63,14 @@
       "date": "2025-10-31",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["mountains", "misty", "rural", "himalayas"]
+      "tags": [
+        "mountains",
+        "misty",
+        "rural",
+        "himalayas"
+      ],
+      "width": 1342,
+      "height": 1920
     },
     {
       "src": "/images/ANU00285.jpg",
@@ -53,7 +80,13 @@
       "date": "2025-10-31",
       "category": "landscapes",
       "tier": 1,
-      "tags": ["mountains", "misty", "rural"]
+      "tags": [
+        "mountains",
+        "misty",
+        "rural"
+      ],
+      "width": 1680,
+      "height": 1920
     },
     {
       "src": "/images/ANU00286.jpg",
@@ -63,7 +96,14 @@
       "date": "2025-10-31",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["mountains", "misty", "forest", "silhouette"]
+      "tags": [
+        "mountains",
+        "misty",
+        "forest",
+        "silhouette"
+      ],
+      "width": 1920,
+      "height": 1611
     },
     {
       "src": "/images/ANU00291.jpg",
@@ -73,7 +113,13 @@
       "date": "2025-10-31",
       "category": "landscapes",
       "tier": 1,
-      "tags": ["mountains", "himalayas", "dramatic"]
+      "tags": [
+        "mountains",
+        "himalayas",
+        "dramatic"
+      ],
+      "width": 1920,
+      "height": 670
     },
     {
       "src": "/images/ANU00292.jpg",
@@ -83,7 +129,13 @@
       "date": "2025-10-31",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["mountains", "himalayas", "dramatic"]
+      "tags": [
+        "mountains",
+        "himalayas",
+        "dramatic"
+      ],
+      "width": 1920,
+      "height": 1205
     },
     {
       "src": "/images/ANU00293.jpg",
@@ -93,7 +145,13 @@
       "date": "2025-10-31",
       "category": "landscapes",
       "tier": 1,
-      "tags": ["mountains", "himalayas", "forest"]
+      "tags": [
+        "mountains",
+        "himalayas",
+        "forest"
+      ],
+      "width": 1365,
+      "height": 1920
     },
     {
       "src": "/images/ANU00299 3.jpg",
@@ -103,7 +161,13 @@
       "date": "2025-10-31",
       "category": "landscapes",
       "tier": 1,
-      "tags": ["water", "himalayas", "dramatic"]
+      "tags": [
+        "water",
+        "himalayas",
+        "dramatic"
+      ],
+      "width": 1415,
+      "height": 1920
     },
     {
       "src": "/images/ANU00302.jpg",
@@ -113,7 +177,13 @@
       "date": "2025-10-31",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["water", "dramatic", "himalayas"]
+      "tags": [
+        "water",
+        "dramatic",
+        "himalayas"
+      ],
+      "width": 1413,
+      "height": 1920
     },
     {
       "src": "/images/optimized/landscapes/ANU00303.jpg",
@@ -123,7 +193,13 @@
       "date": "2025-10-31",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["water", "misty", "himalayas"]
+      "tags": [
+        "water",
+        "misty",
+        "himalayas"
+      ],
+      "width": 1632,
+      "height": 1920
     },
     {
       "src": "/images/ANU00311.jpg",
@@ -133,7 +209,13 @@
       "date": "2025-10-31",
       "category": "landscapes",
       "tier": 1,
-      "tags": ["mountains", "himalayas", "serene"]
+      "tags": [
+        "mountains",
+        "himalayas",
+        "serene"
+      ],
+      "width": 1920,
+      "height": 982
     },
     {
       "src": "/images/ANU00318.jpg",
@@ -143,7 +225,13 @@
       "date": "2025-10-31",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["mountains", "forest", "himalayas"]
+      "tags": [
+        "mountains",
+        "forest",
+        "himalayas"
+      ],
+      "width": 1536,
+      "height": 1920
     },
     {
       "src": "/images/ANU00321.jpg",
@@ -153,7 +241,13 @@
       "date": "2025-10-31",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["mountains", "golden-hour", "himalayas"]
+      "tags": [
+        "mountains",
+        "golden-hour",
+        "himalayas"
+      ],
+      "width": 1920,
+      "height": 886
     },
     {
       "src": "/images/ANU00326.jpg",
@@ -163,7 +257,13 @@
       "date": "2025-10-31",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["mountains", "dramatic", "himalayas"]
+      "tags": [
+        "mountains",
+        "dramatic",
+        "himalayas"
+      ],
+      "width": 1920,
+      "height": 1052
     },
     {
       "src": "/images/ANU00330.jpg",
@@ -173,7 +273,14 @@
       "date": "2025-10-31",
       "category": "landscapes",
       "tier": 1,
-      "tags": ["mountains", "golden-hour", "himalayas", "dramatic"]
+      "tags": [
+        "mountains",
+        "golden-hour",
+        "himalayas",
+        "dramatic"
+      ],
+      "width": 1920,
+      "height": 957
     },
     {
       "src": "/images/ANU00333.jpg",
@@ -183,7 +290,13 @@
       "date": "2025-10-31",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["mountains", "rural", "himalayas"]
+      "tags": [
+        "mountains",
+        "rural",
+        "himalayas"
+      ],
+      "width": 1693,
+      "height": 1920
     },
     {
       "src": "/images/DIV9.jpg",
@@ -193,7 +306,13 @@
       "date": "2025-10-31",
       "category": "landscapes",
       "tier": 3,
-      "tags": ["mountains", "rural", "himalayas"]
+      "tags": [
+        "mountains",
+        "rural",
+        "himalayas"
+      ],
+      "width": 1920,
+      "height": 1280
     },
     {
       "src": "/images/optimized/landscapes/ANU00156.jpg",
@@ -203,7 +322,13 @@
       "date": "2025-10-31",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["forest", "himalayas", "serene"]
+      "tags": [
+        "forest",
+        "himalayas",
+        "serene"
+      ],
+      "width": 1920,
+      "height": 1581
     },
     {
       "src": "/images/optimized/landscapes/DIV19.jpg",
@@ -213,7 +338,13 @@
       "date": "2025-10-31",
       "category": "landscapes",
       "tier": 1,
-      "tags": ["mountains", "himalayas", "dramatic"]
+      "tags": [
+        "mountains",
+        "himalayas",
+        "dramatic"
+      ],
+      "width": 1661,
+      "height": 1920
     },
     {
       "src": "/images/optimized/landscapes/A7400955.jpg",
@@ -223,7 +354,11 @@
       "date": "2025-12-28",
       "category": "landscapes",
       "tier": 1,
-      "tags": ["nature"]
+      "tags": [
+        "nature"
+      ],
+      "width": 1651,
+      "height": 2000
     },
     {
       "src": "/images/optimized/landscapes/DIV2514.jpg",
@@ -233,7 +368,13 @@
       "date": "2025-10-31",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["mountains", "golden-hour", "himalayas"]
+      "tags": [
+        "mountains",
+        "golden-hour",
+        "himalayas"
+      ],
+      "width": 1920,
+      "height": 1280
     },
     {
       "src": "/images/optimized/landscapes/ANU00064.jpg",
@@ -243,7 +384,12 @@
       "date": "2025-10-03",
       "category": "landscapes",
       "tier": 1,
-      "tags": ["mountains", "serene"]
+      "tags": [
+        "mountains",
+        "serene"
+      ],
+      "width": 1200,
+      "height": 1800
     },
     {
       "src": "/images/optimized/landscapes/IMG_0118.jpg",
@@ -253,7 +399,12 @@
       "date": "2024-06-25",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["forest", "serene"]
+      "tags": [
+        "forest",
+        "serene"
+      ],
+      "width": 1200,
+      "height": 770
     },
     {
       "src": "/images/optimized/landscapes/IMG_0095-Edit.jpg",
@@ -263,7 +414,11 @@
       "date": "2024-09-11",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["serene"]
+      "tags": [
+        "serene"
+      ],
+      "width": 1200,
+      "height": 1605
     },
     {
       "src": "/images/optimized/landscapes/IMG_0107-Edit.jpg",
@@ -273,7 +428,11 @@
       "date": "2024-09-11",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["serene"]
+      "tags": [
+        "serene"
+      ],
+      "width": 1200,
+      "height": 822
     },
     {
       "src": "/images/optimized/landscapes/IMG_8654.jpg",
@@ -283,7 +442,12 @@
       "date": "2024-09-11",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["forest", "serene"]
+      "tags": [
+        "forest",
+        "serene"
+      ],
+      "width": 1200,
+      "height": 1831
     },
     {
       "src": "/images/optimized/landscapes/IMG_8952.jpg",
@@ -293,7 +457,12 @@
       "date": "2024-09-11",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["mountains", "serene"]
+      "tags": [
+        "mountains",
+        "serene"
+      ],
+      "width": 1200,
+      "height": 1709
     },
     {
       "src": "/images/optimized/landscapes/IMG_9604-Edit.jpg",
@@ -303,7 +472,12 @@
       "date": "2024-09-11",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["golden-hour", "serene"]
+      "tags": [
+        "golden-hour",
+        "serene"
+      ],
+      "width": 1200,
+      "height": 789
     },
     {
       "src": "/images/optimized/landscapes/IMG_9743-Edit.jpg",
@@ -313,7 +487,11 @@
       "date": "2024-09-11",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["serene"]
+      "tags": [
+        "serene"
+      ],
+      "width": 1200,
+      "height": 993
     },
     {
       "src": "/images/optimized/landscapes/DSC_7617.jpg",
@@ -323,7 +501,12 @@
       "date": "2024-09-19",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["mountains", "himalayas"]
+      "tags": [
+        "mountains",
+        "himalayas"
+      ],
+      "width": 1200,
+      "height": 806
     },
     {
       "src": "/images/optimized/landscapes/IMG_0738-Edit.jpg",
@@ -333,7 +516,11 @@
       "date": "2024-09-19",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["serene"]
+      "tags": [
+        "serene"
+      ],
+      "width": 1200,
+      "height": 1505
     },
     {
       "src": "/images/optimized/landscapes/IMG_0746.jpg",
@@ -343,7 +530,11 @@
       "date": "2024-09-19",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["serene"]
+      "tags": [
+        "serene"
+      ],
+      "width": 1200,
+      "height": 1641
     },
     {
       "src": "/images/optimized/landscapes/IMG_0748.jpg",
@@ -353,7 +544,12 @@
       "date": "2024-09-19",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["golden-hour", "serene"]
+      "tags": [
+        "golden-hour",
+        "serene"
+      ],
+      "width": 1200,
+      "height": 1730
     },
     {
       "src": "/images/optimized/landscapes/IMG_0880.jpg",
@@ -363,7 +559,11 @@
       "date": "2024-09-19",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["dramatic"]
+      "tags": [
+        "dramatic"
+      ],
+      "width": 1200,
+      "height": 1800
     },
     {
       "src": "/images/optimized/landscapes/IMG_0999.jpg",
@@ -373,7 +573,12 @@
       "date": "2024-09-19",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["forest", "serene"]
+      "tags": [
+        "forest",
+        "serene"
+      ],
+      "width": 1200,
+      "height": 1389
     },
     {
       "src": "/images/optimized/landscapes/kalga_DSC_7632.jpg",
@@ -383,7 +588,14 @@
       "date": "2024-09-19",
       "category": "landscapes",
       "tier": 1,
-      "tags": ["mountains", "himalayas", "rural", "serene"]
+      "tags": [
+        "mountains",
+        "himalayas",
+        "rural",
+        "serene"
+      ],
+      "width": 1200,
+      "height": 806
     },
     {
       "src": "/images/optimized/landscapes/kalga_DSC_7634.jpg",
@@ -393,7 +605,13 @@
       "date": "2024-09-19",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["mountains", "himalayas", "serene"]
+      "tags": [
+        "mountains",
+        "himalayas",
+        "serene"
+      ],
+      "width": 1200,
+      "height": 1788
     },
     {
       "src": "/images/optimized/landscapes/IMG_9552.jpg",
@@ -403,7 +621,11 @@
       "date": "2024-08-10",
       "category": "landscapes",
       "tier": 3,
-      "tags": ["serene"]
+      "tags": [
+        "serene"
+      ],
+      "width": 1200,
+      "height": 800
     },
     {
       "src": "/images/optimized/landscapes/IMG_0775.jpg",
@@ -413,7 +635,11 @@
       "date": "2024-08-05",
       "category": "landscapes",
       "tier": 3,
-      "tags": ["serene"]
+      "tags": [
+        "serene"
+      ],
+      "width": 1200,
+      "height": 732
     },
     {
       "src": "/images/optimized/landscapes/IMG_0464-Edit.jpg",
@@ -423,7 +649,11 @@
       "date": "2024-07-28",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["golden-hour"]
+      "tags": [
+        "golden-hour"
+      ],
+      "width": 1200,
+      "height": 1654
     },
     {
       "src": "/images/optimized/landscapes/IMG_8946.jpg",
@@ -433,7 +663,11 @@
       "date": "2024-07-20",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["dramatic"]
+      "tags": [
+        "dramatic"
+      ],
+      "width": 1200,
+      "height": 1800
     },
     {
       "src": "/images/optimized/landscapes/IMG_9293.jpg",
@@ -443,7 +677,11 @@
       "date": "2024-07-15",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["serene"]
+      "tags": [
+        "serene"
+      ],
+      "width": 1200,
+      "height": 1800
     },
     {
       "src": "/images/optimized/landscapes/IMG_9285.jpg",
@@ -453,7 +691,11 @@
       "date": "2024-07-10",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["mountains"]
+      "tags": [
+        "mountains"
+      ],
+      "width": 1200,
+      "height": 1800
     },
     {
       "src": "/images/optimized/landscapes/IMG_8980.jpg",
@@ -463,7 +705,12 @@
       "date": "2024-07-05",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["forest", "serene"]
+      "tags": [
+        "forest",
+        "serene"
+      ],
+      "width": 1200,
+      "height": 1800
     },
     {
       "src": "/images/optimized/landscapes/IMG_8995.jpg",
@@ -473,7 +720,11 @@
       "date": "2024-06-30",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["serene"]
+      "tags": [
+        "serene"
+      ],
+      "width": 1200,
+      "height": 1800
     },
     {
       "src": "/images/optimized/landscapes/A7400634.jpg",
@@ -483,7 +734,11 @@
       "date": "2025-11-25",
       "category": "landscapes",
       "tier": 1,
-      "tags": ["architecture"]
+      "tags": [
+        "architecture"
+      ],
+      "width": 1668,
+      "height": 2000
     },
     {
       "src": "/images/optimized/landscapes/ANU00371.jpg",
@@ -493,7 +748,12 @@
       "date": "2025-11-25",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["mountains", "himalayas"]
+      "tags": [
+        "mountains",
+        "himalayas"
+      ],
+      "width": 1498,
+      "height": 2000
     },
     {
       "src": "/images/optimized/landscapes/ANU00479.jpg",
@@ -503,7 +763,13 @@
       "date": "2025-11-25",
       "category": "landscapes",
       "tier": 1,
-      "tags": ["mountains", "himalayas", "dramatic"]
+      "tags": [
+        "mountains",
+        "himalayas",
+        "dramatic"
+      ],
+      "width": 2000,
+      "height": 1411
     },
     {
       "src": "/images/optimized/landscapes/ANU00480.jpg",
@@ -513,7 +779,13 @@
       "date": "2025-11-25",
       "category": "landscapes",
       "tier": 1,
-      "tags": ["mountains", "himalayas", "dramatic"]
+      "tags": [
+        "mountains",
+        "himalayas",
+        "dramatic"
+      ],
+      "width": 2000,
+      "height": 892
     },
     {
       "src": "/images/optimized/landscapes/ANU00511.jpg",
@@ -523,7 +795,12 @@
       "date": "2025-11-25",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["mountains", "himalayas"]
+      "tags": [
+        "mountains",
+        "himalayas"
+      ],
+      "width": 1486,
+      "height": 2000
     },
     {
       "src": "/images/optimized/landscapes/ANU00513.jpg",
@@ -533,7 +810,13 @@
       "date": "2025-11-25",
       "category": "landscapes",
       "tier": 2,
-      "tags": ["mountains", "himalayas", "serene"]
+      "tags": [
+        "mountains",
+        "himalayas",
+        "serene"
+      ],
+      "width": 1360,
+      "height": 2000
     },
     {
       "src": "/images/optimized/landscapes/A7400906.jpg",
@@ -543,7 +826,11 @@
       "date": "2025-12-28",
       "category": "landscapes",
       "tier": 1,
-      "tags": ["nature"]
+      "tags": [
+        "nature"
+      ],
+      "width": 2000,
+      "height": 1312
     },
     {
       "src": "/images/optimized/landscapes/A7400982.jpg",
@@ -553,7 +840,11 @@
       "date": "2025-12-28",
       "category": "landscapes",
       "tier": 1,
-      "tags": ["nature"]
+      "tags": [
+        "nature"
+      ],
+      "width": 2000,
+      "height": 1789
     },
     {
       "src": "/images/optimized/landscapes/A7400984.jpg",
@@ -563,7 +854,11 @@
       "date": "2025-12-28",
       "category": "landscapes",
       "tier": 1,
-      "tags": ["nature"]
+      "tags": [
+        "nature"
+      ],
+      "width": 1600,
+      "height": 2000
     },
     {
       "src": "/images/optimized/landscapes/A7400985.jpg",
@@ -573,7 +868,11 @@
       "date": "2025-12-28",
       "category": "landscapes",
       "tier": 1,
-      "tags": ["nature"]
+      "tags": [
+        "nature"
+      ],
+      "width": 1333,
+      "height": 2000
     },
     {
       "src": "/images/optimized/landscapes/A7400987.jpg",
@@ -583,7 +882,11 @@
       "date": "2025-12-28",
       "category": "landscapes",
       "tier": 1,
-      "tags": ["nature"]
+      "tags": [
+        "nature"
+      ],
+      "width": 1600,
+      "height": 2000
     },
     {
       "src": "/images/optimized/landscapes/A7400989.jpg",
@@ -593,7 +896,11 @@
       "date": "2025-12-28",
       "category": "landscapes",
       "tier": 1,
-      "tags": ["nature"]
+      "tags": [
+        "nature"
+      ],
+      "width": 2000,
+      "height": 599
     },
     {
       "src": "/images/optimized/landscapes/A7401002.jpg",
@@ -603,7 +910,11 @@
       "date": "2025-12-28",
       "category": "landscapes",
       "tier": 1,
-      "tags": ["nature"]
+      "tags": [
+        "nature"
+      ],
+      "width": 2000,
+      "height": 1600
     },
     {
       "src": "/images/optimized/landscapes/ANU00363.jpg",
@@ -613,7 +924,11 @@
       "date": "2025-12-28",
       "category": "landscapes",
       "tier": 1,
-      "tags": ["nature"]
+      "tags": [
+        "nature"
+      ],
+      "width": 1333,
+      "height": 2000
     }
   ]
 }

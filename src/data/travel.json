@@ -13,8 +13,13 @@
       "date": "2025-11-25",
       "category": "travel",
       "tier": 1,
-      "tags": ["architecture", "dramatic"],
-      "featured": true
+      "tags": [
+        "architecture",
+        "dramatic"
+      ],
+      "featured": true,
+      "width": 1262,
+      "height": 2000
     },
     {
       "src": "/images/optimized/travel/A7400612.jpg",
@@ -24,7 +29,12 @@
       "date": "2025-11-25",
       "category": "travel",
       "tier": 1,
-      "tags": ["architecture", "dramatic"]
+      "tags": [
+        "architecture",
+        "dramatic"
+      ],
+      "width": 1369,
+      "height": 2000
     },
     {
       "src": "/images/optimized/landscapes/A7400609.jpg",
@@ -34,7 +44,11 @@
       "date": "2025-11-25",
       "category": "travel",
       "tier": 2,
-      "tags": ["architecture"]
+      "tags": [
+        "architecture"
+      ],
+      "width": 1321,
+      "height": 2000
     },
     {
       "src": "/images/optimized/landscapes/A7400610.jpg",
@@ -44,7 +58,12 @@
       "date": "2025-11-25",
       "category": "travel",
       "tier": 2,
-      "tags": ["architecture", "serene"]
+      "tags": [
+        "architecture",
+        "serene"
+      ],
+      "width": 2000,
+      "height": 1600
     },
     {
       "src": "/images/optimized/landscapes/A7400613.jpg",
@@ -54,7 +73,12 @@
       "date": "2025-11-25",
       "category": "travel",
       "tier": 1,
-      "tags": ["architecture", "dramatic"]
+      "tags": [
+        "architecture",
+        "dramatic"
+      ],
+      "width": 2000,
+      "height": 1570
     },
     {
       "src": "/images/optimized/landscapes/A7400633.jpg",
@@ -64,7 +88,12 @@
       "date": "2025-11-25",
       "category": "travel",
       "tier": 1,
-      "tags": ["golden-hour", "dramatic"]
+      "tags": [
+        "golden-hour",
+        "dramatic"
+      ],
+      "width": 1830,
+      "height": 2000
     },
     {
       "src": "/images/optimized/landscapes/ANU00555.jpg",
@@ -74,7 +103,12 @@
       "date": "2025-11-25",
       "category": "travel",
       "tier": 1,
-      "tags": ["mountains", "dramatic"]
+      "tags": [
+        "mountains",
+        "dramatic"
+      ],
+      "width": 1279,
+      "height": 2000
     },
     {
       "src": "/images/ANU002352.jpg",
@@ -84,7 +118,13 @@
       "date": "2025-10-31",
       "category": "travel",
       "tier": 2,
-      "tags": ["temples", "streets", "abstract"]
+      "tags": [
+        "temples",
+        "streets",
+        "abstract"
+      ],
+      "width": 1920,
+      "height": 1327
     },
     {
       "src": "/images/ANU002495.jpg",
@@ -94,7 +134,13 @@
       "date": "2025-10-31",
       "category": "travel",
       "tier": 1,
-      "tags": ["water", "abstract", "serene"]
+      "tags": [
+        "water",
+        "abstract",
+        "serene"
+      ],
+      "width": 1536,
+      "height": 1920
     },
     {
       "src": "/images/optimized/landscapes/ANU00255.jpg",
@@ -104,7 +150,13 @@
       "date": "2025-10-31",
       "category": "travel",
       "tier": 2,
-      "tags": ["temples", "architecture", "abstract"]
+      "tags": [
+        "temples",
+        "architecture",
+        "abstract"
+      ],
+      "width": 1341,
+      "height": 1920
     },
     {
       "src": "/images/ANU0026212.jpg",
@@ -114,7 +166,12 @@
       "date": "2025-10-31",
       "category": "travel",
       "tier": 2,
-      "tags": ["temples", "architecture"]
+      "tags": [
+        "temples",
+        "architecture"
+      ],
+      "width": 1254,
+      "height": 1920
     },
     {
       "src": "/images/optimized/landscapes/ANU0027015.jpg",
@@ -124,7 +181,13 @@
       "date": "2025-10-31",
       "category": "travel",
       "tier": 1,
-      "tags": ["temples", "architecture", "abstract"]
+      "tags": [
+        "temples",
+        "architecture",
+        "abstract"
+      ],
+      "width": 1629,
+      "height": 1920
     },
     {
       "src": "/images/optimized/artsy/A7400597.jpg",
@@ -134,7 +197,12 @@
       "date": "2025-11-25",
       "category": "travel",
       "tier": 1,
-      "tags": ["architecture", "abstract"]
+      "tags": [
+        "architecture",
+        "abstract"
+      ],
+      "width": 1317,
+      "height": 2000
     },
     {
       "src": "/images/optimized/artsy/A7400600.jpg",
@@ -144,7 +212,12 @@
       "date": "2025-11-25",
       "category": "travel",
       "tier": 1,
-      "tags": ["abstract", "dramatic"]
+      "tags": [
+        "abstract",
+        "dramatic"
+      ],
+      "width": 2000,
+      "height": 1163
     },
     {
       "src": "/images/optimized/portraits/ANU00559.jpg",
@@ -154,7 +227,12 @@
       "date": "2025-11-25",
       "category": "travel",
       "tier": 1,
-      "tags": ["people", "dramatic"]
+      "tags": [
+        "people",
+        "dramatic"
+      ],
+      "width": 1273,
+      "height": 2000
     },
     {
       "src": "/images/optimized/travel/A7400670.jpg",
@@ -164,7 +242,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 2000,
+      "height": 1333
     },
     {
       "src": "/images/optimized/travel/A7400718.jpg",
@@ -174,7 +256,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 2000,
+      "height": 1383
     },
     {
       "src": "/images/optimized/travel/A7400719.jpg",
@@ -184,7 +270,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 1578,
+      "height": 2000
     },
     {
       "src": "/images/optimized/travel/A7400732.jpg",
@@ -194,7 +284,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 2000,
+      "height": 1333
     },
     {
       "src": "/images/optimized/travel/A7400737.jpg",
@@ -204,7 +298,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 2000,
+      "height": 1333
     },
     {
       "src": "/images/optimized/travel/A7400738.jpg",
@@ -214,7 +312,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 2000,
+      "height": 1333
     },
     {
       "src": "/images/optimized/travel/A7400739.jpg",
@@ -224,7 +326,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 1466,
+      "height": 2000
     },
     {
       "src": "/images/optimized/travel/A7400740.jpg",
@@ -234,7 +340,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 2000,
+      "height": 1814
     },
     {
       "src": "/images/optimized/travel/A7400742.jpg",
@@ -244,7 +354,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 1600,
+      "height": 2000
     },
     {
       "src": "/images/optimized/travel/A7400759.jpg",
@@ -254,7 +368,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 1709,
+      "height": 2000
     },
     {
       "src": "/images/optimized/travel/A7400760.jpg",
@@ -264,7 +382,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 1406,
+      "height": 2000
     },
     {
       "src": "/images/optimized/travel/A7400766.jpg",
@@ -274,7 +396,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 1600,
+      "height": 2000
     },
     {
       "src": "/images/optimized/travel/A7400768.jpg",
@@ -284,7 +410,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 1565,
+      "height": 2000
     },
     {
       "src": "/images/optimized/travel/A7400770.jpg",
@@ -294,7 +424,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 1347,
+      "height": 2000
     },
     {
       "src": "/images/optimized/travel/A7400773.jpg",
@@ -304,7 +438,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 2000,
+      "height": 1310
     },
     {
       "src": "/images/optimized/travel/A7400778.jpg",
@@ -314,7 +452,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 1920,
+      "height": 2000
     },
     {
       "src": "/images/optimized/travel/A7400779.jpg",
@@ -324,7 +466,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 1521,
+      "height": 2000
     },
     {
       "src": "/images/optimized/travel/A7400821.jpg",
@@ -334,7 +480,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 1526,
+      "height": 2000
     },
     {
       "src": "/images/optimized/travel/A7400828.jpg",
@@ -344,7 +494,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 2000,
+      "height": 1425
     },
     {
       "src": "/images/optimized/travel/A7400863.jpg",
@@ -354,7 +508,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 1452,
+      "height": 2000
     },
     {
       "src": "/images/optimized/travel/A7400874.jpg",
@@ -364,7 +522,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 2000,
+      "height": 1481
     },
     {
       "src": "/images/optimized/travel/A7400875.jpg",
@@ -374,7 +536,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 1508,
+      "height": 2000
     },
     {
       "src": "/images/optimized/travel/A7400876.jpg",
@@ -384,7 +550,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 1542,
+      "height": 2000
     },
     {
       "src": "/images/optimized/travel/A7400883.jpg",
@@ -394,7 +564,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 1333,
+      "height": 2000
     },
     {
       "src": "/images/optimized/travel/A7400886.jpg",
@@ -404,7 +578,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 2000,
+      "height": 1333
     },
     {
       "src": "/images/optimized/travel/A7400887.jpg",
@@ -414,7 +592,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 2000,
+      "height": 1369
     },
     {
       "src": "/images/optimized/travel/A7400891.jpg",
@@ -424,7 +606,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 1312,
+      "height": 2000
     },
     {
       "src": "/images/optimized/travel/A7400894.jpg",
@@ -434,7 +620,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 1334,
+      "height": 2000
     },
     {
       "src": "/images/optimized/travel/A7400903.jpg",
@@ -444,7 +634,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 1600,
+      "height": 2000
     },
     {
       "src": "/images/optimized/travel/A7400906.jpg",
@@ -454,7 +648,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 2000,
+      "height": 1312
     },
     {
       "src": "/images/optimized/travel/A7400916.jpg",
@@ -464,7 +662,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 1521,
+      "height": 2000
     },
     {
       "src": "/images/optimized/travel/A7400938.jpg",
@@ -474,7 +676,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 1473,
+      "height": 2000
     },
     {
       "src": "/images/optimized/travel/A7400949.jpg",
@@ -484,7 +690,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 1432,
+      "height": 2000
     },
     {
       "src": "/images/optimized/travel/A7400952.jpg",
@@ -494,7 +704,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 2000,
+      "height": 1248
     },
     {
       "src": "/images/optimized/travel/A7400955.jpg",
@@ -504,7 +718,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 1651,
+      "height": 2000
     },
     {
       "src": "/images/optimized/travel/A7400963.jpg",
@@ -514,7 +732,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 1396,
+      "height": 2000
     },
     {
       "src": "/images/optimized/travel/A7400989.jpg",
@@ -524,7 +746,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 2000,
+      "height": 599
     },
     {
       "src": "/images/optimized/travel/A7401046.jpg",
@@ -534,7 +760,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 1365,
+      "height": 2000
     },
     {
       "src": "/images/optimized/travel/ANU00335.jpg",
@@ -544,7 +774,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 1479,
+      "height": 2000
     },
     {
       "src": "/images/optimized/travel/ANU00343.jpg",
@@ -554,7 +788,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 1335,
+      "height": 2000
     },
     {
       "src": "/images/optimized/travel/ANU00362.jpg",
@@ -564,7 +802,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 2000,
+      "height": 1333
     },
     {
       "src": "/images/optimized/travel/ANU00366.jpg",
@@ -574,7 +816,11 @@
       "date": "2025-12-28",
       "category": "travel",
       "tier": 1,
-      "tags": ["travel"]
+      "tags": [
+        "travel"
+      ],
+      "width": 2000,
+      "height": 1333
     }
   ]
 }

@@ -110,6 +110,11 @@ export interface GalleryImage {
   
   /** Primary category for gallery organization */
   category: Category;
+
+  /** Intrinsic pixel dimensions — set on <img> tags to prevent layout shift.
+   *  Backfilled by scripts/add-dimensions.js */
+  width?: number;
+  height?: number;
   
   /** 
    * Tier for ordering within the gallery

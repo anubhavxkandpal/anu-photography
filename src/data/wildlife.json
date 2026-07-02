@@ -13,7 +13,13 @@
       "date": "2025-10-31",
       "category": "wildlife",
       "tier": 2,
-      "tags": ["birds", "rural", "candid"]
+      "tags": [
+        "birds",
+        "rural",
+        "candid"
+      ],
+      "width": 1760,
+      "height": 1920
     },
     {
       "src": "/images/ANU00119.jpg",
@@ -23,7 +29,13 @@
       "date": "2025-10-31",
       "category": "wildlife",
       "tier": 2,
-      "tags": ["birds", "rural", "candid"]
+      "tags": [
+        "birds",
+        "rural",
+        "candid"
+      ],
+      "width": 1920,
+      "height": 898
     },
     {
       "src": "/images/ANU002464.jpg",
@@ -33,7 +45,13 @@
       "date": "2025-10-31",
       "category": "wildlife",
       "tier": 1,
-      "tags": ["monkeys", "temples", "wildlife"]
+      "tags": [
+        "monkeys",
+        "temples",
+        "wildlife"
+      ],
+      "width": 1536,
+      "height": 1920
     },
     {
       "src": "/images/ANU00295.jpg",
@@ -43,7 +61,13 @@
       "date": "2025-10-31",
       "category": "wildlife",
       "tier": 3,
-      "tags": ["wildlife", "rural", "candid"]
+      "tags": [
+        "wildlife",
+        "rural",
+        "candid"
+      ],
+      "width": 1315,
+      "height": 1920
     },
     {
       "src": "/images/ANU00297.jpg",
@@ -53,7 +77,13 @@
       "date": "2025-10-31",
       "category": "wildlife",
       "tier": 2,
-      "tags": ["birds", "forest", "wildlife"]
+      "tags": [
+        "birds",
+        "forest",
+        "wildlife"
+      ],
+      "width": 1920,
+      "height": 647
     },
     {
       "src": "/images/ANU00396 1.jpg",
@@ -63,7 +93,13 @@
       "date": "2025-10-31",
       "category": "wildlife",
       "tier": 1,
-      "tags": ["birds", "wildlife", "abstract"]
+      "tags": [
+        "birds",
+        "wildlife",
+        "abstract"
+      ],
+      "width": 1437,
+      "height": 1920
     },
     {
       "src": "/images/optimized/portraits/ANU00151.jpg",
@@ -73,7 +109,13 @@
       "date": "2025-10-31",
       "category": "wildlife",
       "tier": 2,
-      "tags": ["dogs", "forest", "himalayas"]
+      "tags": [
+        "dogs",
+        "forest",
+        "himalayas"
+      ],
+      "width": 1394,
+      "height": 1920
     },
     {
       "src": "/images/optimized/portraits/ANU00159.jpg",
@@ -83,7 +125,13 @@
       "date": "2025-10-31",
       "category": "wildlife",
       "tier": 1,
-      "tags": ["dogs", "wildlife", "himalayas"]
+      "tags": [
+        "dogs",
+        "wildlife",
+        "himalayas"
+      ],
+      "width": 1339,
+      "height": 1920
     },
     {
       "src": "/images/optimized/portraits/ANU00166.jpg",
@@ -93,7 +141,13 @@
       "date": "2025-10-31",
       "category": "wildlife",
       "tier": 2,
-      "tags": ["dogs", "wildlife", "serene"]
+      "tags": [
+        "dogs",
+        "wildlife",
+        "serene"
+      ],
+      "width": 1544,
+      "height": 1920
     },
     {
       "src": "/images/optimized/portraits/DIV17.jpg",
@@ -103,7 +157,13 @@
       "date": "2025-10-31",
       "category": "wildlife",
       "tier": 2,
-      "tags": ["birds", "wildlife", "candid"]
+      "tags": [
+        "birds",
+        "wildlife",
+        "candid"
+      ],
+      "width": 1920,
+      "height": 1469
     },
     {
       "src": "/images/optimized/wildlife/A7400614.jpg",
@@ -113,7 +173,11 @@
       "date": "2025-11-25",
       "category": "wildlife",
       "tier": 2,
-      "tags": ["wildlife"]
+      "tags": [
+        "wildlife"
+      ],
+      "width": 2000,
+      "height": 1446
     },
     {
       "src": "/images/optimized/wildlife/A7400617.jpg",
@@ -123,7 +187,11 @@
       "date": "2025-11-25",
       "category": "wildlife",
       "tier": 2,
-      "tags": ["wildlife"]
+      "tags": [
+        "wildlife"
+      ],
+      "width": 2000,
+      "height": 1243
     },
     {
       "src": "/images/optimized/wildlife/ANU00417.jpg",
@@ -133,7 +201,12 @@
       "date": "2025-11-25",
       "category": "wildlife",
       "tier": 2,
-      "tags": ["wildlife", "himalayas"]
+      "tags": [
+        "wildlife",
+        "himalayas"
+      ],
+      "width": 1333,
+      "height": 2000
     },
     {
       "src": "/images/optimized/wildlife/ANU00418.jpg",
@@ -143,7 +216,12 @@
       "date": "2025-11-25",
       "category": "wildlife",
       "tier": 2,
-      "tags": ["wildlife", "himalayas"]
+      "tags": [
+        "wildlife",
+        "himalayas"
+      ],
+      "width": 1595,
+      "height": 2000
     },
     {
       "src": "/images/optimized/wildlife/ANU00426.jpg",
@@ -153,7 +231,12 @@
       "date": "2025-11-25",
       "category": "wildlife",
       "tier": 2,
-      "tags": ["wildlife", "forest"]
+      "tags": [
+        "wildlife",
+        "forest"
+      ],
+      "width": 1800,
+      "height": 2000
     },
     {
       "src": "/images/optimized/wildlife/ANU00456.jpg",
@@ -163,7 +246,12 @@
       "date": "2025-11-25",
       "category": "wildlife",
       "tier": 2,
-      "tags": ["wildlife", "himalayas"]
+      "tags": [
+        "wildlife",
+        "himalayas"
+      ],
+      "width": 1519,
+      "height": 2000
     },
     {
       "src": "/images/optimized/wildlife/IMG_0100-Edit.jpg",
@@ -173,7 +261,11 @@
       "date": "2025-11-25",
       "category": "wildlife",
       "tier": 2,
-      "tags": ["wildlife"]
+      "tags": [
+        "wildlife"
+      ],
+      "width": 1200,
+      "height": 1400
     },
     {
       "src": "/images/optimized/wildlife/A7400900.jpg",
@@ -183,7 +275,11 @@
       "date": "2025-12-28",
       "category": "wildlife",
       "tier": 1,
-      "tags": ["wildlife"]
+      "tags": [
+        "wildlife"
+      ],
+      "width": 1600,
+      "height": 2000
     },
     {
       "src": "/images/optimized/wildlife/A7400901.jpg",
@@ -193,7 +289,11 @@
       "date": "2025-12-28",
       "category": "wildlife",
       "tier": 1,
-      "tags": ["wildlife"]
+      "tags": [
+        "wildlife"
+      ],
+      "width": 1600,
+      "height": 2000
     },
     {
       "src": "/images/optimized/wildlife/A7400911.jpg",
@@ -203,7 +303,11 @@
       "date": "2025-12-28",
       "category": "wildlife",
       "tier": 1,
-      "tags": ["wildlife"]
+      "tags": [
+        "wildlife"
+      ],
+      "width": 1718,
+      "height": 2000
     },
     {
       "src": "/images/optimized/wildlife/A7400912.jpg",
@@ -213,7 +317,11 @@
       "date": "2025-12-28",
       "category": "wildlife",
       "tier": 1,
-      "tags": ["wildlife"]
+      "tags": [
+        "wildlife"
+      ],
+      "width": 1830,
+      "height": 2000
     },
     {
       "src": "/images/optimized/wildlife/A7400920.jpg",
@@ -223,7 +331,11 @@
       "date": "2025-12-28",
       "category": "wildlife",
       "tier": 1,
-      "tags": ["wildlife"]
+      "tags": [
+        "wildlife"
+      ],
+      "width": 2000,
+      "height": 1316
     },
     {
       "src": "/images/optimized/wildlife/A7400921.jpg",
@@ -233,7 +345,11 @@
       "date": "2025-12-28",
       "category": "wildlife",
       "tier": 1,
-      "tags": ["wildlife"]
+      "tags": [
+        "wildlife"
+      ],
+      "width": 2000,
+      "height": 1333
     },
     {
       "src": "/images/optimized/wildlife/A7400925.jpg",
@@ -243,7 +359,11 @@
       "date": "2025-12-28",
       "category": "wildlife",
       "tier": 1,
-      "tags": ["wildlife"]
+      "tags": [
+        "wildlife"
+      ],
+      "width": 1600,
+      "height": 2000
     },
     {
       "src": "/images/optimized/wildlife/A7400959.jpg",
@@ -253,7 +373,11 @@
       "date": "2025-12-28",
       "category": "wildlife",
       "tier": 1,
-      "tags": ["wildlife"]
+      "tags": [
+        "wildlife"
+      ],
+      "width": 1312,
+      "height": 2000
     }
   ]
 }

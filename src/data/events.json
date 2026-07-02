@@ -13,7 +13,12 @@
       "date": "2024-08-17",
       "category": "events",
       "tier": 1,
-      "tags": ["people", "candid"]
+      "tags": [
+        "people",
+        "candid"
+      ],
+      "width": 1200,
+      "height": 1740
     },
     {
       "src": "/images/optimized/events/DSC01083-Edit.jpg",
@@ -23,7 +28,11 @@
       "date": "2024-08-15",
       "category": "events",
       "tier": 2,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1200,
+      "height": 1577
     },
     {
       "src": "/images/optimized/events/IMG_9287.jpg",
@@ -33,7 +42,12 @@
       "date": "2024-08-12",
       "category": "events",
       "tier": 2,
-      "tags": ["people", "candid"]
+      "tags": [
+        "people",
+        "candid"
+      ],
+      "width": 1200,
+      "height": 1760
     },
     {
       "src": "/images/optimized/events/DSC01096.jpg",
@@ -43,7 +57,11 @@
       "date": "2024-08-10",
       "category": "events",
       "tier": 2,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1200,
+      "height": 667
     },
     {
       "src": "/images/optimized/events/IMG_9454.jpg",
@@ -53,7 +71,12 @@
       "date": "2024-08-08",
       "category": "events",
       "tier": 2,
-      "tags": ["people", "candid"]
+      "tags": [
+        "people",
+        "candid"
+      ],
+      "width": 1200,
+      "height": 832
     },
     {
       "src": "/images/optimized/events/DSC01095.jpg",
@@ -63,7 +86,11 @@
       "date": "2024-08-05",
       "category": "events",
       "tier": 2,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1200,
+      "height": 1090
     },
     {
       "src": "/images/optimized/events/DSC01092.jpg",
@@ -73,7 +100,11 @@
       "date": "2024-08-03",
       "category": "events",
       "tier": 2,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1200,
+      "height": 618
     },
     {
       "src": "/images/optimized/events/DSC01087.jpg",
@@ -83,7 +114,12 @@
       "date": "2024-08-01",
       "category": "events",
       "tier": 2,
-      "tags": ["people", "candid"]
+      "tags": [
+        "people",
+        "candid"
+      ],
+      "width": 1200,
+      "height": 797
     },
     {
       "src": "/images/optimized/events/IMG_9273.jpg",
@@ -93,7 +129,11 @@
       "date": "2024-07-30",
       "category": "events",
       "tier": 2,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1200,
+      "height": 800
     },
     {
       "src": "/images/optimized/events/IMG_7256-Final.jpg",
@@ -103,7 +143,12 @@
       "date": "2024-07-28",
       "category": "events",
       "tier": 1,
-      "tags": ["people", "dramatic"]
+      "tags": [
+        "people",
+        "dramatic"
+      ],
+      "width": 1200,
+      "height": 800
     },
     {
       "src": "/images/optimized/events/DSC01064.jpg",
@@ -113,7 +158,12 @@
       "date": "2024-07-25",
       "category": "events",
       "tier": 2,
-      "tags": ["people", "candid"]
+      "tags": [
+        "people",
+        "candid"
+      ],
+      "width": 1200,
+      "height": 1256
     },
     {
       "src": "/images/optimized/events/IMG_9117.jpg",
@@ -123,7 +173,11 @@
       "date": "2024-07-22",
       "category": "events",
       "tier": 2,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1200,
+      "height": 800
     },
     {
       "src": "/images/optimized/events/DSC01065.jpg",
@@ -133,7 +187,12 @@
       "date": "2024-07-20",
       "category": "events",
       "tier": 2,
-      "tags": ["people", "candid"]
+      "tags": [
+        "people",
+        "candid"
+      ],
+      "width": 1200,
+      "height": 716
     },
     {
       "src": "/images/optimized/events/IMG_0021.jpg",
@@ -143,7 +202,12 @@
       "date": "2024-07-18",
       "category": "events",
       "tier": 2,
-      "tags": ["people", "candid"]
+      "tags": [
+        "people",
+        "candid"
+      ],
+      "width": 1200,
+      "height": 1222
     },
     {
       "src": "/images/optimized/events/IMG_8625-2-3.jpg",
@@ -153,7 +217,12 @@
       "date": "2024-09-11",
       "category": "events",
       "tier": 1,
-      "tags": ["people", "abstract"]
+      "tags": [
+        "people",
+        "abstract"
+      ],
+      "width": 1200,
+      "height": 1602
     }
   ]
 }

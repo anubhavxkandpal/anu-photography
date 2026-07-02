@@ -13,7 +13,14 @@
       "date": "2025-10-31",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people", "mountains", "himalayas", "serene"]
+      "tags": [
+        "people",
+        "mountains",
+        "himalayas",
+        "serene"
+      ],
+      "width": 1920,
+      "height": 1887
     },
     {
       "src": "/images/DIV1.jpg",
@@ -23,7 +30,14 @@
       "date": "2025-10-31",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people", "golden-hour", "mountains", "himalayas"]
+      "tags": [
+        "people",
+        "golden-hour",
+        "mountains",
+        "himalayas"
+      ],
+      "width": 1536,
+      "height": 1920
     },
     {
       "src": "/images/DIV3.jpg",
@@ -33,7 +47,14 @@
       "date": "2025-10-31",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people", "golden-hour", "mountains", "candid"]
+      "tags": [
+        "people",
+        "golden-hour",
+        "mountains",
+        "candid"
+      ],
+      "width": 1536,
+      "height": 1920
     },
     {
       "src": "/images/DIV4.jpg",
@@ -43,7 +64,14 @@
       "date": "2025-10-31",
       "category": "portraits",
       "tier": 2,
-      "tags": ["people", "silhouette", "golden-hour", "dramatic"]
+      "tags": [
+        "people",
+        "silhouette",
+        "golden-hour",
+        "dramatic"
+      ],
+      "width": 1465,
+      "height": 1920
     },
     {
       "src": "/images/DIV8.jpg",
@@ -53,7 +81,14 @@
       "date": "2025-10-31",
       "category": "portraits",
       "tier": 2,
-      "tags": ["people", "silhouette", "mountains", "dramatic"]
+      "tags": [
+        "people",
+        "silhouette",
+        "mountains",
+        "dramatic"
+      ],
+      "width": 1920,
+      "height": 1109
     },
     {
       "src": "/images/optimized/portraits/DIV20.jpg",
@@ -63,7 +98,13 @@
       "date": "2025-10-31",
       "category": "portraits",
       "tier": 2,
-      "tags": ["people", "candid", "rural"]
+      "tags": [
+        "people",
+        "candid",
+        "rural"
+      ],
+      "width": 1514,
+      "height": 1920
     },
     {
       "src": "/images/optimized/portraits/IMG_9020.jpg",
@@ -73,7 +114,11 @@
       "date": "2024-08-20",
       "category": "portraits",
       "tier": 2,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1200,
+      "height": 800
     },
     {
       "src": "/images/optimized/portraits/IMG_9589-Edit.jpg",
@@ -83,7 +128,12 @@
       "date": "2024-08-15",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people", "abstract"]
+      "tags": [
+        "people",
+        "abstract"
+      ],
+      "width": 1200,
+      "height": 832
     },
     {
       "src": "/images/optimized/portraits/_MG_8501-2.jpg",
@@ -93,7 +143,11 @@
       "date": "2024-08-10",
       "category": "portraits",
       "tier": 2,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1200,
+      "height": 1805
     },
     {
       "src": "/images/optimized/portraits/IMG_9511.jpg",
@@ -103,7 +157,11 @@
       "date": "2024-08-05",
       "category": "portraits",
       "tier": 2,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1200,
+      "height": 1487
     },
     {
       "src": "/images/optimized/portraits/IMG_9117.jpg",
@@ -113,7 +171,11 @@
       "date": "2024-07-30",
       "category": "portraits",
       "tier": 2,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1200,
+      "height": 800
     },
     {
       "src": "/images/optimized/portraits/IMG_9372.jpg",
@@ -123,7 +185,12 @@
       "date": "2024-07-25",
       "category": "portraits",
       "tier": 2,
-      "tags": ["people", "urban"]
+      "tags": [
+        "people",
+        "urban"
+      ],
+      "width": 1200,
+      "height": 759
     },
     {
       "src": "/images/optimized/portraits/IMG_9655-Edit.jpg",
@@ -133,7 +200,11 @@
       "date": "2024-07-20",
       "category": "portraits",
       "tier": 2,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1200,
+      "height": 1594
     },
     {
       "src": "/images/optimized/portraits/A7400620.jpg",
@@ -143,7 +214,12 @@
       "date": "2025-11-25",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people", "golden-hour"]
+      "tags": [
+        "people",
+        "golden-hour"
+      ],
+      "width": 1307,
+      "height": 2000
     },
     {
       "src": "/images/optimized/portraits/A7400629.jpg",
@@ -153,7 +229,12 @@
       "date": "2025-11-25",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people", "dramatic"]
+      "tags": [
+        "people",
+        "dramatic"
+      ],
+      "width": 1706,
+      "height": 2000
     },
     {
       "src": "/images/optimized/portraits/A7400630.jpg",
@@ -163,7 +244,11 @@
       "date": "2025-11-25",
       "category": "portraits",
       "tier": 3,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1487,
+      "height": 2000
     },
     {
       "src": "/images/optimized/portraits/ANU00381.jpg",
@@ -173,7 +258,13 @@
       "date": "2025-11-25",
       "category": "portraits",
       "tier": 2,
-      "tags": ["people", "mountains", "himalayas"]
+      "tags": [
+        "people",
+        "mountains",
+        "himalayas"
+      ],
+      "width": 1514,
+      "height": 2000
     },
     {
       "src": "/images/optimized/portraits/ANU00432.jpg",
@@ -183,7 +274,13 @@
       "date": "2025-11-25",
       "category": "portraits",
       "tier": 2,
-      "tags": ["people", "mountains", "himalayas"]
+      "tags": [
+        "people",
+        "mountains",
+        "himalayas"
+      ],
+      "width": 1588,
+      "height": 2000
     },
     {
       "src": "/images/optimized/portraits/ANU00447.jpg",
@@ -193,7 +290,13 @@
       "date": "2025-11-25",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people", "candid", "himalayas"]
+      "tags": [
+        "people",
+        "candid",
+        "himalayas"
+      ],
+      "width": 2000,
+      "height": 1333
     },
     {
       "src": "/images/optimized/portraits/ANU00477.jpg",
@@ -203,7 +306,12 @@
       "date": "2025-11-25",
       "category": "portraits",
       "tier": 2,
-      "tags": ["people", "himalayas"]
+      "tags": [
+        "people",
+        "himalayas"
+      ],
+      "width": 1655,
+      "height": 2000
     },
     {
       "src": "/images/optimized/portraits/ANU00523.jpg",
@@ -213,7 +321,11 @@
       "date": "2025-11-25",
       "category": "portraits",
       "tier": 3,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1598,
+      "height": 2000
     },
     {
       "src": "/images/optimized/portraits/ANU00557.jpg",
@@ -223,7 +335,11 @@
       "date": "2025-11-25",
       "category": "portraits",
       "tier": 2,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 2000,
+      "height": 1218
     },
     {
       "src": "/images/optimized/portraits/ANU00559.jpg",
@@ -233,7 +349,12 @@
       "date": "2025-11-25",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people", "dramatic"]
+      "tags": [
+        "people",
+        "dramatic"
+      ],
+      "width": 1273,
+      "height": 2000
     },
     {
       "src": "/images/optimized/portraits/ANU00561 1.jpg",
@@ -243,7 +364,11 @@
       "date": "2025-11-25",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1237,
+      "height": 2000
     },
     {
       "src": "/images/optimized/portraits/ANU00561.jpg",
@@ -253,7 +378,11 @@
       "date": "2025-11-25",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1287,
+      "height": 2000
     },
     {
       "src": "/images/optimized/portraits/ANU00563.jpg",
@@ -263,7 +392,12 @@
       "date": "2025-11-25",
       "category": "portraits",
       "tier": 2,
-      "tags": ["people", "candid"]
+      "tags": [
+        "people",
+        "candid"
+      ],
+      "width": 2000,
+      "height": 1396
     },
     {
       "src": "/images/optimized/portraits/ANU00564.jpg",
@@ -273,7 +407,11 @@
       "date": "2025-11-25",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 2000,
+      "height": 1336
     },
     {
       "src": "/images/optimized/portraits/A7400692.jpg",
@@ -283,7 +421,11 @@
       "date": "2025-12-28",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 2000,
+      "height": 1338
     },
     {
       "src": "/images/optimized/portraits/A7400734.jpg",
@@ -293,7 +435,11 @@
       "date": "2025-12-28",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1333,
+      "height": 2000
     },
     {
       "src": "/images/optimized/portraits/A7400749.jpg",
@@ -303,7 +449,11 @@
       "date": "2025-12-28",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1600,
+      "height": 2000
     },
     {
       "src": "/images/optimized/portraits/A7400751.jpg",
@@ -313,7 +463,11 @@
       "date": "2025-12-28",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1369,
+      "height": 2000
     },
     {
       "src": "/images/optimized/portraits/A7400752.jpg",
@@ -323,7 +477,11 @@
       "date": "2025-12-28",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1191,
+      "height": 2000
     },
     {
       "src": "/images/optimized/portraits/A7400753.jpg",
@@ -333,7 +491,11 @@
       "date": "2025-12-28",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1533,
+      "height": 2000
     },
     {
       "src": "/images/optimized/portraits/A7400755.jpg",
@@ -343,7 +505,11 @@
       "date": "2025-12-28",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1333,
+      "height": 2000
     },
     {
       "src": "/images/optimized/portraits/A7400764.jpg",
@@ -353,7 +519,11 @@
       "date": "2025-12-28",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1418,
+      "height": 2000
     },
     {
       "src": "/images/optimized/portraits/A7400772.jpg",
@@ -363,7 +533,11 @@
       "date": "2025-12-28",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1395,
+      "height": 2000
     },
     {
       "src": "/images/optimized/portraits/A7400784.jpg",
@@ -373,7 +547,11 @@
       "date": "2025-12-28",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1407,
+      "height": 2000
     },
     {
       "src": "/images/optimized/portraits/A7400789.jpg",
@@ -383,7 +561,11 @@
       "date": "2025-12-28",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1331,
+      "height": 2000
     },
     {
       "src": "/images/optimized/portraits/A7400791.jpg",
@@ -393,7 +575,11 @@
       "date": "2025-12-28",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1271,
+      "height": 2000
     },
     {
       "src": "/images/optimized/portraits/A7400840.jpg",
@@ -403,7 +589,11 @@
       "date": "2025-12-28",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1333,
+      "height": 2000
     },
     {
       "src": "/images/optimized/portraits/A7400856.jpg",
@@ -413,7 +603,11 @@
       "date": "2025-12-28",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1333,
+      "height": 2000
     },
     {
       "src": "/images/optimized/portraits/A7400877.jpg",
@@ -423,7 +617,11 @@
       "date": "2025-12-28",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 2000,
+      "height": 1288
     },
     {
       "src": "/images/optimized/portraits/A7400972_1.jpg",
@@ -433,7 +631,11 @@
       "date": "2025-12-28",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 2000,
+      "height": 1298
     },
     {
       "src": "/images/optimized/portraits/A7401004.jpg",
@@ -443,7 +645,11 @@
       "date": "2025-12-28",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1333,
+      "height": 2000
     },
     {
       "src": "/images/optimized/portraits/A7401031.jpg",
@@ -453,7 +659,11 @@
       "date": "2025-12-28",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 2000,
+      "height": 1333
     },
     {
       "src": "/images/optimized/portraits/A7401069.jpg",
@@ -463,7 +673,11 @@
       "date": "2025-12-28",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1287,
+      "height": 2000
     },
     {
       "src": "/images/optimized/portraits/A7401172.jpg",
@@ -473,7 +687,11 @@
       "date": "2025-12-28",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 2000,
+      "height": 1333
     },
     {
       "src": "/images/optimized/portraits/A7401176.jpg",
@@ -483,7 +701,11 @@
       "date": "2025-12-28",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 2000,
+      "height": 1333
     },
     {
       "src": "/images/optimized/portraits/A7401209.jpg",
@@ -493,7 +715,11 @@
       "date": "2025-12-28",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 2000,
+      "height": 1333
     },
     {
       "src": "/images/optimized/portraits/A7401214.jpg",
@@ -503,7 +729,11 @@
       "date": "2025-12-28",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 2000,
+      "height": 1333
     },
     {
       "src": "/images/optimized/portraits/A7401234.jpg",
@@ -513,7 +743,11 @@
       "date": "2025-12-28",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1333,
+      "height": 2000
     },
     {
       "src": "/images/optimized/portraits/A7401252.jpg",
@@ -523,7 +757,11 @@
       "date": "2025-12-28",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1333,
+      "height": 2000
     },
     {
       "src": "/images/optimized/portraits/A7401253.jpg",
@@ -533,7 +771,11 @@
       "date": "2025-12-28",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1333,
+      "height": 2000
     },
     {
       "src": "/images/optimized/portraits/A7401262.jpg",
@@ -543,7 +785,11 @@
       "date": "2025-12-28",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1333,
+      "height": 2000
     },
     {
       "src": "/images/optimized/portraits/A7401263.jpg",
@@ -553,7 +799,11 @@
       "date": "2025-12-28",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 1333,
+      "height": 2000
     },
     {
       "src": "/images/optimized/portraits/ANU00340.jpg",
@@ -563,7 +813,11 @@
       "date": "2025-12-28",
       "category": "portraits",
       "tier": 1,
-      "tags": ["people"]
+      "tags": [
+        "people"
+      ],
+      "width": 2000,
+      "height": 1249
     }
   ]
 }

@@ -141,28 +141,45 @@ const { title, description = "Professional photography portfolio featuring lands
       </div>
     </div>
     
-    <!-- Import and initialize SmoothScrollProvider -->
     <script>
-      import SmoothScrollProvider from '../components/SmoothScrollProvider';
-      
-      // Initialize smooth scrolling
-      document.addEventListener('DOMContentLoaded', function() {
+      import Lenis from '@studio-freight/lenis';
+
+      let lenis: Lenis | null = null;
+
+      // astro:page-load fires on initial load AND after every ViewTransitions
+      // navigation; DOM listeners must be re-attached each time since the
+      // <body> is swapped out.
+      document.addEventListener('astro:page-load', () => {
         // Mobile menu toggle
         const mobileMenuButton = document.querySelector('.mobile-menu-button');
         const mobileMenu = document.querySelector('.mobile-menu');
-        
+
         if (mobileMenuButton && mobileMenu) {
-          mobileMenuButton.addEventListener('click', function() {
+          mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
           });
-        }
-        
-        // Initialize smooth scrolling
-        const wrapper = document.getElementById('smooth-scroll-wrapper');
-        if (wrapper) {
-          import('../components/SmoothScrollProvider').then(module => {
-            // SmoothScrollProvider will auto-initialize
+          // Close the menu when a navigation link is chosen
+          mobileMenu.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
           });
+        }
+
+        // Smooth scrolling — Lenis runs on the window, so a single instance
+        // survives ViewTransitions navigations.
+        if (!lenis) {
+          lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            touchMultiplier: 2,
+            wheelMultiplier: 1.5,
+            infinite: false,
+          });
+
+          const raf = (time: number) => {
+            lenis?.raf(time);
+            requestAnimationFrame(raf);
+          };
+          requestAnimationFrame(raf);
         }
       });
     </script>

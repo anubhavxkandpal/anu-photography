@@ -171,8 +171,10 @@ const FilterableGallery: React.FC<FilterableGalleryProps> = ({
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className={isFeatured 
-                    ? "w-full max-h-[85vh] object-contain" 
+                  width={image.width}
+                  height={image.height}
+                  className={isFeatured
+                    ? "w-full max-h-[85vh] object-contain"
                     : "w-full h-auto"
                   }
                   loading="lazy"

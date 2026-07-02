@@ -13,7 +13,13 @@
       "date": "2025-10-31",
       "category": "artsy",
       "tier": 2,
-      "tags": ["temples", "architecture", "abstract"]
+      "tags": [
+        "temples",
+        "architecture",
+        "abstract"
+      ],
+      "width": 1620,
+      "height": 1920
     },
     {
       "src": "/images/ANU002506.jpg",
@@ -23,7 +29,12 @@
       "date": "2025-10-31",
       "category": "artsy",
       "tier": 2,
-      "tags": ["abstract", "serene"]
+      "tags": [
+        "abstract",
+        "serene"
+      ],
+      "width": 1920,
+      "height": 1061
     },
     {
       "src": "/images/ANU002517.jpg",
@@ -33,7 +44,12 @@
       "date": "2025-10-31",
       "category": "artsy",
       "tier": 2,
-      "tags": ["temples", "architecture"]
+      "tags": [
+        "temples",
+        "architecture"
+      ],
+      "width": 1920,
+      "height": 1196
     },
     {
       "src": "/images/optimized/landscapes/ANU00257.jpg",
@@ -43,7 +59,12 @@
       "date": "2025-10-31",
       "category": "artsy",
       "tier": 1,
-      "tags": ["temples", "abstract"]
+      "tags": [
+        "temples",
+        "abstract"
+      ],
+      "width": 1536,
+      "height": 1920
     },
     {
       "src": "/images/optimized/portraits/ANU0025810.jpg",
@@ -53,7 +74,12 @@
       "date": "2025-10-31",
       "category": "artsy",
       "tier": 2,
-      "tags": ["temples", "architecture"]
+      "tags": [
+        "temples",
+        "architecture"
+      ],
+      "width": 1295,
+      "height": 1920
     },
     {
       "src": "/images/optimized/portraits/ANU0026111.jpg",
@@ -63,7 +89,12 @@
       "date": "2025-10-31",
       "category": "artsy",
       "tier": 2,
-      "tags": ["temples", "forest"]
+      "tags": [
+        "temples",
+        "forest"
+      ],
+      "width": 1510,
+      "height": 1920
     },
     {
       "src": "/images/optimized/portraits/ANU0026413.jpg",
@@ -73,7 +104,13 @@
       "date": "2025-10-31",
       "category": "artsy",
       "tier": 2,
-      "tags": ["temples", "architecture", "abstract"]
+      "tags": [
+        "temples",
+        "architecture",
+        "abstract"
+      ],
+      "width": 1920,
+      "height": 1657
     },
     {
       "src": "/images/optimized/portraits/ANU0026614.jpg",
@@ -83,7 +120,12 @@
       "date": "2025-10-31",
       "category": "artsy",
       "tier": 2,
-      "tags": ["temples", "forest"]
+      "tags": [
+        "temples",
+        "forest"
+      ],
+      "width": 1920,
+      "height": 1641
     },
     {
       "src": "/images/ANU00349.jpg",
@@ -93,7 +135,13 @@
       "date": "2025-10-31",
       "category": "artsy",
       "tier": 2,
-      "tags": ["streets", "urban", "abstract"]
+      "tags": [
+        "streets",
+        "urban",
+        "abstract"
+      ],
+      "width": 1920,
+      "height": 1182
     },
     {
       "src": "/images/ANU00389.jpg",
@@ -103,7 +151,13 @@
       "date": "2025-10-31",
       "category": "artsy",
       "tier": 2,
-      "tags": ["forest", "golden-hour", "abstract"]
+      "tags": [
+        "forest",
+        "golden-hour",
+        "abstract"
+      ],
+      "width": 1356,
+      "height": 1920
     },
     {
       "src": "/images/optimized/artsy/DIV15.jpg",
@@ -113,7 +167,13 @@
       "date": "2025-10-31",
       "category": "artsy",
       "tier": 1,
-      "tags": ["temples", "forest", "abstract"]
+      "tags": [
+        "temples",
+        "forest",
+        "abstract"
+      ],
+      "width": 1920,
+      "height": 1581
     },
     {
       "src": "/images/optimized/artsy/DIV16.jpg",
@@ -123,7 +183,12 @@
       "date": "2025-10-31",
       "category": "artsy",
       "tier": 2,
-      "tags": ["temples", "architecture"]
+      "tags": [
+        "temples",
+        "architecture"
+      ],
+      "width": 1277,
+      "height": 1920
     },
     {
       "src": "/images/optimized/artsy/DIV18.jpg",
@@ -133,7 +198,12 @@
       "date": "2025-10-31",
       "category": "artsy",
       "tier": 2,
-      "tags": ["architecture", "abstract"]
+      "tags": [
+        "architecture",
+        "abstract"
+      ],
+      "width": 1280,
+      "height": 1920
     },
     {
       "src": "/images/optimized/artsy/DIV2510.jpg",
@@ -143,7 +213,13 @@
       "date": "2025-10-31",
       "category": "artsy",
       "tier": 1,
-      "tags": ["architecture", "dramatic", "abstract"]
+      "tags": [
+        "architecture",
+        "dramatic",
+        "abstract"
+      ],
+      "width": 1468,
+      "height": 1920
     },
     {
       "src": "/images/optimized/artsy/DIV2511.jpg",
@@ -153,7 +229,13 @@
       "date": "2025-10-31",
       "category": "artsy",
       "tier": 2,
-      "tags": ["architecture", "dramatic", "abstract"]
+      "tags": [
+        "architecture",
+        "dramatic",
+        "abstract"
+      ],
+      "width": 1920,
+      "height": 1063
     },
     {
       "src": "/images/optimized/artsy/DIV2512.jpg",
@@ -163,7 +245,11 @@
       "date": "2025-10-31",
       "category": "artsy",
       "tier": 2,
-      "tags": ["abstract"]
+      "tags": [
+        "abstract"
+      ],
+      "width": 1536,
+      "height": 1920
     },
     {
       "src": "/images/optimized/artsy/IMG_1267(Forgotten dream).jpg",
@@ -173,7 +259,12 @@
       "date": "2024-07-18",
       "category": "artsy",
       "tier": 1,
-      "tags": ["abstract", "serene"]
+      "tags": [
+        "abstract",
+        "serene"
+      ],
+      "width": 1200,
+      "height": 722
     },
     {
       "src": "/images/optimized/artsy/A7400591_HDR.jpg",
@@ -183,7 +274,12 @@
       "date": "2025-11-25",
       "category": "artsy",
       "tier": 1,
-      "tags": ["architecture", "dramatic"]
+      "tags": [
+        "architecture",
+        "dramatic"
+      ],
+      "width": 1765,
+      "height": 2000
     },
     {
       "src": "/images/optimized/artsy/A7400597.jpg",
@@ -193,7 +289,12 @@
       "date": "2025-11-25",
       "category": "artsy",
       "tier": 1,
-      "tags": ["architecture", "abstract"]
+      "tags": [
+        "architecture",
+        "abstract"
+      ],
+      "width": 1317,
+      "height": 2000
     },
     {
       "src": "/images/optimized/artsy/A7400600.jpg",
@@ -203,7 +304,12 @@
       "date": "2025-11-25",
       "category": "artsy",
       "tier": 1,
-      "tags": ["abstract", "dramatic"]
+      "tags": [
+        "abstract",
+        "dramatic"
+      ],
+      "width": 2000,
+      "height": 1163
     },
     {
       "src": "/images/optimized/artsy/A7400622.jpg",
@@ -213,7 +319,11 @@
       "date": "2025-11-25",
       "category": "artsy",
       "tier": 1,
-      "tags": ["abstract"]
+      "tags": [
+        "abstract"
+      ],
+      "width": 1401,
+      "height": 2000
     },
     {
       "src": "/images/optimized/artsy/ANU00415.jpg",
@@ -223,7 +333,13 @@
       "date": "2025-11-25",
       "category": "artsy",
       "tier": 1,
-      "tags": ["mountains", "himalayas", "abstract"]
+      "tags": [
+        "mountains",
+        "himalayas",
+        "abstract"
+      ],
+      "width": 2000,
+      "height": 1300
     },
     {
       "src": "/images/optimized/artsy/ANU00461.jpg",
@@ -233,7 +349,12 @@
       "date": "2025-11-25",
       "category": "artsy",
       "tier": 1,
-      "tags": ["forest", "abstract"]
+      "tags": [
+        "forest",
+        "abstract"
+      ],
+      "width": 1600,
+      "height": 2000
     },
     {
       "src": "/images/optimized/artsy/ANU00559.jpg",
@@ -243,7 +364,13 @@
       "date": "2025-11-25",
       "category": "artsy",
       "tier": 1,
-      "tags": ["people", "dramatic", "abstract"]
+      "tags": [
+        "people",
+        "dramatic",
+        "abstract"
+      ],
+      "width": 1273,
+      "height": 2000
     },
     {
       "src": "/images/optimized/artsy/A7400676.jpg",
@@ -253,7 +380,11 @@
       "date": "2025-12-28",
       "category": "artsy",
       "tier": 1,
-      "tags": ["abstract"]
+      "tags": [
+        "abstract"
+      ],
+      "width": 2000,
+      "height": 1333
     },
     {
       "src": "/images/optimized/artsy/A7400691.jpg",
@@ -263,7 +394,11 @@
       "date": "2025-12-28",
       "category": "artsy",
       "tier": 1,
-      "tags": ["abstract"]
+      "tags": [
+        "abstract"
+      ],
+      "width": 2000,
+      "height": 1333
     },
     {
       "src": "/images/optimized/artsy/A7400720.jpg",
@@ -273,7 +408,11 @@
       "date": "2025-12-28",
       "category": "artsy",
       "tier": 1,
-      "tags": ["abstract"]
+      "tags": [
+        "abstract"
+      ],
+      "width": 1364,
+      "height": 2000
     },
     {
       "src": "/images/optimized/artsy/A7400732.jpg",
@@ -283,7 +422,11 @@
       "date": "2025-12-28",
       "category": "artsy",
       "tier": 1,
-      "tags": ["abstract"]
+      "tags": [
+        "abstract"
+      ],
+      "width": 2000,
+      "height": 1333
     },
     {
       "src": "/images/optimized/artsy/A7400743.jpg",
@@ -293,7 +436,11 @@
       "date": "2025-12-28",
       "category": "artsy",
       "tier": 1,
-      "tags": ["abstract"]
+      "tags": [
+        "abstract"
+      ],
+      "width": 2000,
+      "height": 1973
     },
     {
       "src": "/images/optimized/artsy/A7400745.jpg",
@@ -303,7 +450,11 @@
       "date": "2025-12-28",
       "category": "artsy",
       "tier": 1,
-      "tags": ["abstract"]
+      "tags": [
+        "abstract"
+      ],
+      "width": 1369,
+      "height": 2000
     },
     {
       "src": "/images/optimized/artsy/A7400754.jpg",
@@ -313,7 +464,11 @@
       "date": "2025-12-28",
       "category": "artsy",
       "tier": 1,
-      "tags": ["abstract"]
+      "tags": [
+        "abstract"
+      ],
+      "width": 1153,
+      "height": 2000
     },
     {
       "src": "/images/optimized/artsy/A7400780.jpg",
@@ -323,7 +478,11 @@
       "date": "2025-12-28",
       "category": "artsy",
       "tier": 1,
-      "tags": ["abstract"]
+      "tags": [
+        "abstract"
+      ],
+      "width": 1515,
+      "height": 2000
     },
     {
       "src": "/images/optimized/artsy/A7400785.jpg",
@@ -333,7 +492,11 @@
       "date": "2025-12-28",
       "category": "artsy",
       "tier": 1,
-      "tags": ["abstract"]
+      "tags": [
+        "abstract"
+      ],
+      "width": 2000,
+      "height": 1072
     },
     {
       "src": "/images/optimized/artsy/A7400793.jpg",
@@ -343,7 +506,11 @@
       "date": "2025-12-28",
       "category": "artsy",
       "tier": 1,
-      "tags": ["abstract"]
+      "tags": [
+        "abstract"
+      ],
+      "width": 2000,
+      "height": 1186
     },
     {
       "src": "/images/optimized/artsy/A7400961.jpg",
@@ -353,7 +520,11 @@
       "date": "2025-12-28",
       "category": "artsy",
       "tier": 1,
-      "tags": ["abstract"]
+      "tags": [
+        "abstract"
+      ],
+      "width": 1333,
+      "height": 2000
     },
     {
       "src": "/images/optimized/artsy/A7400968.jpg",
@@ -363,7 +534,11 @@
       "date": "2025-12-28",
       "category": "artsy",
       "tier": 1,
-      "tags": ["abstract"]
+      "tags": [
+        "abstract"
+      ],
+      "width": 1590,
+      "height": 2000
     },
     {
       "src": "/images/optimized/artsy/A7400969.jpg",
@@ -373,7 +548,11 @@
       "date": "2025-12-28",
       "category": "artsy",
       "tier": 1,
-      "tags": ["abstract"]
+      "tags": [
+        "abstract"
+      ],
+      "width": 1491,
+      "height": 2000
     },
     {
       "src": "/images/optimized/artsy/A7401039.jpg",
@@ -383,7 +562,11 @@
       "date": "2025-12-28",
       "category": "artsy",
       "tier": 1,
-      "tags": ["abstract"]
+      "tags": [
+        "abstract"
+      ],
+      "width": 1473,
+      "height": 2000
     },
     {
       "src": "/images/optimized/artsy/ANU00316.jpg",
@@ -393,7 +576,11 @@
       "date": "2025-12-28",
       "category": "artsy",
       "tier": 1,
-      "tags": ["abstract"]
+      "tags": [
+        "abstract"
+      ],
+      "width": 1600,
+      "height": 2000
     }
   ]
 }
